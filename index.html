@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Assignment</title>
+   <meta charset="utf-8" />
+   <!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+   <link rel="stylesheet" href="style1_basic.css">
+   <link rel="stylesheet" href="style2_size.css">
+   <link rel="stylesheet" href="style3_style.css">
+   <link rel="stylesheet" href="">
+   <link rel="stylesheet" href="">
+   <link rel="stylesheet" href="">
+</head>
+
+<body>
+    
+    <img id="mclogo" src="image/mclogo.png" alt="mars_cafe_logo" >  
+    <header>
+        Mars Café
+    </header>
+
+    <nav class="navigation_img">
+        <ul>
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="event_promotion.html">Event Promotion</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+        </ul>
+    </nav>
+
+ <!-- Panel slideshow -->
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <img src="image/banner.png" style="width:100%">
+        <!-- <div class="text">Caption Text</div> -->
+    </div>
+
+    <div class="mySlides fade">
+        <img src="image/valentine_event.png" style="width:100%">
+        <!-- <div class="text">Caption Two</div> -->
+    </div>
+
+    <div class="mySlides fade">
+        <img src="image/open.jpg" style="width:100%" margin="auto">
+        <!-- <div class="text">Caption Three</div> -->
+    </div>
+</div><br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+</script>
+
+
+    <footer>
+        <p class="footer-left">
+        <span>Design & developed by: RSF1S2G2</span> <br> 
+        <a href="term_privacy.html">Term & Privacy</a></p>
+
+        <p class="footer-right">
+        <img src="image/gmail.png.png" alt="gmail">
+        <img src="image/whatsapp.png.png" alt="whatsapp"style= "border-radius: 50%;">
+        <img src="image/insta.png.png" alt="insta"style= "border-radius: 50%;">
+        <img src="image/fb.jng.png" alt="facebook" style= "border-radius: 50%;">
+        <img src="image/phone.png.png" alt="phone" style= "border-radius: 50%;"></p>
+        
+    </footer>
+</body>
+
+</html>

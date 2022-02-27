@@ -12,6 +12,8 @@ body {
     width: 960px;
     margin-right: auto;
     margin-left: auto;
+    background-color: lightskyblue;
+    ;
  }
 
 #mclogo {
@@ -19,6 +21,7 @@ body {
     margin-right: 30px;
     width: 150px;
     border-radius: 50%;
+  
      
 }
 
@@ -34,15 +37,20 @@ body header {
 nav.navigation_img ul li{
     width: 20%;
     padding: 10px;
+    margin-bottom: 50px;
     display: block;
-	border: solid rgba(127,96,17,1.00);
-    block-size: auto;
-    text-align: center;
-    margin-bottom: 30px;
-    float: left;
+    border: solid rgba(127,96,17,1.00); 
+    float: left
+
 }
 
-nav.navigation_img ul li a:hover{
+nav.navigation_img ul li a:link,
+nav.navigation_img ul li a:visited{
+    color: rgb(239, 220, 156);
+}
+
+nav.navigation_img ul li a:hover,
+nav.navigation_img ul li a:active{
     color: white;
     background-color: rgba(244, 158, 0.2);
 }
@@ -50,27 +58,6 @@ nav.navigation_img ul li a:hover{
 nav.navigation_img ul li a{
     display:table-cell  
     float none;
-}
-
-.footer-left {
-    display:inline;  
-    margin: 0px;
-    padding: 0px; 
-    float: left;
-}
-
-.footer-left a:link{
-    display: inline;
-    margin: 0px;
-    padding: 0px;
-    float: left; 
-    text-decoration: none;  
-}
-
-.footer-right img{
-    width: 30px;
-    display: inline;
-    float:right;
 }
 
 *{box-sizing: border-box;}
@@ -83,6 +70,7 @@ div.numbertext img {vertical-align: middle;}
   max-width: 1000px;
   position: relative;
   margin: auto;
+  clear:left;
 }
 
 /* Caption text 
@@ -141,4 +129,38 @@ div.numbertext img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
+}
+
+div.mapouter {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+/* footer */
+
+.footer-left {
+    display:inline;  
+    margin: 0px;
+    padding: 0px; 
+    float: left;
+}
+
+.footer-left a:link{
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+    float: left; 
+    text-decoration: none;  
+}
+
+.footer-right img{
+    width: 30px;
+    display: inline;
+    float:right;
 }

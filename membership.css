@@ -1,0 +1,248 @@
+
+ /*MEMBERSHIP REGISTER*/
+
+.membership h1{
+      font-size: 60px;
+      text-align: center;
+      padding: auto;
+
+  }
+
+.membership h2{
+    text-align: center;
+    font-size:40px;
+    color: black;
+    text-shadow: 2px 2px 4px #f0ebeb;
+  }
+.membership h3{
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+
+  }
+
+  .membership p{
+    background-color: rgb(243, 230, 230);
+    padding: 50px;
+    margin: 20px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #030303;
+  }
+
+
+  /*Username and Password field for membership register*/
+.container_marscardregister { 
+ padding-bottom: 20%;
+  
+}
+.container_marscardregister form{
+  text-align: center;
+  padding: 7px;
+  width:50%;
+  margin: auto;
+  background-color: rgba(192, 192, 192, 0.849);
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #030303;
+  border: 1px solid;
+  padding: 10px;
+  transition: box-shadow .3s;
+ 
+}
+
+.container_marscardregister form:hover{
+  box-shadow: 0 0 15px rgba(0, 0, 0,0.7);
+}
+
+  .container_marscardregister input[type=text], input[type=password] {
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: inset;
+    background: rgba(255, 252, 252, 0.849);
+
+  }
+  /*change color*/
+  .container_marscardregister input[type=text]:focus, input[type=password]:focus {
+    background: rgba(241, 230, 230, 0.849);
+    outline: none;
+
+  
+  }
+  
+  /*Register button for membership register*/
+  .membership_button {
+    border-style: outset;
+    color: rgb(5, 7, 5);
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    
+  }
+
+  .membership_button:hover {
+    background-color: rgb(14, 190, 14);
+    color: black;
+  }
+  
+  /* signin */
+  .login {
+    margin: auto;
+    text-align: center;
+    padding: 7px;
+    width:50%;
+    
+  }
+
+  .login :hover{
+    color: red;
+    cursor: pointer;
+  }
+  
+/*--------------------------------------------------------------------*/
+/*LOG IN*/
+/*body{
+  background-image: url('image/signin_cafeshop.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}*/
+.container_login{
+  padding-bottom: 10%;
+  padding-top: 2%;
+}
+.container_login form{
+  text-align: center;
+  margin :auto;
+  background-color: rgba(192, 192, 192, 0.849);
+  width:40%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: 1px solid;
+  border-radius: 25px;
+  padding: 10px;
+  transition: box-shadow 0.5s;
+}
+.container_login form:hover{
+  box-shadow: 0 0 15px rgba(0, 0, 0,0.7);
+}
+
+h1{
+  text-align: center;
+  font-size:60px;
+  color: black;
+  text-shadow: 2px 2px 4px #f0ebeb;
+  padding-top: 2%;
+}
+.container_login input[type=text], input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border: inset;
+    background: rgba(255, 252, 252, 0.849);
+  }
+
+  .container_login input[type=text]:focus, input[type=password]:focus {
+    background: rgba(241, 230, 230, 0.849);
+    outline: none;
+  }
+  
+  .container_login button {
+    border-style: outset;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  .container_login button:hover {
+    opacity: 0.8;
+    background-color: #17a847;
+  }
+ .container_signin{
+   text-align:center;
+   font-size:100%;
+   padding-top: 5%;
+ }
+
+ .container_signin:hover a{
+   color: red;
+   cursor: pointer;
+ }
+
+ 
+ /*--------------------------------------------------------------------*/
+/*RESERVATION*/ 
+
+.container_reservation{
+  padding-bottom: 20%;
+}
+.container_reservation form{
+  text-align: center;
+  background-color: rgba(192, 192, 192, 0.849);
+  margin:auto;
+  width:50%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid;
+  border-radius: 50px;
+  padding: 10px;
+  transition: box-shadow 0.5s;
+}
+
+.container_reservation form:hover{
+  box-shadow: 0 0 15px rgba(0, 0, 0,0.7);
+}
+.container_reservation h2{
+  text-align: center;
+  font-size:50px;
+  color: black;
+  text-shadow: 2px 2px 4px #f0ebeb;
+  padding-bottom: 20px;
+}
+
+.container_reservation input[type=text], input[type=password],input[type=number],input[type=datetime-local] {
+    width: 45%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border: inset;
+}
+.container_reservation input[type=text]:focus, input[type=password]:focus,input[type=number]:focus,input[type=datetime-local]:focus {
+  background: rgba(241, 230, 230, 0.849);
+  outline: none;
+  }
+
+
+  /*book*/
+  .reservation_button_book {
+    border-style: outset;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    
+  }
+  .reservation_button_cancel {
+    border-style: outset;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+  }
+  
+
+  .reservation_button_book:hover {
+    background-color: rgba(52, 209, 52, 0.822);
+    color: black;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    
+  }
+
+  .reservation_button_cancel:hover {
+    background-color: rgba(211, 12, 12, 0.822);
+    color: black;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  }

@@ -13,7 +13,7 @@
     <nav>
         <img class="mclogo" src="image/mc_logo.jpg" alt="mars_cafe_logo">
         <div class="logo">Mars Café</div>
-        <ul>
+        <ul class="nav_ul">
             <li><a href="#">Home</a></li>
             <li><a href="#">Menu</a>
                 <ul>
@@ -31,14 +31,60 @@
                 </ul>
             </li>
             <li><a href="#">Reservation</a></li>
-            <li><a href="#">About Us</a>
+            <li><a href="about_us.html">About Us</a>
                 <ul>
-                    <li><a href=" ">Astronaut</a></li>
-                    <li><a href=" ">Membership</a></li>
+                    <li><a href="astronaut.html">Astronaut</a></li>
+                    <li><a href="membership.html">Membership</a></li>
                 </ul>
             </li>
+            <li><a class="cart_car" href=""></a></li>
         </ul>
     </nav>
+
+    <!--Small screen-->
+    <nav class="small_s">
+        <div class="mclogo">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <img src="image/mars_logo.png" alt="Mars">Mars Café
+        </div>
+
+        <div id="myNavicon" class="navicon">
+            <a href="javascript:void(0)" class="navclosebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="#">Menu</a>
+            <ol>
+                <a href=" ">Food</a>
+                <a href=" ">Beverage</a>
+                <a href=" ">Combo Set</a>
+                <a href=" ">Merchandise</a>
+                <a href=" ">Pre-order</a>
+            </ol>
+            <a href="#">Event Promotion</a>
+            <ol>
+                <a href=" ">Event</a>
+                <a href=" ">Promotion</a>
+            </ol>
+
+            <a href="#">Reservation</a>
+            <a href="about_us.html">About Us</a>
+            <ol>
+                <a href="astronaut.html">Astronaut</a>
+                <a href="membership.html">Membership</a>
+            </ol>
+            <a class="cart_car" href=""></a>
+        </div>
+    </nav>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("myNavicon").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNavicon").style.width = "0";
+        }
+    </script>
 
     <!--Slide show-->
     <div class="slideshow ">
@@ -46,20 +92,20 @@
 
             <div class="mySlides fade ">
                 <!--<div class="numbertext ">1 / 3</div> -->
-                <img src="image/banner.png " style="width:100% ">
-                <div class="text ">Caption Text</div>
+                <img src="image/banner.jpg " style="width:100% ">
+                <div class="text "></div>
             </div>
 
             <div class="mySlides fade ">
                 <!--<div class="numbertext ">2 / 3</div> -->
-                <img src="image/valentine_event.png " style="width:100% ">
-                <div class="text ">Caption Two</div>
+                <img src="image/valentine_event.jpg" style="width:100% ">
+                <div class="text "></div>
             </div>
 
             <div class="mySlides fade ">
                 <!--<div class="numbertext ">3 / 3</div> -->
                 <img src="image/open.jpg " style="width:100% ">
-                <div class="text ">Caption Three</div>
+                <div class="text "></div>
             </div>
 
             <a class="prev " onclick="plusSlides(-1) ">&#10094;</a>
@@ -114,15 +160,14 @@
                 /*1000 = 1second */
             }
         </script>
+
     </div>
 
     <!--Map-->
     <div class="mapouter ">
         <div class="gmap_canvas "><iframe width="1500 " height="400 " id="gmap_canvas "
                 src="https://maps.google.com/maps?q=Taruc&t=&z=13&ie=UTF8&iwloc=&output=embed " frameborder="0 "
-                scrolling="no " marginheight="0 " marginwidth="0
-            "></iframe><a href="https://fmovies-online.net ">fmovies</a><br>
-            <a href="https://www.embedgooglemap.net ">embedgooglemap.net</a>
+                scrolling="no " marginheight="0 " marginwidth="0"></iframe>
         </div>
     </div>
 
@@ -142,7 +187,7 @@
 
         <div class="footer-bottom ">
             <p>copyright &copy;2022 MarsCafé. Designed & developed by <span>RSF1S2G2</span><br>
-                <a href="term_privacy.html ">Term & Privacy</a>&nbsp;|&nbsp;<a href="term_privacy.html ">Membership</a>
+                <a href="term_privacy.html ">Term & Privacy</a>&nbsp;|&nbsp;<a href="membership.html">Membership</a>
             </p>
         </div>
     </footer>

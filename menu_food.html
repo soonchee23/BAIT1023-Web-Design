@@ -2,10 +2,14 @@
 <html lang="en">
 
 <head>
-    <title>Menu</title>
+    <title>Assignment</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mcd1card.css">
+    <link rel="stylesheet" href="membership.css">
+    <link rel="stylesheet" href="merchandise.css">
+    <link rel="stylesheet" href="preorder.css">
     <script src="https://kit.fontawesome.com/2703fb7a38.js" crossorigin="anonymous"></script>
 </head>
 
@@ -13,245 +17,290 @@
     <nav>
         <img class="mclogo" src="image/mars_logo.png" alt="mars_cafe_logo">
         <div class="logo">Mars Café</div>
-        <ul>
+        <ul class="nav_ul">
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Menu</a>
                 <ul>
                     <li><a href="menu_food.html">Food</a></li>
                     <li><a href="menu_beverage.html">Beverage</a></li>
                     <li><a href="menu_comboset.html">Combo Set</a></li>
-                    <li><a href=" ">Merchandise</a></li>
-                    <li><a href=" ">Pre-order</a></li>
+                    <li><a href="merchandise.html">Merchandise</a></li>
+                    <li><a href="preorder.html">Pre-order</a></li>
                 </ul>
             </li>
-            <li><a href="#">Event Promotion</a>
+            <li><a href="event_promotion.html">Event Promotion</a>
                 <ul>
-                    <li><a href=" ">Event</a></li>
-                    <li><a href=" ">Promotion</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="promotion.html">Promotion</a></li>
                 </ul>
             </li>
-            <li><a href="#">Reservation</a></li>
-            <li><a href="#">About Us</a>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="about_us.html">About Us</a>
                 <ul>
-                    <li><a href=" ">Astronaut</a></li>
-                    <li><a href=" ">Membership</a></li>
+                    <li><a href="astronaut.html">Astronaut</a></li>
+                    <li><a href="membership.html">Membership</a></li>
                 </ul>
             </li>
+            <li><a class="cart_car" href=""></a></li>
         </ul>
     </nav>
 
-    <aside class="menuisningpart_picture_left">
-      <div class="menu_ning_container_left" >
-      <img src="image/menu/menu_nasilemak.jpg" alt="Mars Signature nasi lemak" width="690" height="390" 
-            style="margin: 10px 45%" />
-            <div class="menu_ning_content">
-              <p>
-                <h2>&#11088;Mars Nasi Lemak&#11088;</h2>
-                Deep fried organic chicken thigh</br>
-                served with Homemade organic, fresh salmon based Sambal
-              </p>
-            </div>
+    <!--Small screen-->
+    <nav class="small_s">
+        <div class="mclogo">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <img src="image/mars_logo.png" alt="Mars">Mars Café
+        </div>
+
+        <div id="myNavicon" class="navicon">
+            <a href="javascript:void(0)" class="navclosebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="#">Menu</a>
+            <ol>
+                <a href="menu_food.html">Food</a>
+                <a href="menu_beverage.html">Beverage</a>
+                <a href="menu_comboset.html">Combo Set</a>
+                <a href="merchandise.html">Merchandise</a>
+                <a href="preorder.html">Pre-order</a>
+            </ol>
+            <a href="event_promotion.html">Event Promotion</a>
+            <ol>
+                <a href="event.html">Event</a>
+                <a href="promotion.html">Promotion</a>
+            </ol>
+
+            <a href="reservation.html">Reservation</a>
+            <a href="about_us.html">About Us</a>
+            <ol>
+                <a href="astronaut.html">Astronaut</a>
+                <a href="membership.html">Membership</a>
+            </ol>
+            <a class="cart_car" href=""></a>
+        </div>
+    </nav>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNavicon").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNavicon").style.width = "0";
+        }
+    </script>
+
+  <aside class="menuisningpart_picture_left">
+    <div class="menu_ning_container_left">
+      <img src="Image/menu/menu_nasilemak.jpg" alt="Mars Signature nasi lemak" width="690" height="390"
+        style="margin: 10px 20%" />
+      <div class="menu_ning_content">
+        <p>
+        <h2>&#11088;Mars Nasi Lemak&#11088;</h2>
+        Deep fried organic chicken thigh</br>
+        served with Homemade organic, fresh salmon based Sambal
+        </p>
       </div>
-    </aside>
-
-    <div id="pillar" style="margin: 10px 75%">
-
-        <div class="menu_ning_row">
-          <div class="menu_ning_wrap">
-            <div class="menu_ning_left">Mars Nasi Lemak</div>
-            <div class="menu_ning_right">R M  1 2 . 2 5</div>  
-            </div>
-        </div>
-          
-          <div class="menu_ning_row">
-          <div class="menu_ning_wrap">
-            <div class="menu_ning_left">Chicken Chop </div>
-            <div class="menu_ning_right">R M 1 5 . 5 0
-              <h5>( m u s h r o o m , b l a c k p e p p e r )</h5>
-            </div>  
-            </div>
-        </div>
-          
-          <div class="menu_ning_row">
-          <div class="menu_ning_wrap">
-            <div class="menu_ning_left">Cheese Baked Rice</div>
-            <div class="menu_ning_right">R M  2 0 . 0 0</div>  
-            </div>
-        </div>
-          
-           <div class="menu_ning_row">
-          <div class="menu_ning_wrap">
-            <div class="menu_ning_left">Fish and Chips</div>
-            <div class="menu_ning_right">R M  2 0 . 5 0</div>  
-            </div>
-        </div>
-          
-          <div class="menu_ning_row">
-          <div class="menu_ning_wrap">
-            <div class="menu_ning_left">Bologna Pasta</div>
-            <div class="menu_ning_right">R M  2 0 . 0 0</div>  
-            </div>
-        </div>
-          
-          <div class="menu_ning_row">
-          <div class="menu_ning_wrap">
-            <div class="menu_ning_left">Carbonara Pasta</div>
-            <div class="menu_ning_right">R M  2 0 . 5 0</div>  
-            </div>
-        </div>
-          
-          <div class="menu_ning_row">
-          <div class="menu_ning_wrap">
-            <div class="menu_ning_left">Tomato Lagsagna</div>
-            <div class="menu_ning_right">R M  2 0 . 5 0</div>  
-            </div>
-        </div>
-      
-        
     </div>
- 
     
-    <aside class="menuisningpart_picture_right">
-      <div class="menu_ning_container_right" >
-      <img src="image/menu/menu_roticanai.jpg" alt="Roti canai" width="690" height="390" 
-            style="margin: 100px -75%" />
-            <div class="menu_ning_content_right">
-              <p>
-                <h2>&#11088;Mars Roti Canai &#11088;</h2>
-                Preserved roti canai</br> 
-                served with the curry of the day, curry flavor will following owner's inconsistent mood.
-              </p>
-            </div>
+  </aside>
+
+  <div id="pillar" style="margin: 10px 30%">
+
+    <div class="menu_ning_row">
+      <div class="menu_ning_wrap">
+        <div class="menu_ning_left">Mars Nasi Lemak</div>
+        <div class="menu_ning_right">R M 1 2 . 2 5</div>
       </div>
-    </aside>
-
-    <div id="pillar1" style="margin: 200px 20%">
-        <!-----PASTRY------>
-          <div class="menu_ning_row">
-          <div class="menu_ning_wrap">
-            <div class="menu_ning_left">Mars Roti Canai</div>
-            <div class="menu_ning_right">R M  1 . 7 5  /  e a c h</div>  
-            </div>
-        </div>
-
-        <div class="menu_ning_row">
-          <div class="menu_ning_wrap">
-            <div class="menu_ning_left">Curry Puff</div>
-            <div class="menu_ning_right">R M  2 . 0 0  /  e a c h</div>  
-            </div>
-        </div>
-  
-          <div class="menu_ning_row">
-          <div class="menu_ning_wrap">
-            <div class="menu_ning_left">Apple Pie</div>
-            <div class="menu_ning_right">R M 4 . 5 0  /  s l i d e</div>  
-            </div>
-        </div>
-          
-          <div class="menu_ning_row">
-          <div class="menu_ning_wrap">
-            <div class="menu_ning_left">Croissant</div>
-            <div class="menu_ning_right">R M  4 . 5 0  /  e a c h</div>  
-            </div>
-        </div>
-    
-        
     </div>
-    <aside class="menuisningpart_picture_left">
-      <div class="menu_ning_container_left" >
-      <img src="image/menu/menu_belgiumcake.jpg" alt=" Belgium Chocolate Cake" width="690" height="390" 
-            style="margin: 10px 45%" />
-            <div class="menu_ning_content">
-              <p>
-                <h2>&#11088;Belgium Chocolate Cake&#11088;</h2>
-                Made with imported premium Belgian Couverture chocolates</br>
-                gives you an intense, bittersweet chocolate taste and a natural, sweet taste of the cocoa fruit.
 
-              </p>
-            </div>
+    <div class="menu_ning_row">
+      <div class="menu_ning_wrap">
+        <div class="menu_ning_left">Chicken Chop </div>
+        <div class="menu_ning_right">R M 1 5 . 5 0
+          <h5>( m u s h r o o m , b l a c k p e p p e r )</h5>
+        </div>
       </div>
-    </aside>
+    </div>
 
-    <div id="pillar">
-        <!-----PASTRY------>  
-          <div class="menu_ning_row">
-          <div class="menu_ning_wrap">
-            <div class="menu_ning_left">Belgium Chocolate Cake</div>
-            <div class="menu_ning_right">R M  1 2 . 0 0  /  s l i d e</div>  
-            </div>
-        </div>
-      
-        <div class="menu_ning_row">
-          <div class="menu_ning_wrap">
-            <div class="menu_ning_left">Red Velvet Cake</div>
-            <div class="menu_ning_right">R M  1 2 . 0 0  /  s l i d e</div>  
-            </div>
-        </div>
+    <div class="menu_ning_row">
+      <div class="menu_ning_wrap">
+        <div class="menu_ning_left">Cheese Baked Rice</div>
+        <div class="menu_ning_right">R M 2 0 . 0 0</div>
+      </div>
+    </div>
 
-        <div class="menu_ning_row">
-          <div class="menu_ning_wrap">
-            <div class="menu_ning_left">Burnt Cheese Cake</div>
-            <div class="menu_ning_right">R M  1 2 . 0 0  /  s l i d e</div>  
-            </div>
-        </div>
-        
-        <div class="menu_ning_row">
-          <div class="menu_ning_wrap">
-            <div class="menu_ning_left">Oreo Cheese Cake</div>
-            <div class="menu_ning_right">R M  1 5 . 0 0  /  s l i d e</div>  
-            </div>
-        </div>
+    <div class="menu_ning_row">
+      <div class="menu_ning_wrap">
+        <div class="menu_ning_left">Fish and Chips</div>
+        <div class="menu_ning_right">R M 2 0 . 5 0</div>
+      </div>
+    </div>
 
-        <div class="menu_ning_row">
-          <div class="menu_ning_wrap">
-            <div class="menu_ning_left">Chocolate Lava Cake</div>
-            <div class="menu_ning_right">R M  1 5 . 0 0  /  s l i d e</div>  
-            </div>
-        </div>
+    <div class="menu_ning_row">
+      <div class="menu_ning_wrap">
+        <div class="menu_ning_left">Bologna Pasta</div>
+        <div class="menu_ning_right">R M 2 0 . 0 0</div>
+      </div>
+    </div>
 
-        <div class="menu_ning_row">
-          <div class="menu_ning_wrap">
-            <div class="menu_ning_left">Tiramisu Cake</div>
-            <div class="menu_ning_right">R M  1 5 . 0 0  /  s l i d e</div>  
-            </div>
-        </div>
+    <div class="menu_ning_row">
+      <div class="menu_ning_wrap">
+        <div class="menu_ning_left">Carbonara Pasta</div>
+        <div class="menu_ning_right">R M 2 0 . 5 0</div>
+      </div>
+    </div>
 
-        <div class="menu_ning_row">
-          <div class="menu_ning_wrap">
-            <div class="menu_ning_left">Matcha Cheese Cake</div>
-            <div class="menu_ning_right">R M  1 8 . 0 0  /  s l i d e</div>  
-            </div>
-        </div>
-
-        <div class="menu_ning_row">
-          <div class="menu_ning_wrap">
-            <div class="menu_ning_left">Strawberry Vanilla Cake</div>
-            <div class="menu_ning_right">R M  1 8 . 0 0  /  s l i d e</div>  
-            </div>
-        </div>
-
-          </div>
-
-    <!--footer-->
-    <footer>
-        <div class="content ">
-
-            <ul class="socials ">
-                <li><a href=" "><i class="fa-solid fa-envelope "></i></a></li>
-                <li><a href=" "><i class="fa-brands fa-whatsapp "></i></a></li>
-                <li><a href=" "><i class="fa-brands fa-instagram "></i></a></li>
-                <li><a href=" "><i class="fa-brands fa-facebook-f "></i></a></li>
-                <li><a href=" "><i class="fa-solid fa-phone "></i></a></li>
-            </ul>
-        </div>
+    <div class="menu_ning_row">
+      <div class="menu_ning_wrap">
+        <div class="menu_ning_left">Tomato Lagsagna</div>
+        <div class="menu_ning_right">R M 2 0 . 5 0</div>
+      </div>
+    </div>
 
 
-        <div class="footer-bottom ">
-            <p>copyright &copy;2022 MarsCafé. Designed & developed by <span>RSF1S2G2</span><br>
-                <a href="term_privacy.html ">Term & Privacy</a>&nbsp;|&nbsp;<a href="term_privacy.html ">Membership</a>
-            </p>
-        </div>
-    </footer>
+  </div>
+
+
+  <aside class="menuisningpart_picture_right">
+    <div class="menu_ning_container_right">
+      <img src="Image/menu/menu_roticanai.jpg" alt="Roti canai" width="690" height="390" style="margin: 100px -75%" />
+      <div class="menu_ning_content_right">
+        <p>
+        <h2>&#11088;Mars Roti Canai &#11088;</h2>
+        Preserved roti canai</br>
+        served with the curry of the day, curry flavor will following owner's inconsistent mood.
+        </p>
+      </div>
+    </div>
+  </aside>
+
+  <div id="pillar1" style="margin: 200px 20%">
+    <!-----PASTRY------>
+    <div class="menu_ning_row">
+      <div class="menu_ning_wrap">
+        <div class="menu_ning_left">Mars Roti Canai</div>
+        <div class="menu_ning_right">R M 1 . 7 5 / e a c h</div>
+      </div>
+    </div>
+
+    <div class="menu_ning_row">
+      <div class="menu_ning_wrap">
+        <div class="menu_ning_left">Curry Puff</div>
+        <div class="menu_ning_right">R M 2 . 0 0 / e a c h</div>
+      </div>
+    </div>
+
+    <div class="menu_ning_row">
+      <div class="menu_ning_wrap">
+        <div class="menu_ning_left">Apple Pie</div>
+        <div class="menu_ning_right">R M 4 . 5 0 / s l i d e</div>
+      </div>
+    </div>
+
+    <div class="menu_ning_row">
+      <div class="menu_ning_wrap">
+        <div class="menu_ning_left">Croissant</div>
+        <div class="menu_ning_right">R M 4 . 5 0 / e a c h</div>
+      </div>
+    </div>
+
+
+  </div>
+  <aside class="menuisningpart_picture_left">
+    <div class="menu_ning_container_left">
+      <img src="Image/menu/menu_belgiumcake.jpg" alt=" Belgium Chocolate Cake" width="690" height="390"
+        style="margin: 10px 20%" />
+      <div class="menu_ning_content">
+        <p>
+        <h2>&#11088;Belgium Chocolate Cake&#11088;</h2>
+        Made with imported premium Belgian Couverture chocolates</br>
+        gives you an intense, bittersweet chocolate taste and a natural, sweet taste of the cocoa fruit.
+
+        </p>
+      </div>
+    </div>
+  </aside>
+
+  <div id="pillar" style="margin: 10px 20%">
+    <!-----PASTRY------>
+    <div class="menu_ning_row">
+      <div class="menu_ning_wrap">
+        <div class="menu_ning_left">Belgium Chocolate Cake</div>
+        <div class="menu_ning_right">R M 1 2 . 0 0 / s l i d e</div>
+      </div>
+    </div>
+
+    <div class="menu_ning_row">
+      <div class="menu_ning_wrap">
+        <div class="menu_ning_left">Red Velvet Cake</div>
+        <div class="menu_ning_right">R M 1 2 . 0 0 / s l i d e</div>
+      </div>
+    </div>
+
+    <div class="menu_ning_row">
+      <div class="menu_ning_wrap">
+        <div class="menu_ning_left">Burnt Cheese Cake</div>
+        <div class="menu_ning_right">R M 1 2 . 0 0 / s l i d e</div>
+      </div>
+    </div>
+
+    <div class="menu_ning_row">
+      <div class="menu_ning_wrap">
+        <div class="menu_ning_left">Oreo Cheese Cake</div>
+        <div class="menu_ning_right">R M 1 5 . 0 0 / s l i d e</div>
+      </div>
+    </div>
+
+    <div class="menu_ning_row">
+      <div class="menu_ning_wrap">
+        <div class="menu_ning_left">Chocolate Lava Cake</div>
+        <div class="menu_ning_right">R M 1 5 . 0 0 / s l i d e</div>
+      </div>
+    </div>
+
+    <div class="menu_ning_row">
+      <div class="menu_ning_wrap">
+        <div class="menu_ning_left">Tiramisu Cake</div>
+        <div class="menu_ning_right">R M 1 5 . 0 0 / s l i d e</div>
+      </div>
+    </div>
+
+    <div class="menu_ning_row">
+      <div class="menu_ning_wrap">
+        <div class="menu_ning_left">Matcha Cheese Cake</div>
+        <div class="menu_ning_right">R M 1 8 . 0 0 / s l i d e</div>
+      </div>
+    </div>
+
+    <div class="menu_ning_row">
+      <div class="menu_ning_wrap">
+        <div class="menu_ning_left">Strawberry Vanilla Cake</div>
+        <div class="menu_ning_right">R M 1 8 . 0 0 / s l i d e</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--footer-->
+  <footer>
+    <div class="content ">
+
+      <ul class="socials ">
+        <li><a href=" "><i class="fa-solid fa-envelope "></i></a></li>
+        <li><a href=" "><i class="fa-brands fa-whatsapp "></i></a></li>
+        <li><a href=" "><i class="fa-brands fa-instagram "></i></a></li>
+        <li><a href=" "><i class="fa-brands fa-facebook-f "></i></a></li>
+        <li><a href=" "><i class="fa-solid fa-phone "></i></a></li>
+      </ul>
+    </div>
+
+
+    <div class="footer-bottom ">
+      <p>copyright &copy;2022 MarsCafé. Designed & developed by <span>RSF1S2G2</span><br>
+        <a href="term_privacy.html ">Term & Privacy</a>&nbsp;|&nbsp;<a href="term_privacy.html ">Membership</a>
+      </p>
+    </div>
+  </footer>
 
 </body>
 

@@ -2,250 +2,307 @@
 <html lang="en">
 
 <head>
-    <title>Merchandise</title>
-    <meta charset="utf-8" />
+    <title>Assignment</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no,width=device-width"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mcd1card.css">
+    <link rel="stylesheet" href="membership.css">
     <link rel="stylesheet" href="merchandise.css">
-    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="preorder.css">
     <script src="https://kit.fontawesome.com/2703fb7a38.js" crossorigin="anonymous"></script>
-    
-
 </head>
 
-<body>
-  <nav>
-    <img class="mclogo" src="image/mc_logo.jpg" alt="mars_cafe_logo">
-    <div class="logo">Mars Café</div>
-    <ul class="nav_ul">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Menu</a>
-            <ul>
-                <li><a href=" ">Food</a></li>
-                <li><a href=" ">Beverage</a></li>
-                <li><a href=" ">Combo Set</a></li>
-                <li><a href="merchandise.html">Merchandise</a></li>
-                <li><a href="preorder.html">Pre-order</a></li>
-            </ul>
-        </li>
-        <li><a href="#">Event Promotion</a>
-            <ul>
-                <li><a href=" ">Event</a></li>
-                <li><a href=" ">Promotion</a></li>
-            </ul>
-        </li>
-        <li><a href="#">Reservation</a></li>
-        <li><a href="about_us.html">About Us</a>
-            <ul>
-                <li><a href="astronaut.html">Astronaut</a></li>
-                <li><a href="membership.html">Membership</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
+<body id="merchandise_b">
+    <nav class="merchandise_nav">
+        <img class="mclogo" src="image/mars_logo.png" alt="mars_cafe_logo">
+        <div class="logo">Mars Café</div>
+        <ul class="nav_ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Menu</a>
+                <ul>
+                    <li><a href="menu_food.html">Food</a></li>
+                    <li><a href="menu_beverage.html">Beverage</a></li>
+                    <li><a href="menu_comboset.html">Combo Set</a></li>
+                    <li><a href="merchandise.html">Merchandise</a></li>
+                    <li><a href="preorder.html">Pre-order</a></li>
+                </ul>
+            </li>
+            <li><a href="event_promotion.html">Event Promotion</a>
+                <ul>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="promotion.html">Promotion</a></li>
+                </ul>
+            </li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="about_us.html">About Us</a>
+                <ul>
+                    <li><a href="astronaut.html">Astronaut</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                </ul>
+            </li>
+            <li><a class="cart_car" href=""></a></li>
+        </ul>
+    </nav>
 
-<div class="card card1">
-    <h2> 
-      <div class="merchandise_container_1">
-      <img class="merchandise_myslide1" src="image/merchandise_m/m_bag_kawaii front.jpg" style="width: 290px;"> 
-      <img class="merchandise_myslide1" src="image/merchandise_m/m_bag_kawaii_back.jpg" style="width: 290px;">
-      <div class="bottom-left"><a href="mcd1card.html">More</a></div>
-      <div class="bottom-right"><a href="url">Add to Cart</a></div>
+    <!--Small screen-->
+    <nav class="small_s">
+        <div class="mclogo">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <img src="image/mars_logo.png" alt="Mars">Mars Café
+        </div>
+
+        <div id="myNavicon" class="navicon">
+            <a href="javascript:void(0)" class="navclosebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="#">Menu</a>
+            <ol>
+                <a href="menu_food.html">Food</a>
+                <a href="menu_beverage.html">Beverage</a>
+                <a href="menu_comboset.html">Combo Set</a>
+                <a href="merchandise.html">Merchandise</a>
+                <a href="preorder.html">Pre-order</a>
+            </ol>
+            <a href="event_promotion.html">Event Promotion</a>
+            <ol>
+                <a href="event.html">Event</a>
+                <a href="promotion.html">Promotion</a>
+            </ol>
+
+            <a href="reservation.html">Reservation</a>
+            <a href="about_us.html">About Us</a>
+            <ol>
+                <a href="astronaut.html">Astronaut</a>
+                <a href="membership.html">Membership</a>
+            </ol>
+            <a class="cart_car" href=""></a>
+        </div>
+    </nav>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNavicon").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNavicon").style.width = "0";
+        }
+    </script>
+
+    <div class="merchandise_card">
+        <div class="card card1">
+            <h2>
+                <div class="merchandise_container_1">
+                    <img class="merchandise_myslide1" src="image/merchandise_m/m_bag_kawaii front.jpg"
+                        style="width: 290px;">
+                    <img class="merchandise_myslide1" src="image/merchandise_m/m_bag_kawaii_back.jpg"
+                        style="width: 290px;">
+                    <div class="bottom-left"><a href="mcd1card.html">More</a></div>
+                    <div class="bottom-right"><a href="url">Add to Cart</a></div>
+                </div>
+            </h2>
+
+            <a class="prev" onclick="plusSlide1(-1) ">&#10094;</a>
+            <a class="next" onclick="plusSlide1(1) ">&#10095;</a>
+
+
+            <script>
+
+                var slideIndex = 1;
+                merchandise1_showslides(slideIndex);
+
+                function plusSlide1(n) {
+                    merchandise1_showslides(slideIndex += n);
+                }
+
+                function merchandise1_showslides(n) {
+                    var i;
+                    var merchandise_slide1 = document.getElementsByClassName("merchandise_myslide1");
+
+                    if (n > merchandise_slide1.length) {
+                        slideIndex = 1
+                    }
+
+                    if (n < 1) {
+                        slideIndex = merchandise_slide1.length
+                    }
+
+                    for (i = 0; i < merchandise_slide1.length; i++) {
+                        merchandise_slide1[i].style.display = "none";
+                    }
+
+                    merchandise_slide1[slideIndex - 1].style.display = "block";
+                }
+
+            </script>
+        </div>
+
+        <div class="card card2 ">
+            <h2>
+                <div class="merchandise_container_2">
+                    <img class="merchandise_myslide2" src="image/merchandise_m/m_earring front.jpg"
+                        style="width: 290px;">
+                    <img class="merchandise_myslide2" src="image/merchandise_m/m_earring back.jpg"
+                        style="width: 290px;">
+                    <div class="bottom-left"><a href="mcd2card.html">More</a></div>
+                    <div class="bottom-right"><a href="url">Add to Cart</a></div>
+                </div>
+
+            </h2>
+
+            <a class="prev " onclick="plusSlide2(-1) ">&#10094;</a>
+            <a class="next " onclick="plusSlide2(1) ">&#10095;</a>
+
+            <script>
+
+                var slideIndex = 1;
+                merchandise2_showslides(slideIndex);
+
+                function plusSlide2(n) {
+                    merchandise2_showslides(slideIndex += n);
+                }
+
+                function merchandise2_showslides(n) {
+                    var i;
+                    var merchandise_slide2 = document.getElementsByClassName("merchandise_myslide2");
+
+                    if (n > merchandise_slide2.length) {
+                        slideIndex = 1
+                    }
+
+                    if (n < 1) {
+                        slideIndex = merchandise_slide2.length
+                    }
+
+                    for (i = 0; i < merchandise_slide2.length; i++) {
+                        merchandise_slide2[i].style.display = "none";
+                    }
+
+                    merchandise_slide2[slideIndex - 1].style.display = "block";
+                }
+
+            </script>
+
+        </div>
+
+        <div class="card card3">
+
+            <h2>
+                <div class="merchandise_container_3">
+                    <img class="merchandise_myslide3" src="image/merchandise_m/m_tshirt_white front.jpg"
+                        style="width: 290px;">
+                    <img class="merchandise_myslide3" src="image/merchandise_m/m_tshirt_white back.jpg"
+                        style="width: 290px;">
+                    <div class="bottom-left"><a href="mcd3card.html">More</a></div>
+                    <div class="bottom-right"><a href="url">Add to Cart</a></div>
+                </div>
+
+            </h2>
+
+            <a class="prev " onclick="plusSlide3(-1) ">&#10094;</a>
+            <a class="next " onclick="plusSlide3(1) ">&#10095;</a>
+
+            <script>
+
+                var slideIndex = 1;
+                merchandise3_showslides(slideIndex);
+
+                function plusSlide3(n) {
+                    merchandise3_showslides(slideIndex += n);
+                }
+
+                function merchandise3_showslides(n) {
+                    var i;
+                    var merchandise_slide3 = document.getElementsByClassName("merchandise_myslide3");
+
+                    if (n > merchandise_slide3.length) {
+                        slideIndex = 1
+                    }
+
+                    if (n < 1) {
+                        slideIndex = merchandise_slide3.length
+                    }
+
+                    for (i = 0; i < merchandise_slide3.length; i++) {
+                        merchandise_slide3[i].style.display = "none";
+                    }
+
+                    merchandise_slide3[slideIndex - 1].style.display = "block";
+                }
+
+            </script>
+        </div>
+
+        <div class="card card4">
+
+            <h2>
+                <div class="merchandise_container_4">
+                    <img class="merchandise_myslide4" src="image/merchandise_m/m_tshirt_black front.jpg"
+                        style="width: 290px;">
+                    <img class="merchandise_myslide4" src="image/merchandise_m/m_tshirt_black back.jpg"
+                        style="width: 290px;">
+                    <div class="bottom-left"><a href="mcd4card.html">More</a></div>
+                    <div class="bottom-right"><a href="url">Add to Cart</a></div>
+                </div>
+
+            </h2>
+
+            <a class="prev " onclick="plusSlide4(-1) ">&#10094;</a>
+            <a class="next " onclick="plusSlide4(1) ">&#10095;</a>
+
+            <script>
+
+                var slideIndex = 1;
+                merchandise4_showslides(slideIndex);
+
+                function plusSlide4(n) {
+                    merchandise4_showslides(slideIndex += n);
+                }
+
+                function merchandise4_showslides(n) {
+                    var i;
+                    var merchandise_slide4 = document.getElementsByClassName("merchandise_myslide4");
+
+                    if (n > merchandise_slide4.length) {
+                        slideIndex = 1
+                    }
+
+                    if (n < 1) {
+                        slideIndex = merchandise_slide4.length
+                    }
+
+                    for (i = 0; i < merchandise_slide4.length; i++) {
+                        merchandise_slide4[i].style.display = "none";
+                    }
+
+                    merchandise_slide4[slideIndex - 1].style.display = "block";
+                }
+
+            </script>
+        </div>
     </div>
-  </h2>
-
-    <a class="prev" onclick="plusSlide1(-1) ">&#10094;</a>
-    <a class="next" onclick="plusSlide1(1) ">&#10095;</a>
 
 
-<script>
+    <!--footer-->
+    <footer>
+        <div class="content ">
 
-var slideIndex = 1;
-merchandise1_showslides(slideIndex);
+            <ul class="socials ">
+                <li><a href=" "><i class="fa-solid fa-envelope "></i></a></li>
+                <li><a href=" "><i class="fa-brands fa-whatsapp "></i></a></li>
+                <li><a href=" "><i class="fa-brands fa-instagram "></i></a></li>
+                <li><a href=" "><i class="fa-brands fa-facebook-f "></i></a></li>
+                <li><a href=" "><i class="fa-solid fa-phone "></i></a></li>
+            </ul>
+        </div>
 
-function plusSlide1(n) {
-merchandise1_showslides(slideIndex += n);
-}
 
-function merchandise1_showslides(n) {
-var i;
-var merchandise_slide1 = document.getElementsByClassName("merchandise_myslide1");
-
-if (n > merchandise_slide1.length) {
-slideIndex = 1
-}
-
-if (n < 1) {
-slideIndex = merchandise_slide1.length
-} 
-
-for (i = 0; i < merchandise_slide1.length; i++) {
-merchandise_slide1[i].style.display = "none";
-}
-
-merchandise_slide1[slideIndex-1].style.display = "block";
-}
-
-</script>
-  </div>
-  
-  <div class="card card2 ">
-    <h2> 
-      <div class="merchandise_container_2">
-        <img class="merchandise_myslide2" src="image/merchandise_m/m_earring front.jpg" style="width: 290px;"> 
-        <img class="merchandise_myslide2" src="image/merchandise_m/m_earring back.jpg" style="width: 290px;"> 
-        <div class="bottom-left"><a href="mcd2card.html">More</a></div>
-        <div class="bottom-right"><a href="url">Add to Cart</a></div>
-      </div>
-     
-    </h2>
-
-        <a class="prev " onclick="plusSlide2(-1) ">&#10094;</a>
-        <a class="next " onclick="plusSlide2(1) ">&#10095;</a>
-
-<script>
-
-var slideIndex = 1;
-merchandise2_showslides(slideIndex);
-
-function plusSlide2(n) {
-  merchandise2_showslides(slideIndex += n);
-}
-
-function merchandise2_showslides(n) {
-  var i;
-  var merchandise_slide2 = document.getElementsByClassName("merchandise_myslide2");
- 
-  if (n > merchandise_slide2.length) {
-    slideIndex = 1
-  }
-
-  if (n < 1) {
-    slideIndex = merchandise_slide2.length
-  } 
-
-  for (i = 0; i < merchandise_slide2.length; i++) {
-    merchandise_slide2[i].style.display = "none";
-  }
-  
-  merchandise_slide2[slideIndex-1].style.display = "block";
-}
-
-  </script>
-
-  </div>
-  
-  <div class="card card3">
-    
-    <h2> 
-      <div class="merchandise_container_3">
-        <img class="merchandise_myslide3" src="image/merchandise_m/m_tshirt_white front.jpg" style="width: 290px;"> 
-      <img class="merchandise_myslide3"src="image/merchandise_m/m_tshirt_white back.jpg" style="width: 290px;">
-        <div class="bottom-left"><a href="mcd3card.html">More</a></div>
-        <div class="bottom-right"><a href="url">Add to Cart</a></div>
-  </div>
-      
-    </h2>
-
-    <a class="prev " onclick="plusSlide3(-1) ">&#10094;</a>
-    <a class="next " onclick="plusSlide3(1) ">&#10095;</a>
-
-<script>
-
-var slideIndex = 1;
-merchandise3_showslides(slideIndex);
-
-function plusSlide3(n) {
-merchandise3_showslides(slideIndex += n);
-}
-
-function merchandise3_showslides(n) {
-var i;
-var merchandise_slide3 = document.getElementsByClassName("merchandise_myslide3");
-
-if (n > merchandise_slide3.length) {
-slideIndex = 1
-}
-
-if (n < 1) {
-slideIndex = merchandise_slide3.length
-} 
-
-for (i = 0; i < merchandise_slide3.length; i++) {
-merchandise_slide3[i].style.display = "none";
-}
-
-merchandise_slide3[slideIndex-1].style.display = "block";
-}
-
-</script>
-  </div>
-
-  <div class="card card4">
-    
-    <h2> 
-      <div class="merchandise_container_4">
-        <img class="merchandise_myslide4" src="image/merchandise_m/m_tshirt_black front.jpg" style="width: 290px;"> 
-        <img class="merchandise_myslide4" src="image/merchandise_m/m_tshirt_black back.jpg" style="width: 290px;">
-        <div class="bottom-left"><a href="mcd4card.html">More</a></div>
-        <div class="bottom-right"><a href="url">Add to Cart</a></div>
-      </div>
-      
-    </h2>
-
-    <a class="prev " onclick="plusSlide4(-1) ">&#10094;</a>
-    <a class="next " onclick="plusSlide4(1) ">&#10095;</a>
-
-<script>
-
-var slideIndex = 1;
-merchandise4_showslides(slideIndex);
-
-function plusSlide4(n) {
-merchandise4_showslides(slideIndex += n);
-}
-
-function merchandise4_showslides(n) {
-var i;
-var merchandise_slide4 = document.getElementsByClassName("merchandise_myslide4");
-
-if (n > merchandise_slide4.length) {
-slideIndex = 1
-}
-
-if (n < 1) {
-slideIndex = merchandise_slide4.length
-} 
-
-for (i = 0; i < merchandise_slide4.length; i++) {
-merchandise_slide4[i].style.display = "none";
-}
-
-merchandise_slide4[slideIndex-1].style.display = "block";
-}
-
-</script>
-  </div>
-
+        <div class="footer-bottom ">
+            <p>copyright &copy;2022 MarsCafé. Designed & developed by <span>RSF1S2G2</span><br>
+                <a href="term_privacy.html ">Term & Privacy</a>&nbsp;|&nbsp;<a href="membership.html">Membership</a>
+            </p>
+        </div>
+    </footer>
 </body>
- 
-<footer>
-  <div class="content ">
 
-      <ul class="socials ">
-          <li><a href=" "><i class="fa-solid fa-envelope "></i></a></li>
-          <li><a href=" "><i class="fa-brands fa-whatsapp "></i></a></li>
-          <li><a href=" "><i class="fa-brands fa-instagram "></i></a></li>
-          <li><a href=" "><i class="fa-brands fa-facebook-f "></i></a></li>
-          <li><a href=" "><i class="fa-solid fa-phone "></i></a></li>
-      </ul>
-  </div>
-
-
-  <div class="footer-bottom ">
-      <p>copyright &copy;2022 MarsCafé. Designed & developed by <span>RSF1S2G2</span><br>
-          <a href="term_privacy.html ">Term & Privacy</a>&nbsp;|&nbsp;<a href="membership.html">Membership</a>
-      </p>
-  </div>
-</footer>
-
+</html>

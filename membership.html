@@ -2,96 +2,116 @@
 <html lang="en">
 
 <head>
-    <title>Membership</title>
+    <title>Assignment</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mcd1card.css">
     <link rel="stylesheet" href="membership.css">
+    <link rel="stylesheet" href="merchandise.css">
+    <link rel="stylesheet" href="preorder.css">
     <script src="https://kit.fontawesome.com/2703fb7a38.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    
     <nav>
-        <img class="mclogo" src="image/mclogo.png" alt="mars_cafe_logo">
+        <img class="mclogo" src="image/mars_logo.png" alt="mars_cafe_logo">
         <div class="logo">Mars Café</div>
-        <ul>
+        <ul class="nav_ul">
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Menu</a>
                 <ul>
-                    <li><a href=" ">Food</a></li>
-                    <li><a href=" ">Beverage</a></li>
-                    <li><a href=" ">Combo Set</a></li>
-                    <li><a href=" ">Merchandise</a></li>
-                    <li><a href=" ">Pre-order</a></li>
+                    <li><a href="menu_food.html">Food</a></li>
+                    <li><a href="menu_beverage.html">Beverage</a></li>
+                    <li><a href="menu_comboset.html">Combo Set</a></li>
+                    <li><a href="merchandise.html">Merchandise</a></li>
+                    <li><a href="preorder.html">Pre-order</a></li>
                 </ul>
             </li>
-            <li><a href="#">Event Promotion</a>
+            <li><a href="event_promotion.html">Event Promotion</a>
                 <ul>
-                    <li><a href=" ">Event</a></li>
-                    <li><a href=" ">Promotion</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="promotion.html">Promotion</a></li>
                 </ul>
             </li>
             <li><a href="reservation.html">Reservation</a></li>
-            <li><a href="#">About Us</a>
+            <li><a href="about_us.html">About Us</a>
                 <ul>
-                    <li><a href=" ">Astronaut</a></li>
-                    <li><a href=" ">Membership</a></li>
+                    <li><a href="astronaut.html">Astronaut</a></li>
+                    <li><a href="membership.html">Membership</a></li>
                 </ul>
             </li>
+            <li><a class="cart_car" href=""></a></li>
         </ul>
     </nav>
-    <div class="membership">
-    <h1>Mars Card</h1><br>
-    <p>
-        You can register one Mars stored value cards (“Mars Cards”) on this Site. Please refer to the Mars Café Terms & Conditions 
-        for more information about the terms, conditions and policies that apply to your purchase and use of Mars Cards.Mars Café may 
-        allow you to load value onto Mars Card or purchase virtual Mars Card through one or more of the Sites. By submitting your order 
-        to load value or purchase virtual Mars Card, you represent and warrant that you are authorized to use the designated credit card 
-        or payment account and authorize Mars Café to charge your order to that card or payment account.<br>
-    <br>
-        If the card or payment account cannot be verified, is invalid or otherwise is not acceptable, or if the payment instruction is otherwise 
-        refused or reversed, your order may be suspended or cancelled automatically and the value already loaded or the virtual Mars Card already 
-        issued may be cancelled or revoked automatically.<br>
-    <br>   
-        You can apply the Mars Card through register the form below, the card will send to you after you done register. 
-        The benefit of using the Mars Card can have a member discount 20% every spend minimum RM30 and also have a 
-        stamp collection card ( 5 stamp free 1 drink). As a member, u can also have a promotion discount spend in Mars Café for special occasion 
-        such like birthday celebration and valentine day. So let fast apply the special "Mars Card". 
 
-    </p>
-    <br>
+    <!--Small screen-->
+    <nav class="small_s">
+        <div class="mclogo">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <img src="image/mars_logo.png" alt="Mars">Mars Café
+        </div>
 
-    <h2>Mars Card Register</h2><br>
-    <h3>Please fill in this form to create an account and apply the Mars Card.</h3><br><br>
-    </div>
+        <div id="myNavicon" class="navicon">
+            <a href="javascript:void(0)" class="navclosebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="#">Menu</a>
+            <ol>
+                <a href="menu_food.html">Food</a>
+                <a href="menu_beverage.html">Beverage</a>
+                <a href="menu_comboset.html">Combo Set</a>
+                <a href="merchandise.html">Merchandise</a>
+                <a href="preorder.html">Pre-order</a>
+            </ol>
+            <a href="event_promotion.html">Event Promotion</a>
+            <ol>
+                <a href="event.html">Event</a>
+                <a href="promotion.html">Promotion</a>
+            </ol>
 
+            <a href="reservation.html">Reservation</a>
+            <a href="about_us.html">About Us</a>
+            <ol>
+                <a href="astronaut.html">Astronaut</a>
+                <a href="membership.html">Membership</a>
+            </ol>
+            <a class="cart_car" href=""></a>
+        </div>
+    </nav>
 
-    <div class="container_marscardregister">
-        <form action="signin.html" method="get">
+    <script>
+        function openNav() {
+            document.getElementById("myNavicon").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNavicon").style.width = "0";
+        }
+    </script>
+
+    <h1>Log In</h1><br>
+    <div class="container_login">
+        <form action="reservation.html">
+
             <label for="username"><b>Username</b></label><br>
-            <input type="text" placeholder="Enter Username" id="text" name="text"><br>
+            <input type="text" placeholder="Enter Username" name="text" required> <br><br>
 
             <label for="password"><b>Password</b></label><br>
-            <input type="text" placeholder="Password" id="password" name="password"><br>
+            <input type="text" placeholder="Enter Password" name="password" required><br><br>
 
-            <label for="password"><b>Repeat Password</b></label><br>
-            <input type="text" placeholder="Repeat Password" id="password" name="password"><br>
 
-            <input type="checkbox" id="term_policy" name="term_policy" >
+            <label>
+                <input type="checkbox" name="remember"> Remember Me
+            </label><br><br>
 
-            <label for="term_policy"> I agree to the Term and Policy</label><br><br>
-           
-            <button class="membership_button">Register</button> 
+            <button class="login_button"><b>Log In</b></button> <br>
 
-            <div class="login">
-                Already have an account? 
-                <a href="signin.html">Log In</a>  
+            <div class="container_signin">
+                <span class="psw">Forgot <a href="membership.html">password?</a></span>
             </div>
-        </form>
- 
-    </div>
 
+        </form>
+    </div>
 
     <footer>
         <div class="content ">

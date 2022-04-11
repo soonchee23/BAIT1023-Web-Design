@@ -2,252 +2,300 @@
 <html lang="en">
 
 <head>
-  <title>Menu</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/2703fb7a38.js" crossorigin="anonymous"></script>
+    <title>Assignment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mcd1card.css">
+    <link rel="stylesheet" href="membership.css">
+    <link rel="stylesheet" href="merchandise.css">
+    <link rel="stylesheet" href="preorder.css">
+    <script src="https://kit.fontawesome.com/2703fb7a38.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <nav>
-    <img class="mclogo" src="image/mars_logo.png" alt="mars_cafe_logo">
-    <div class="logo">Mars Café</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Menu</a>
-        <ul>
-          <li><a href="menu_food.html">Food</a></li>
-          <li><a href="menu_beverage.html">Beverage</a></li>
-          <li><a href="menu_comboset.html">Combo Set</a></li>
-          <li><a href=" ">Merchandise</a></li>
-          <li><a href=" ">Pre-order</a></li>
+    <nav>
+        <img class="mclogo" src="image/mars_logo.png" alt="mars_cafe_logo">
+        <div class="logo">Mars Café</div>
+        <ul class="nav_ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Menu</a>
+                <ul>
+                    <li><a href="menu_food.html">Food</a></li>
+                    <li><a href="menu_beverage.html">Beverage</a></li>
+                    <li><a href="menu_comboset.html">Combo Set</a></li>
+                    <li><a href="merchandise.html">Merchandise</a></li>
+                    <li><a href="preorder.html">Pre-order</a></li>
+                </ul>
+            </li>
+            <li><a href="event_promotion.html">Event Promotion</a>
+                <ul>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="promotion.html">Promotion</a></li>
+                </ul>
+            </li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="about_us.html">About Us</a>
+                <ul>
+                    <li><a href="astronaut.html">Astronaut</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                </ul>
+            </li>
+            <li><a class="cart_car" href=""></a></li>
         </ul>
-      </li>
-      <li><a href="#">Event Promotion</a>
-        <ul>
-          <li><a href=" ">Event</a></li>
-          <li><a href=" ">Promotion</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Reservation</a></li>
-      <li><a href="#">About Us</a>
-        <ul>
-          <li><a href=" ">Astronaut</a></li>
-          <li><a href=" ">Membership</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+    </nav>
 
-  <img src="image/menu/menu_combobanner.jpg" alt="combo banner" width="1780" height="610"
-  style="margin: -2.20% 0;" >
+    <!--Small screen-->
+    <nav class="small_s">
+        <div class="mclogo">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <img src="image/mars_logo.png" alt="Mars">Mars Café
+        </div>
 
-  <table style="margin: 5% 0;">
-    <colgroup>
-      <col class="menu_timesColumn">
-      <col class="menu_comboColumn">
-      <col class="menu_priceColumns">
+        <div id="myNavicon" class="navicon">
+            <a href="javascript:void(0)" class="navclosebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="#">Menu</a>
+            <ol>
+                <a href="menu_food.html">Food</a>
+                <a href="menu_beverage.html">Beverage</a>
+                <a href="menu_comboset.html">Combo Set</a>
+                <a href="merchandise.html">Merchandise</a>
+                <a href="preorder.html">Pre-order</a>
+            </ol>
+            <a href="event_promotion.html">Event Promotion</a>
+            <ol>
+                <a href="event.html">Event</a>
+                <a href="promotion.html">Promotion</a>
+            </ol>
 
-    </colgroup>
+            <a href="reservation.html">Reservation</a>
+            <a href="about_us.html">About Us</a>
+            <ol>
+                <a href="astronaut.html">Astronaut</a>
+                <a href="membership.html">Membership</a>
+            </ol>
+            <a class="cart_car" href=""></a>
+        </div>
+    </nav>
 
-    <thead>
-        <th style="font-size: 75px ">Time</th>
-        <th style="font-size: 75px">Session</th>
-        <th style="font-size: 75px">Price</th>
-    </thead>
-
-    
-    <tbody>
-      <tr>
-        <td><a href="#lunchcombo">1200-1400</a> </td>
-        <td><a href="#lunchcombo">Lunch</a></td>
-        <td><a href="#lunchcombo">RM 10.23</a></td>
-      </tr>
-
-      <tr>
-        <td><a href="#lunchcombo">1500-1800</a></td>
-        <td><a href="#hiteacombo">HiTea</a></td>
-        <td><a href="#lunchcombo">RM 50.23</a></td>
-      </tr>
-
-      <td><a href="#lunchcombo">1900-2100</a></td>
-      <td><a href="#dinnercombo">Dinner</a></td>
-      <td><a href="#lunchcombo">RM 51.23</a></td>
-      </tr>
-    </tbody>
-
-    </table>
-
-    <img src="image/menu/menu_lunch.jpg" alt="lunch combo" width="1780" height="700"
-        style="margin: 5% 0;" id="lunchcombo">
-    <div class="comboset_row_lunch">
-
-      <div class="comboset_column" style="background-color:#D61;">
-        <h1 style="color: aliceblue ;">Beverage</h1>
-        <p style="font-size: 28px;"><em>choose any one from below</em></p>
-        <h3>20 years old red wine </h3></br>
-        <h3>Blue Mint Macchiato </h3></br>
-        <h3>Dalgona Milo fully </br>with 24k gold leaves</h3>
-      </div>
-
-      <div class="comboset_column" style="display:inline-flexbox; background-color:#C94;">
-        <h1 style="color: aliceblue;">Main</h1>
-
-        <p style="font-size: 28px;"><em>choose any one from below</em></p>
-        <h3>Nasi Lemak from Mars</h3>
-        Deep fried organic chicken thigh </br>
-        served with Homemade organic, fresh salmon based Sambal </br></br>
-        <h3>Cheese Baked Rice</h3>
-        Blue cheese that fresh delivery from France monthly </br>
-        served with Australia potatoes </br></br>
-        
-      </div>
-
-      <div class="comboset_column" style="background-color:#DB8;">
-        <h1 style="color: aliceblue;">Dessert</h1>
-        <p style="color: aliceblue;">
-        <h3>Fruit Tart</h3>
-        Made with fresh delivery Mussang King, Banana, Grape, Strawberry with Kiwi daily 
-        </p>
-      </div>
-
-    </div>
-
-    <img src="image/menu/menu_hitea.jpg" alt="hitea combo" width="1780" height="700"
-    style="margin: 5% 0;" id="hiteacombo">
-    <div class="comboset_row_lunch">
-
-      <div class="comboset_column" style="background-color:#D61;">
-        <h1 style="color: aliceblue ;">Appetizers</h1>
-        <p style="font-size: 28px;"><em>choose any one from below</em></p>
-        <h3>Hokkaido Ice Cream </h3>
-        <em>(Earl Grey, MintChoco, Soju)</em></br>
-        <h3>Gintama Ice Cream </h3></br>
-        <h3>Inkigayo Sandwich</h3>
-      </div>
-
-      <div class="comboset_column" style="background-color:#C94;">
-        <h1 style="color: aliceblue;">Main</h1>
-
-        <p style="font-size: 28px;"><em>choose any one from below</em></p>
-        <h3>Bolognese Pasta</h3>
-        Homemade Wagyu beef balls </br>
-        served with Maggie Tomato Sauce</br></br>
-        <h3>Carbonara</h3>
-        Taiwanese style sausages </br>
-        with Prego pre-served white sauce</br></br>
-        <h3>Lagsana</h3>
-        100% Garfield style Lasagna
-      </div>
-
-      <div class="comboset_column" style="background-color:#DB8;">
-        <h1 style="color: aliceblue;">Drink</h1>
-        <p style="color: aliceblue;">
-          <h3>Mars Signature Drink</h3>
-          A Coffee brew by Arabica Coffee Bean and fresh coco fruit</br>
-          with New Zealand fresh milk and sugar Melaka 
-        </p>
-      </div>
-
-    </div>
-  
-    <img src="image/menu/menu_dinner.jpg" alt="hitea combo" width="1780" height="700"
-    style="margin: 5% 0;" id="dinnercombo">
-    <div class="comboset_row_lunch">
-
-      <div class="comboset_column" style="background-color:#D61;">
-        <h1 style="color: aliceblue ;">Appetizers</h1>
-        <p style="font-size: 28px;"><em>choose any one from below</em></p>
-        <h3>ph-5 Pickled Cucumber </h3></br>
-        <h3>Allergic - free Peanut</h3></br>
-        <h3>Mars Roti Canai</h3>
-      </div>
-
-      <div class="comboset_column" style="background-color:#C94;">
-        <h1 style="color: aliceblue;">Main</h1>
-
-        <p style="font-size: 28px;"><em>choose any one from below</em></p>
-        <h3>Chicken Chop</h3>
-        Grilled organic and skinless chicken breast</br>
-        served with Jamie Oliver's secret recipe sauce <em>(mushroom / pepper)</em></br></br>
-        <h3>Potato-Crusted Sea Bass</h3>
-        Cook by Gordan Rasmay.
-        </p>
-      </div>
-
-      <div class="comboset_column" style="background-color:#DB8;">
-        <h1 style="color: aliceblue;">Beverage</h1>
-          <h3>Sparkling Cocktail</h3>
-          An alcohol-free drink</br>
-          filled by whole universe &#11088;
-        </p>
-      </div>
-
-    </div>
-
-    <div class="ning_combomenu_display" >
-      <a class="HOVER FLASH" href=" ">
-        <span></span>
-        <text style="font-size: 80px; ">CLI&#128157;K ME</text>
-      </a>
-    </div>
-    
     <script>
-      const ANIMATEDCLASSNAME = "animated";
-const ELEMENTS = document.querySelectorAll(".HOVER");
-const ELEMENTS_SPAN = [];
+        function openNav() {
+            document.getElementById("myNavicon").style.width = "100%";
+        }
 
-ELEMENTS.forEach((element, index) => {
-	let addAnimation = false;
-	// Elements that contain the "FLASH" class, add a listener to remove
-	// animation-class when the animation ends
-	if (element.classList[1] == "FLASH") {
-		element.addEventListener("animationend", e => {
-			element.classList.remove(ANIMATEDCLASSNAME);
-		});
-		addAnimation = true;
-	}
-
-	// If The span element for this element does not exist in the array, add it.
-	if (!ELEMENTS_SPAN[index])
-		ELEMENTS_SPAN[index] = element.querySelector("span");
-
-	element.addEventListener("mouseover", e => {
-		ELEMENTS_SPAN[index].style.left = e.pageX - element.offsetLeft + "px";
-		ELEMENTS_SPAN[index].style.top = e.pageY - element.offsetTop + "px";
-
-		// Add an animation-class to animate via CSS.
-		if (addAnimation) element.classList.add(ANIMATEDCLASSNAME);
-	});
-
-	element.addEventListener("mouseout", e => {
-		ELEMENTS_SPAN[index].style.left = e.pageX - element.offsetLeft + "px";
-		ELEMENTS_SPAN[index].style.top = e.pageY - element.offsetTop + "px";
-	});
-});
+        function closeNav() {
+            document.getElementById("myNavicon").style.width = "0";
+        }
     </script>
 
-  <!--footer-->
-  <footer>
-    <div class="content ">
+<img src="Image/menu/menu_combobanner.jpg" alt="combo banner" width="1780" height="610" style="margin: -2.20% 0;">
 
-      <ul class="socials ">
-        <li><a href=" "><i class="fa-solid fa-envelope "></i></a></li>
-        <li><a href=" "><i class="fa-brands fa-whatsapp "></i></a></li>
-        <li><a href=" "><i class="fa-brands fa-instagram "></i></a></li>
-        <li><a href=" "><i class="fa-brands fa-facebook-f "></i></a></li>
-        <li><a href=" "><i class="fa-solid fa-phone "></i></a></li>
-      </ul>
-    </div>
+<table style="margin: 5% 0;">
+  <colgroup>
+    <col class="menu_timesColumn">
+    <col class="menu_comboColumn">
+    <col class="menu_priceColumns">
+
+  </colgroup>
+
+  <thead>
+    <th style="font-size: 75px ">Time</th>
+    <th style="font-size: 75px">Session</th>
+    <th style="font-size: 75px">Price</th>
+  </thead>
 
 
-    <div class="footer-bottom ">
-      <p>copyright &copy;2022 MarsCafé. Designed & developed by <span>RSF1S2G2</span><br>
-        <a href="term_privacy.html ">Term & Privacy</a>&nbsp;|&nbsp;<a href="term_privacy.html ">Membership</a>
-      </p>
-    </div>
-  </footer>
+  <tbody>
+    <tr>
+      <td><a href="#lunchcombo">1200-1400</a> </td>
+      <td><a href="#lunchcombo">Lunch</a></td>
+      <td><a href="#lunchcombo">RM 10.23</a></td>
+    </tr>
+
+    <tr>
+      <td><a href="#lunchcombo">1500-1800</a></td>
+      <td><a href="#hiteacombo">HiTea</a></td>
+      <td><a href="#lunchcombo">RM 50.23</a></td>
+    </tr>
+
+    <td><a href="#lunchcombo">1900-2100</a></td>
+    <td><a href="#dinnercombo">Dinner</a></td>
+    <td><a href="#lunchcombo">RM 51.23</a></td>
+    </tr>
+  </tbody>
+
+</table>
+
+<img src="Image/menu/menu_lunch.jpg" alt="lunch combo" width="1780" height="700" style="margin: 5% 0;"
+  id="lunchcombo">
+<div class="comboset_row_lunch">
+
+  <div class="comboset_column" style="background-color:#D61;">
+    <h1 style="color: aliceblue ;">Beverage</h1>
+    <p style="font-size: 28px;"><em>choose any one from below</em></p>
+    <h3>20 years old red wine </h3></br>
+    <h3>Blue Mint Macchiato </h3></br>
+    <h3>Dalgona Milo fully </br>with 24k gold leaves</h3>
+  </div>
+
+  <div class="comboset_column" style="display:inline-flexbox; background-color:#C94;">
+    <h1 style="color: aliceblue;">Main</h1>
+
+    <p style="font-size: 28px;"><em>choose any one from below</em></p>
+    <h3>Nasi Lemak from Mars</h3>
+    Deep fried organic chicken thigh </br>
+    served with Homemade organic, fresh salmon based Sambal </br></br>
+    <h3>Cheese Baked Rice</h3>
+    Blue cheese that fresh delivery from France monthly </br>
+    served with Australia potatoes </br></br>
+
+  </div>
+
+  <div class="comboset_column" style="background-color:#DB8;">
+    <h1 style="color: aliceblue;">Dessert</h1>
+    <p style="color: aliceblue;">
+    <h3>Fruit Tart</h3>
+    Made with fresh delivery Mussang King, Banana, Grape, Strawberry with Kiwi daily
+    </p>
+  </div>
+
+</div>
+
+<img src="Image/menu/menu_hitea.jpg" alt="hitea combo" width="1780" height="700" style="margin: 5% 0;"
+  id="hiteacombo">
+<div class="comboset_row_lunch">
+
+  <div class="comboset_column" style="background-color:#D61;">
+    <h1 style="color: aliceblue ;">Appetizers</h1>
+    <p style="font-size: 28px;"><em>choose any one from below</em></p>
+    <h3>Hokkaido Ice Cream </h3>
+    <em>(Earl Grey, MintChoco, Soju)</em></br>
+    <h3>Gintama Ice Cream </h3></br>
+    <h3>Inkigayo Sandwich</h3>
+  </div>
+
+  <div class="comboset_column" style="background-color:#C94;">
+    <h1 style="color: aliceblue;">Main</h1>
+
+    <p style="font-size: 28px;"><em>choose any one from below</em></p>
+    <h3>Bolognese Pasta</h3>
+    Homemade Wagyu beef balls </br>
+    served with Maggie Tomato Sauce</br></br>
+    <h3>Carbonara</h3>
+    Taiwanese style sausages </br>
+    with Prego pre-served white sauce</br></br>
+    <h3>Lagsana</h3>
+    100% Garfield style Lasagna
+  </div>
+
+  <div class="comboset_column" style="background-color:#DB8;">
+    <h1 style="color: aliceblue;">Drink</h1>
+    <p style="color: aliceblue;">
+    <h3>Mars Signature Drink</h3>
+    A Coffee brew by Arabica Coffee Bean and fresh coco fruit</br>
+    with New Zealand fresh milk and sugar Melaka
+    </p>
+  </div>
+
+</div>
+
+<img src="Image/menu/menu_dinner.jpg" alt="hitea combo" width="1780" height="700" style="margin: 5% 0;"
+  id="dinnercombo">
+<div class="comboset_row_lunch">
+
+  <div class="comboset_column" style="background-color:#D61;">
+    <h1 style="color: aliceblue ;">Appetizers</h1>
+    <p style="font-size: 28px;"><em>choose any one from below</em></p>
+    <h3>ph-5 Pickled Cucumber </h3></br>
+    <h3>Allergic - free Peanut</h3></br>
+    <h3>Mars Roti Canai</h3>
+  </div>
+
+  <div class="comboset_column" style="background-color:#C94;">
+    <h1 style="color: aliceblue;">Main</h1>
+
+    <p style="font-size: 28px;"><em>choose any one from below</em></p>
+    <h3>Chicken Chop</h3>
+    Grilled organic and skinless chicken breast</br>
+    served with Jamie Oliver's secret recipe sauce <em>(mushroom / pepper)</em></br></br>
+    <h3>Potato-Crusted Sea Bass</h3>
+    Cook by Gordan Rasmay.
+    </p>
+  </div>
+
+  <div class="comboset_column" style="background-color:#DB8;">
+    <h1 style="color: aliceblue;">Beverage</h1>
+    <h3>Sparkling Cocktail</h3>
+    An alcohol-free drink</br>
+    filled by whole universe &#11088;
+    </p>
+  </div>
+
+</div>
+
+<div class="ning_combomenu_display">
+  <a class="HOVER FLASH" href=" ">
+    <span></span>
+    <text style="font-size: 80px; ">CLI&#128157;K ME</text>
+  </a>
+</div>
+
+<script>
+  const ANIMATEDCLASSNAME = "animated";
+  const ELEMENTS = document.querySelectorAll(".HOVER");
+  const ELEMENTS_SPAN = [];
+
+  ELEMENTS.forEach((element, index) => {
+    let addAnimation = false;
+    // Elements that contain the "FLASH" class, add a listener to remove
+    // animation-class when the animation ends
+    if (element.classList[1] == "FLASH") {
+      element.addEventListener("animationend", e => {
+        element.classList.remove(ANIMATEDCLASSNAME);
+      });
+      addAnimation = true;
+    }
+
+    // If The span element for this element does not exist in the array, add it.
+    if (!ELEMENTS_SPAN[index])
+      ELEMENTS_SPAN[index] = element.querySelector("span");
+
+    element.addEventListener("mouseover", e => {
+      ELEMENTS_SPAN[index].style.left = e.pageX - element.offsetLeft + "px";
+      ELEMENTS_SPAN[index].style.top = e.pageY - element.offsetTop + "px";
+
+      // Add an animation-class to animate via CSS.
+      if (addAnimation) element.classList.add(ANIMATEDCLASSNAME);
+    });
+
+    element.addEventListener("mouseout", e => {
+      ELEMENTS_SPAN[index].style.left = e.pageX - element.offsetLeft + "px";
+      ELEMENTS_SPAN[index].style.top = e.pageY - element.offsetTop + "px";
+    });
+  });
+</script>
+
+<!--footer-->
+<footer>
+  <div class="content ">
+
+    <ul class="socials ">
+      <li><a href=" "><i class="fa-solid fa-envelope "></i></a></li>
+      <li><a href=" "><i class="fa-brands fa-whatsapp "></i></a></li>
+      <li><a href=" "><i class="fa-brands fa-instagram "></i></a></li>
+      <li><a href=" "><i class="fa-brands fa-facebook-f "></i></a></li>
+      <li><a href=" "><i class="fa-solid fa-phone "></i></a></li>
+    </ul>
+  </div>
+
+
+  <div class="footer-bottom ">
+    <p>copyright &copy;2022 MarsCafé. Designed & developed by <span>RSF1S2G2</span><br>
+      <a href="term_privacy.html ">Term & Privacy</a>&nbsp;|&nbsp;<a href="term_privacy.html ">Membership</a>
+    </p>
+  </div>
+</footer>
 
 </body>
 

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Reservation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="membership.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2703fb7a38.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <img class="mclogo" src="image/mclogo.png" alt="mars_cafe_logo">
+        <div class="logo">Mars Café</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a>
+                <ul>
+                    <li><a href=" ">Food</a></li>
+                    <li><a href=" ">Beverage</a></li>
+                    <li><a href=" ">Combo Set</a></li>
+                    <li><a href=" ">Merchandise</a></li>
+                    <li><a href=" ">Pre-order</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Event Promotion</a>
+                <ul>
+                    <li><a href=" ">Event</a></li>
+                    <li><a href=" ">Promotion</a></li>
+                </ul>
+            </li>
+            <li><a href="signin.html">Reservation</a></li>
+            <li><a href="#">About Us</a>
+                <ul>
+                    <li><a href=" ">Astronaut</a></li>
+                    <li><a href=" ">Membership</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="container_reservation">
+    <h2>Reservation</h2>
+
+        <form action="" method="get"> 
+        
+        <label for="name"><b>Name:</b></label><br>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="phone"><b>Phone Number:</b></label><br>
+        <input type="text" id="phone" name="phone"><br><br>
+
+        <label for="adult"><b>Adult:</b></label><br>
+        <input type="number" id="adult" name="total_adults" placeholder="0" min="0" required><br><br>
+
+        <label for="children"><b>Children:</b></label><br>
+        <input type="number" id="children" name="total_children" placeholder="0" min="0"required ><br><br>
+
+        <label for="datetime"><b>Select Date/Time:</b></label><br>
+        <input type="datetime-local" id="Test_DatetimeLocal"><br><br>
+  
+        <button class="reservation_button_book"><b>Book</b></button> 
+        <button class="reservation_button_cancel"><b>Cancel</b></button>
+        </form> 
+        
+    </div>       
+
+
+
+<!--footer-->
+    <footer>
+        <div class="content ">
+
+            <ul class="socials ">
+                <li><a href=" "><i class="fa-solid fa-envelope "></i></a></li>
+                <li><a href=" "><i class="fa-brands fa-whatsapp "></i></a></li>
+                <li><a href=" "><i class="fa-brands fa-instagram "></i></a></li>
+                <li><a href=" "><i class="fa-brands fa-facebook-f "></i></a></li>
+                <li><a href=" "><i class="fa-solid fa-phone "></i></a></li>
+            </ul>
+        </div>
+
+
+        <div class="footer-bottom ">
+            <p>copyright &copy;2022 MarsCafé. Designed & developed by <span>RSF1S2G2</span><br>
+                <a href="term_privacy.html ">Term & Privacy</a>&nbsp;|&nbsp;<a href="term_privacy.html ">Membership</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -661,3 +661,526 @@ footer {
   
 }
 /*end of footer*/
+
+/*event  promotion*/
+.eventheadn {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url(image/event_promotion_ep/eventphead.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-top: -30px;
+}
+
+.textinhead {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.textinhead h1 {
+    font-size: 60px;
+}
+
+.textinhead p {
+    margin: 10px 0 40px;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+@media(max-width : 700px){
+    .textinhead h1 {
+        font-size: 20px;
+    }
+}
+ 
+.special_event {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background: #fad0c4;
+}
+
+.special_event h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.special_event p{
+    color: #777;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.eventrow {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.event-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    left: 10%;
+}
+
+.event-col h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 10px 0 ;
+    color: #fff;
+}
+
+.event-col p {
+    color: rgb(6, 6, 6);
+}
+
+.event-col:hover {
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.eventbutton a {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    font-family:Cambria, Cochin, Georgia, Times, serif;
+    cursor: pointer;
+    margin-bottom: 100px;
+    font-variant: small-caps ;
+}
+
+.eventbutton:hover a {
+    border: 1px solid black;
+    color: white;
+    background: rgb(0, 0, 0);
+    transition: 1s;
+}
+
+@media(max-width : 700px) {
+    .eventrow {
+        flex-direction: column;
+    }
+}
+
+.promotional {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    background: #cfd9df ;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.promotional h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.promotional p{
+    color: #777;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.promotional-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+} 
+
+.promotional-col img {
+    width: 100%;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(71, 60, 60, 0.7);
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 30px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* end of event promotion*/
+
+
+
+/*event page*/
+.eventpageheader {
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(104, 106, 110, 0.6),rgba(104, 106, 110, 0.6)),url(image/event_promotion_ep/event123.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: -30px;
+    position: relative;
+    color: #fff;
+}
+
+.textineventpageheader {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.textineventpageheader h1 {
+    font-size: 60px;
+    margin-top:10px ;
+}
+
+.eventpagerow {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+.eventpage {
+    width: 100%;
+    margin: auto;
+}
+
+.eventpage > p {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #93a5cf;
+}
+
+.event-column {
+    flex-basis: 48%;
+    padding: 20px 1px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.event-column img {
+    width: 80%;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: 0.4s ease-in-out;
+}
+
+.event-column img:hover  {
+    transform: scale(1.2);
+} 
+
+.event-column h1 {
+    padding-top: 0;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.event-column p {
+    padding: 15px 0 25px;
+    line-height: 25px;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+.calendar-icon img {
+    width: 50px;
+    float: left;
+}
+
+@media(max-width : 700px) {
+    .eventpagerow {
+        flex-direction: column;
+    }
+}
+
+.event-comment {
+    padding: 50px 0;
+    background: #f1f1f1d7;
+    color: #000;
+    text-align: center;
+}
+
+.commenhead {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.commen-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.commen-col {
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.commen {
+    background: #fff;
+    padding: 30px;
+}
+
+.commen img {
+    width: 150px;
+    height: 150px;
+    border-radius: 45%;
+}
+
+.commen-name {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+@media(max-width : 960px) {
+    .commen-col {
+        flex: 100%;
+        max-width: 80%;
+        flex-direction: column;
+    }
+}
+
+@media(max-width : 700px) {
+    .commen-col {
+        flex: 100%;
+        max-width: 100%;
+        flex-direction: column;
+    }
+}
+
+/* end of event */
+
+/* promotion page */
+.promotionpageheader {
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(104, 106, 110, 0.6),rgba(104, 106, 110, 0.6)),url(image/event_promotion_ep/promotionhead.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: -30px;
+    position: relative;
+    color: #fff;
+}
+
+.textinpromotionpageheader {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.textinpromotionpageheader h1 {
+    font-size: 60px;
+    margin-top:10px ;
+}
+
+.promotionh {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 26px;
+    background-color: #fcb69f;
+}
+
+.promotiopage {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-bottom: 3%;
+}
+
+.comboset {
+    height: 650px;
+    width: 440px;
+    margin: 20px;
+    border-radius: 10px 10px 10px 10px;
+    background: #f2f2f2;
+    box-shadow: 5px 10px 20px #000;
+
+}
+
+.comboset:hover {
+    background-color: #000;
+    color: #f2f2f2;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+.pic {
+    width: 440px;
+    height: 300px;
+    position: relative;
+    object-fit: cover;
+}
+
+
+.comboset h2 {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+.comboset p {
+    margin: 10px 20px;
+    padding: 10px 0;
+
+}
+
+.comboset a {
+    margin: 10px 0;
+    text-align: center;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    border-color: #000;
+}
+
+.comboset:hover a{
+    color: #f2f2f2;
+    text-decoration: underline;
+}
+
+@media(max-width : 1024px) {
+    .promotiopage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.promotionh1 {
+    text-align: center;
+    padding-top: 2%;
+    background-color: #FFF6B7 ;
+    padding-bottom: 3%;
+}
+
+.promotionh1 > h1 {    
+    padding-bottom: 20px;
+    font-size: 60px;
+}
+
+.valentine  {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+} 
+
+.valentine img{
+    width: 100%;
+    height: 600px;
+    display: flexbox;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.valentinelayer {
+    background: transparent;
+    height: 800px;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    transition: 0.5s;
+}
+
+.valentinelayer:hover {
+    background: rgba(71, 60, 60, 0.7);
+}
+
+.valentinelayer ul{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0;
+    list-style-type: none;
+}
+
+.valentinelayer:hover ul {
+    bottom: 49%;
+    opacity: 1;
+}
+
+.merch p {
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+}
+
+.promo_merchandise {
+    width: 100%;
+    padding-top: 50%;
+    background: url('image/event_promotion_ep/ep_merchandise.jpg') no-repeat center;
+    background-size: cover;
+}
+/* end of promotion*/

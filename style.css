@@ -380,7 +380,7 @@ img .menuisningpart_picture_left{
 }
 
 .menu_ning_row {
-    width: 800px;
+    width: 600px;
     position: relative;
     z-index: 2;
     font-size: 20px;
@@ -472,7 +472,7 @@ img .menuisningpart_picture_left{
    }
    
    .menu_ning_row {
-     width: 1200px;
+     width: 600px;
      position: relative;
      z-index: 2;
      font-size: 20px;

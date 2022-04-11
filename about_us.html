@@ -1,51 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Assignment</title>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2_size.css">
-    <link rel="stylesheet" href="style3_style.css">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/2703fb7a38.js" crossorigin="anonymous">
+    <link rel="stylesheet" href="mcd1card.css">
+    <link rel="stylesheet" href="membership.css">
+    <link rel="stylesheet" href="merchandise.css">
+    <link rel="stylesheet" href="preorder.css">
     <script src="https://kit.fontawesome.com/2703fb7a38.js" crossorigin="anonymous"></script>
-
-
 </head>
 
 <body>
-    <nav class="about_us_nav">
-        <img class="mclogo" src="image/mc_logo.jpg" alt="mars_cafe_logo">
+    <nav>
+        <img class="mclogo" src="image/mars_logo.png" alt="mars_cafe_logo">
         <div class="logo">Mars Café</div>
         <ul class="nav_ul">
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Menu</a>
                 <ul>
-                    <li><a href=" ">Food</a></li>
-                    <li><a href=" ">Beverage</a></li>
-                    <li><a href=" ">Combo Set</a></li>
-                    <li><a href=" ">Merchandise</a></li>
-                    <li><a href=" ">Pre-order</a></li>
+                    <li><a href="menu_food.html">Food</a></li>
+                    <li><a href="menu_beverage.html">Beverage</a></li>
+                    <li><a href="menu_comboset.html">Combo Set</a></li>
+                    <li><a href="merchandise.html">Merchandise</a></li>
+                    <li><a href="preorder.html">Pre-order</a></li>
                 </ul>
             </li>
-            <li><a href="#">Event Promotion</a>
+            <li><a href="event_promotion.html">Event Promotion</a>
                 <ul>
-                    <li><a href=" ">Event</a></li>
-                    <li><a href=" ">Promotion</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="promotion.html">Promotion</a></li>
                 </ul>
             </li>
-            <li><a href="#">Reservation</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
             <li><a href="about_us.html">About Us</a>
                 <ul>
                     <li><a href="astronaut.html">Astronaut</a></li>
                     <li><a href="membership.html">Membership</a></li>
                 </ul>
             </li>
+            <li><a class="cart_car" href=""></a></li>
         </ul>
     </nav>
 
-    <!--small screen nav-->
+    <!--Small screen-->
     <nav class="small_s">
         <div class="mclogo">
             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
@@ -57,19 +57,19 @@
             <a href="index.html">Home</a>
             <a href="#">Menu</a>
             <ol>
-                <a href=" ">Food</a>
-                <a href=" ">Beverage</a>
-                <a href=" ">Combo Set</a>
-                <a href=" ">Merchandise</a>
-                <a href=" ">Pre-order</a>
+                <a href="menu_food.html">Food</a>
+                <a href="menu_beverage.html">Beverage</a>
+                <a href="menu_comboset.html">Combo Set</a>
+                <a href="merchandise.html">Merchandise</a>
+                <a href="preorder.html">Pre-order</a>
             </ol>
-            <a href="#">Event Promotion</a>
-            <ol >
-                <a href=" ">Event</a>
-                <a href=" ">Promotion</a>
+            <a href="event_promotion.html">Event Promotion</a>
+            <ol>
+                <a href="event.html">Event</a>
+                <a href="promotion.html">Promotion</a>
             </ol>
 
-            <a href="#">Reservation</a>
+            <a href="reservation.html">Reservation</a>
             <a href="about_us.html">About Us</a>
             <ol>
                 <a href="astronaut.html">Astronaut</a>
@@ -77,9 +77,8 @@
             </ol>
             <a class="cart_car" href=""></a>
         </div>
-
     </nav>
-    
+
     <script>
         function openNav() {
             document.getElementById("myNavicon").style.width = "100%";
@@ -90,9 +89,8 @@
         }
     </script>
 
-
     <!--Panel of about_us-->
-    <div class="about_us_bgimg">
+    <div class="about_us_bgimg" style="margin-top: -30px;">
         <div class="about_us">
             <div class="about_us_middle">
                 <h1 class="about_us_caption">ABOUT US</h1>
@@ -124,7 +122,8 @@
         <div class="about_us_2nd">
             <div>
                 <img class="about_usimg2" src="image/about_us/cafe_pic2.jpg" alt="mars_cafe_inside">
-                <p class="capl_2nd"><br><br><br><br><br><br><strong>Anonymous</strong><br><br><hr class="hr2"><br>
+                <p class="capl_2nd"><br><br><br><br><br><br><strong>Anonymous</strong><br><br>
+                    <hr class="hr2"><br>
                 <div class="para2">Mars Café for me has always been an amazing place of excitement. The atmosphere
                     always felt just
                     right for not only the high school and college crowd, but also young adults, and even people of
@@ -137,8 +136,10 @@
         <div class="about_us_3rd">
             <div>
                 <img class="about_usimg3" src="image/about_us/cafe_pic6.jpeg" alt="Tom_Holland">
-                <p class="capl_3rd"><br><br><br><br><br><strong>Tom Holland</strong><br><br><hr class="hr3"><br>
-                    <div class="para3">In my case, I joke with my friends that I use Mars Café to appear as the soulful, tortured writer who
+                <p class="capl_3rd"><br><br><br><br><br><strong>Tom Holland</strong><br><br>
+                    <hr class="hr3"><br>
+                <div class="para3">In my case, I joke with my friends that I use Mars Café to appear as the soulful,
+                    tortured writer who
                     is just trying to make his name in the world. Absurd imagery or not, I can&apos;t lie and say that I
                     don&apos;t feel strangely empowered when I have my laptop out at Mars Café, typing furiously to
                     produce a new article, while simultaneously gulping down my Long Black with a water cup on the side,
@@ -150,16 +151,26 @@
         <div class="about_us_4th">
             <div>
                 <img class="about_usimg4" src="image/about_us/cafe_pic7.jpeg" alt="JayB">
-                <p class="capl_4th"><br><br><br><br><strong>JayB</strong><br><br><hr class="hr4"><br>
-                    <div class="para4">I have tried many cafes and Mars Café gave me the best experience with its unique coffee style and desserts. Try it once and you'll never forget the taste of Mars Café coffee. Mars Café has been serving great coffee, hearty breakfasts, and guilt-free homemade desserts for many years. This little cafe in Setapak was a pioneer of a now flourishing cafe scene, nice views and stands strong as one of the best spots in Kuala Lumpur to get your daily cup of coffee! You must take some time out from work to enjoy a cup of the coffee creations (the Hazelnut Twist) or a bottle of cold brew at Mars. You can also never go wrong with their classic options of espressos and chocolate beverages.</div>
+                <p class="capl_4th"><br><br><br><br><strong>JayB</strong><br><br>
+                    <hr class="hr4"><br>
+                <div class="para4">I have tried many cafes and Mars Café gave me the best experience with its unique
+                    coffee style and desserts. Try it once and you'll never forget the taste of Mars Café coffee. Mars
+                    Café has been serving great coffee, hearty breakfasts, and guilt-free homemade desserts for many
+                    years. This little cafe in Setapak was a pioneer of a now flourishing cafe scene, nice views and
+                    stands strong as one of the best spots in Kuala Lumpur to get your daily cup of coffee! You must
+                    take some time out from work to enjoy a cup of the coffee creations (the Hazelnut Twist) or a bottle
+                    of cold brew at Mars. You can also never go wrong with their classic options of espressos and
+                    chocolate beverages.</div>
                 </p>
             </div>
         </div>
         <div class="about_us_5rd">
             <div>
                 <img class="about_usimg5">
-                <p class="capl_5rd"><br><strong>Staff</strong><br><br><hr class="hr5"><br>
-                    <div class="para5">Our baked goods are made in our own baking facilities, added with personal touches by our retailstaff
+                <p class="capl_5rd"><br><strong>Staff</strong><br><br>
+                    <hr class="hr5"><br>
+                <div class="para5">Our baked goods are made in our own baking facilities, added with personal touches by
+                    our retailstaff
                     to suit your requests. We also offer fresh and whole some meal prepared with utmost care in our
                     in-store kitchens. This is what we are devoting our lives to, making sure every experience as unique
                     and personal so you, too, will Find your Flavor.</div>
@@ -187,3 +198,4 @@
         </div>
     </footer>
 </body>
+</html>

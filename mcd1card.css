@@ -1,0 +1,81 @@
+
+.gallery-vertical {
+  overflow-y:auto;
+  overflow-x:hidden;
+  height: 80vh;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100%);
+  float: left;
+  width: 30%;
+  margin-left: 5cm;
+  }
+
+  .gallery-vertical img {
+    position: sticky;
+    top: 0;
+    display:block;
+  }
+
+  img {
+  width: 100%;
+  }
+
+/* width */
+.gallery-vertical::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(150, 103, 81); 
+  border-radius: 10px;
+}
+
+
+.column1 {
+  float: left;
+  width: 30%;
+  margin-left: 7cm;
+  margin-top: 6cm;
+}
+
+.designer {
+  float: left;
+  width: 100%;
+  margin-left: 0cm;
+  margin-top: 3cm;
+}
+
+.designer h1{
+  text-align: center;
+}
+.merchandisedesigner1{
+  width: 300px;
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.designer h2{
+  text-align: center;
+}
+.designer blockquote{
+  text-align: center;
+  font-size: 0.95em;
+   padding: 10px;
+   quotes: "\201C" "\201D";
+}
+
+.designer blockquote::before {
+  content: open-quote;
+  font-weight: bold;
+  font-size: 1.6em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.designer blockquote::after{
+  content: close-quote;
+  font-weight: bold;
+  font-size: 1.6em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

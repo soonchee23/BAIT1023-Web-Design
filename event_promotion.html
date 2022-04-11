@@ -6,27 +6,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.html">
-    <link rel="stylesheet" href="menu.html">
-    <link rel="stylesheet" href="event_promotion.html">
-    <link rel="stylesheet" href="reservation.html">
-    <link rel="stylesheet" href="about_us.html">
+    <link rel="stylesheet" href="mcd1card.css">
+    <link rel="stylesheet" href="membership.css">
+    <link rel="stylesheet" href="merchandise.css">
+    <link rel="stylesheet" href="preorder.css">
     <script src="https://kit.fontawesome.com/2703fb7a38.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <nav>
-        <img class="mclogo" src="image/mc_logo.jpg" alt="mars_cafe_logo">
+        <img class="mclogo" src="image/mars_logo.png" alt="mars_cafe_logo">
         <div class="logo">Mars Café</div>
-        <ul>
+        <ul class="nav_ul">
             <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a>
+            <li><a href="#">Menu</a>
                 <ul>
-                    <li><a href=" ">Food</a></li>
-                    <li><a href=" ">Beverage</a></li>
-                    <li><a href=" ">Combo Set</a></li>
-                    <li><a href=" ">Merchandise</a></li>
-                    <li><a href=" ">Pre-order</a></li>
+                    <li><a href="menu_food.html">Food</a></li>
+                    <li><a href="menu_beverage.html">Beverage</a></li>
+                    <li><a href="menu_comboset.html">Combo Set</a></li>
+                    <li><a href="merchandise.html">Merchandise</a></li>
+                    <li><a href="preorder.html">Pre-order</a></li>
                 </ul>
             </li>
             <li><a href="event_promotion.html">Event Promotion</a>
@@ -35,15 +34,60 @@
                     <li><a href="promotion.html">Promotion</a></li>
                 </ul>
             </li>
-            <li><a href="#">Reservation</a></li>
-            <li><a href="#">About Us</a>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="about_us.html">About Us</a>
                 <ul>
-                    <li><a href=" ">Astronaut</a></li>
-                    <li><a href=" ">Membership</a></li>
+                    <li><a href="astronaut.html">Astronaut</a></li>
+                    <li><a href="membership.html">Membership</a></li>
                 </ul>
             </li>
+            <li><a class="cart_car" href=""></a></li>
         </ul>
     </nav>
+
+    <!--Small screen-->
+    <nav class="small_s">
+        <div class="mclogo">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <img src="image/mars_logo.png" alt="Mars">Mars Café
+        </div>
+
+        <div id="myNavicon" class="navicon">
+            <a href="javascript:void(0)" class="navclosebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="#">Menu</a>
+            <ol>
+                <a href="menu_food.html">Food</a>
+                <a href="menu_beverage.html">Beverage</a>
+                <a href="menu_comboset.html">Combo Set</a>
+                <a href="merchandise.html">Merchandise</a>
+                <a href="preorder.html">Pre-order</a>
+            </ol>
+            <a href="event_promotion.html">Event Promotion</a>
+            <ol>
+                <a href="event.html">Event</a>
+                <a href="promotion.html">Promotion</a>
+            </ol>
+
+            <a href="reservation.html">Reservation</a>
+            <a href="about_us.html">About Us</a>
+            <ol>
+                <a href="astronaut.html">Astronaut</a>
+                <a href="membership.html">Membership</a>
+            </ol>
+            <a class="cart_car" href=""></a>
+        </div>
+    </nav>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNavicon").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNavicon").style.width = "0";
+        }
+    </script>
 
     <div class="eventheadn">
         <div class="textinhead">
@@ -63,7 +107,7 @@
                 </p>
             </div>
 
-            <div class="event-col"  style="background-color:#C94;">
+            <div class="event-col" style="background-color:#C94;">
                 <h3>1 DAY MANAGER</h3>
                 <p>Mars Café is going to invite a special guest to be our one-day shop manager. that day he will come
                     here to meet and interact with you

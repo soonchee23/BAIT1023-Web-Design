@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="astronaut.html" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2703fb7a38.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="astro_page">
+    <nav class="astro_nav">
+        <img class="mclogo" src="image/mc_logo.jpg" alt="mars_cafe_logo">
+        <div class="logo">Mars Café</div>
+        <ul class="nav_ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Menu</a>
+                <ul>
+                    <li><a href=" ">Food</a></li>
+                    <li><a href=" ">Beverage</a></li>
+                    <li><a href=" ">Combo Set</a></li>
+                    <li><a href=" ">Merchandise</a></li>
+                    <li><a href=" ">Pre-order</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Event Promotion</a>
+                <ul>
+                    <li><a href=" ">Event</a></li>
+                    <li><a href=" ">Promotion</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Reservation</a></li>
+            <li><a href="about_us.html">About Us</a>
+                <ul>
+                    <li><a href="astronaut.html">Astronaut</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!--small screen nav-->
+    <nav class="small_s">
+        <div class="mclogo">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <img src="image/mars_logo.png" alt="Mars">Mars Café
+        </div>
+
+        <div id="myNavicon" class="navicon">
+            <a href="javascript:void(0)" class="navclosebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="#">Menu</a>
+            <ol>
+                <a href=" ">Food</a>
+                <a href=" ">Beverage</a>
+                <a href=" ">Combo Set</a>
+                <a href=" ">Merchandise</a>
+                <a href=" ">Pre-order</a>
+            </ol>
+            <a href="#">Event Promotion</a>
+            <ol>
+                <a href=" ">Event</a>
+                <a href=" ">Promotion</a>
+            </ol>
+
+            <a href="#">Reservation</a>
+            <a href="about_us.html">About Us</a>
+            <ol>
+                <a href="astronaut.html">Astronaut</a>
+                <a href="membership.html">Membership</a>
+            </ol>
+            <a class="cart_car" href=""></a>
+        </div>
+
+    </nav>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNavicon").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNavicon").style.width = "0";
+        }
+    </script>
+
+    <div class="astro_header">
+        <h1><strong>Our Astronaut</strong></h>
+            <hr>
+            <h2><strong>Executive Profile</strong></h2>
+    </div>
+
+
+    <div class="row_astro">
+        <div class="firstRow_astro">
+            <div class="row_1_astro">
+                <div class="column_1_astro">
+                    <div class="card_1_astro">
+                        <div class="column_astro">
+                            <img src="image/about_us/astronaut/astro/tzuyu_2.jpg" style="width:100%"
+                                onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        </div>
+                        <div class="container_1_astro">
+                            <h2>Tzuyu Chou</h2>
+                            <p class="title_1_astro">CEO & Head Chef</p>
+                            <p>Effort won't betray you, Try your best without Impatience ~</p>
+                            <p><a href="mailto:tzuyu0614@gmail.com?cc=jypEntertainment@gmail.com&bcc=kayapeanutbutter@gmail.com&subject=Contact%20Us&body=You%20are%20going%20to%20leave%20a%20message%20to%20Tzuyu"
+                                    target="_top">Tzuyu@gmail.com</a></p>
+                            <div class="like_astro">
+                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="">
+                                    <path
+                                        d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"
+                                        fill="#3E4373" />
+                                </svg>
+                                <i class="astro_i">0</i>
+                                <span class="astro_span"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row_1_astro">
+                <div class="column_1_astro">
+                    <div class="card_1_astro">
+                        <div class="column_astro">
+                            <img src="image/about_us/astronaut/astro/astronant_jennie.jpg" style="width:100%"
+                                onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                        </div>
+                        <div class="container_1_astro">
+                            <h2>Jennie Kim</h2>
+                            <p class="title_1_astro">CFO & Chef</p>
+                            <p>Just be you and if they don't like you it's their problem ~</p>
+                            <p><a href="mailto:bp.jennie0116@gmail.com?cc=blackpinkOfficial@gmail.com&bcc=jennieManager@gmail.com&subject=Contact%20Us&body=You%20are%20going%20to%20leave%20a%20message%20to%20Jennie"
+                                    target="_top">Jenniekim16@gmail.com</a></p>
+                            <div class="like_astro">
+                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="">
+                                    <path
+                                        d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"
+                                        fill="#3E4373" />
+                                </svg>
+                                <i class="astro_i">0</i>
+                                <span class="astro_span"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row_1_astro">
+                <div class="column_1_astro">
+                    <div class="card_1_astro">
+                        <div class="column_astro">
+                            <img id="img_a1" src="image/about_us/astronaut/astro/astronaut_jayb.jpg" style="width:100%"
+                                onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                        </div>
+                        <div class="container_1_astro">
+                            <h2>JayB</h2>
+                            <p class="title_1_astro">Chef</p>
+                            <p>If you have a dream then you shouldn't give up no matter what ~</p>
+                            <p><a href="mailto:siheung06@gmail.com?cc=god7_captain@gmail.com&bcc=jayB@gmail.com&subject=Contact%20Us&body=You%20are%20going%20to%20leave%20a%20message%20to%20JayB"
+                                    target="_top">JayB0106@gmail.com</a></p>
+                            <div class="like_astro">
+                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="">
+                                    <path
+                                        d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"
+                                        fill="#3E4373" />
+                                </svg>
+                                <i class="astro_i">0</i>
+                                <span class="astro_span"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row_1_astro">
+                <div class="column_1_astro">
+                    <div class="card_1_astro">
+                        <div class="column_astro">
+                            <img id="img_a2" src="image/about_us/astronaut/astro/astronaut_jackson.jpg"
+                                style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                        </div>
+                        <div class="container_1_astro">
+                            <h2>Jackson Wang</h2>
+                            <p class="title_1_astro">Barista</p>
+                            <p>Always in hungry in what you wanna do, know yourself and make history ~</p>
+                            <p><a href="mailto:bp.jackson0328@gmail.com?cc=teamwangOfficial@gmail.com&bcc=wangJackson@gmail.com&subject=Contact%20Us&body=You%20are%20going%20to%20leave%20a%20message%20to%20Jackson"
+                                    target="_top">JacksonWangSM@gmail.com</a></p>
+                            <div class="like_astro">
+                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="">
+                                    <path
+                                        d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"
+                                        fill="#3E4373" />
+                                </svg>
+                                <i class="astro_i">0</i>
+                                <span class="astro_span"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="secondRow_astro">
+            <div class="row_1_astro">
+                <div class="column_1_astro">
+                    <div class="card_1_astro">
+                        <div class="column_astro">
+                            <img src="image/about_us/astronaut/astro/Lee Jong Suk.jpg" style="width:100%"
+                                onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                        </div>
+                        <div class="container_1_astro">
+                            <h2>Lee Jong Suk</h2>
+                            <p class="title_1_astro">Manager</p>
+                            <p>The greater expectation, the greater disapointment</p>
+                            <p><a href="mailto:leejongsuk914@gmail.com?cc=KBSofficial@gmail.com&bcc=leejongsuk14@gmail.com&subject=Contact%20Us&body=You%20are%20going%20to%20leave%20a%20message%20to%20Jong-Suk"
+                                    target="_top">JongSuk914@gmail.com</a></p>
+                            <div class="like_astro">
+                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="">
+                                    <path
+                                        d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"
+                                        fill="#3E4373" />
+                                </svg>
+                                <i class="astro_i">0</i>
+                                <span class="astro_span"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row_1_astro">
+                <div class="column_1_astro">
+                    <div class="card_1_astro">
+                        <div class="column_astro">
+                            <img src="image/about_us/astronaut/astro/Park Ji Hu.jpg" style="width:100%"
+                                onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                        </div>
+                        <div class="container_1_astro">
+                            <h2>Park Ji Hu</h2>
+                            <p class="title_1_astro">Supervisor</p>
+                            <p>You can't be successful if you don't fail and try a lot ~</p>
+                            <p><a href="mailto:parkjihu@gmail.com?cc=netflixDrama@gmail.com&bcc=parkjihuOfficial@gmail.com&subject=Contact%20Us&body=You%20are%20going%20to%20leave%20a%20message%20to%20Park Ji-Hu"
+                                    target="_top">Parkjihu1107@gmail.com</a></p>
+                            <div class="like_astro">
+                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="">
+                                    <path
+                                        d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"
+                                        fill="#3E4373" />
+                                </svg>
+                                <i class="astro_i">0</i>
+                                <span class="astro_span"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row_1_astro">
+                <div class="column_1_astro">
+                    <div class="card_1_astro">
+                        <div class="column_astro">
+                            <img src="image/about_us/astronaut/astro/Cho Yi Hyun.jpg" style="width:100%"
+                                onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                        </div>
+                        <div class="container_1_astro">
+                            <h2>Cho Yi Hyun</h2>
+                            <p class="title_1_astro">Staff</p>
+                            <p>Think positive, stay positive and you will be positive~</p>
+                            <p><a href="mailto:yihyuncho@gmail.com?cc=yihyunOfficial@gmail.com&bcc=choyihyun1208@gmail.com&subject=Contact%20Us&body=You%20are%20going%20to%20leave%20a%20message%20to%20Cho Yi-Hyun"
+                                    target="_top">Choyihyun08@gmail.com</a></p>
+                            <div class="like_astro">
+                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="">
+                                    <path
+                                        d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"
+                                        fill="#3E4373" />
+                                </svg>
+                                <i class="astro_i">0</i>
+                                <span class="astro_span"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row_1_astro">
+                <div class="column_1_astro">
+                    <div class="card_1_astro">
+                        <div class="column_astro">
+                            <img id="img_a3" src="image/about_us/astronaut/astro/Park Seo Joon 2.jpg" style="width:100%"
+                                onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+                        </div>
+                        <div class="container_1_astro">
+                            <h2>Park Seo Joon</h2>
+                            <p class="title_1_astro">Staff</p>
+                            <p>You won't be able find a staff that is handsome like me ~</p>
+                            <p><a href="mailto:seojoonpark@gmail.com?cc=kbs_official@gmail.com&bcc=parkseojoon1216@gmail.com&subject=Contact%20Us&body=You%20are%20going%20to%20leave%20a%20message%20to%20Park Seo-Joon"
+                                    target="_top">Parkseojoon1216@gmail.com</a></p>
+                            <div class="like_astro">
+                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="">
+                                    <path
+                                        d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"
+                                        fill="#3E4373" />
+                                </svg>
+                                <i class="astro_i">0</i>
+                                <span class="astro_span"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="thirdRow_astro">
+            <div class="row_1_astro">
+                <div class="column_1_astro" id="thirdRow_column_1_astro">
+                    <div class="card_1_astro">
+                        <div class="column_astro">
+                            <img id="img_a5" src="image/about_us/astronaut/astro/Park Jisung.JPG" style="width:100%"
+                                onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+                        </div>
+                        <div class="container_1_astro">
+                            <h2>Park Jisung</h2>
+                            <p class="title_1_astro">Staff</p>
+                            <p>Never apologize for what you feel, trust your gud ~</p>
+                            <p><a href="mailto:nctOfficial@gmail.com?cc=jisung020502@gmail.com&bcc=parkseojoon1216@gmail.com&subject=Contact%20Us&body=You%20are%20going%20to%20leave%20a%20message%20to%20Park Seo-Joon"
+                                    target="_top">Jisung0205@gmail.com</a></p>
+                            <div class="like_astro">
+                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="">
+                                    <path
+                                        d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"
+                                        fill="#3E4373" />
+                                </svg>
+                                <i class="astro_i">0</i>
+                                <span class="astro_span"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row_1_astro">
+                <div class="column_1_astro">
+                    <div class="card_1_astro">
+                        <div class="column_astro">
+                            <img id="img_a4" src="image/about_us/astronaut/astro/Na Jaemin.JPG" style="width:100%"
+                                onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+                        </div>
+                        <div class="container_1_astro">
+                            <h2>Na Jae-Min</h2>
+                            <p class="title_1_astro">Staff</p>
+                            <p>You are brightest star in the universe so you are unique ~</p>
+                            <p><a href="mailto:nctOfficial@gmail.com?cc=kbs_official@gmail.com&bcc=jaeminOfficial0813@gmail.com&subject=Contact%20Us&body=You%20are%20going%20to%20leave%20a%20message%20to%20Na Jae-Min"
+                                    target="_top">Najaemin0813@gmail.com</a></p>
+                            <div class="like_astro">
+                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="">
+                                    <path
+                                        d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"
+                                        fill="#3E4373" />
+                                </svg>
+                                <i class="astro_i">0</i>
+                                <span class="astro_span"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal_astro" class="modal_astro">
+            <span class="close_astro cursor_astro" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides_astro">
+                    <div class="numbertext_astro">Tzuyu Chou</div>
+                    <img src="image/about_us/astronaut/astro/tzuyu_2.jpg" style="width: 100%">
+                </div>
+
+                <div class="mySlides_astro">
+                    <div class="numbertext_astro">Jennie Kim</div>
+                    <img src="image/about_us/astronaut/astro/astronant_jennie.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides_astro">
+                    <div class="numbertext_astro">Jayb</div>
+                    <img src="image/about_us/astronaut/astro/astronaut_jayb.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides_astro">
+                    <div class="numbertext_astro">Jackson Wang</div>
+                    <img src="image/about_us/astronaut/astro/astronaut_jackson.jpg" style="width:100%">
+                </div>
+                <div class="mySlides_astro">
+                    <div class="numbertext_astro">Lee Jong Suk</div>
+                    <img src="image/about_us/astronaut/astro/Lee Jong Suk.jpg" style="width:100%">
+                </div>
+                <div class="mySlides_astro">
+                    <div class="numbertext_astro">Park Ji Hu</div>
+                    <img src="image/about_us/astronaut/astro/Park Ji Hu.jpg" style="width:100%">
+                </div>
+                <div class="mySlides_astro">
+                    <div class="numbertext_astro">Cho Yi Hyun</div>
+                    <img src="image/about_us/astronaut/astro/Cho Yi Hyun.jpg" style="width:100%">
+                </div>
+                <div class="mySlides_astro">
+                    <div class="numbertext_astro">Park Seo Joon</div>
+                    <img src="image/about_us/astronaut/astro/Park Seo Joon 2.jpg" style="width:100%">
+                </div>
+                <div class="mySlides_astro">
+                    <div class="numbertext_astro">Park Jisung</div>
+                    <img src="image/about_us/astronaut/astro/Park Jisung.JPG" style="width:100%">
+                </div>
+                <div class="mySlides_astro">
+                    <div class="numbertext_astro">Na Jaemin</div>
+                    <img src="image/about_us/astronaut/astro/Na Jaemin.JPG" style="width:100%">
+                </div>
+
+                <a class="prev_astro" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next_astro" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container_astro">
+                    <p id="caption_astro"></p>
+                </div>
+
+                <div class="column_modal_2">
+                    <img class="demo_astro cursor_astro" src="image/about_us/astronaut/astro/tzuyu_2.jpg"
+                        style="width:100%" onclick="currentSlide(1)" alt="CEO">
+                </div>
+                <div class="column_modal_2">
+                    <img class="demo_astro cursor_astro" src="image/about_us/astronaut/astro/astronant_jennie.jpg"
+                        style="width:100%" onclick="currentSlide(2)" alt="CFO">
+                </div>
+                <div class="column_modal_2">
+                    <img class="demo_astro cursor_astro" src="image/about_us/astronaut/astro/astronaut_jayb.jpg"
+                        style="width:100%" onclick="currentSlide(3)" alt="Chef">
+                </div>
+                <div class="column_modal_2">
+                    <img class="demo_astro cursor_astro" src="image/about_us/astronaut/astro/astronaut_jackson.jpg"
+                        style="width:100%" onclick="currentSlide(4)" alt="Barista">
+                </div>
+                <div class="column_modal_2">
+                    <img class="demo_astro cursor_astro" src="image/about_us/astronaut/astro/Lee Jong Suk.jpg"
+                        style="width:100%" onclick="currentSlide(5)" alt="Manager">
+                </div>
+                <div class="column_modal_2">
+                    <img class="demo_astro cursor_astro" src="image/about_us/astronaut/astro/Park Ji Hu.jpg"
+                        style="width:100%" onclick="currentSlide(6)" alt="Supervisor">
+                </div>
+                <div class="column_modal_2">
+                    <img class="demo_astro cursor_astro" src="image/about_us/astronaut/astro/Cho Yi Hyun.jpg"
+                        style="width:100%" onclick="currentSlide(7)" alt="Staff">
+                </div>
+                <div class="column_modal_2">
+                    <img class="demo_astro cursor_astro" src="image/about_us/astronaut/astro/Park Seo Joon 2.jpg"
+                        style="width:100%" onclick="currentSlide(8)" alt="Staff">
+                </div>
+                <div class="column_modal_2">
+                    <img class="demo_astro cursor_astro" src="image/about_us/astronaut/astro/Park Jisung.JPG"
+                        style="width:100%" onclick="currentSlide(9)" alt="Staff">
+                </div>
+                <div class="column_modal_2">
+                    <img class="demo_astro cursor_astro" src="image/about_us/astronaut/astro/Na Jaemin.JPG"
+                        style="width:100%" onclick="currentSlide(10)" alt="Staff">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById("myModal_astro").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal_astro").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides_astro");
+            var dots = document.getElementsByClassName("demo_astro");
+            var captionText = document.getElementById("caption_astro");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+    <script>
+        const likeBtn = document.getElementsByClassName("like_astro")[0];
+        const countNum = document.getElementsByTagName("i")[0];
+        const bubble = document.getElementsByTagName("span")[0];
+        let i = 1;
+
+        likeBtn.addEventListener("click", () => {
+            countNum.classList.add("count-motion");
+            bubble.classList.add("bubble-motion");
+            countNum.textContent = i;
+            i++;
+            setTimeout(() => {
+                countNum.classList.remove("count-motion");
+                bubble.classList.remove("bubble-motion");
+            }, 900);
+        });
+    </script>
+
+    <div class="photo_boom">
+        <h2 style="text-align:center">2022</h2>
+        <hr class="line_2022">
+    </div>
+
+    <div class="polaroid_astro">
+        <div class="secondB_photo">
+            <div class="firstB_photo">
+                <img src="image/about_us/astronaut/astro/group_photo.jpeg" alt="RSF1_S2_G2" style="width: 100%">
+                <div class="container_photo">
+                    <p><b style="font-size:30px;">I will make a lot of latte art if that would make you happy</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="line_2022_2">
+
+</body>
+
+<footer>
+    <div class="content ">
+
+        <ul class="socials ">
+            <li><a href=" "><i class="fa-solid fa-envelope "></i></a></li>
+            <li><a href=" "><i class="fa-brands fa-whatsapp "></i></a></li>
+            <li><a href=" "><i class="fa-brands fa-instagram "></i></a></li>
+            <li><a href=" "><i class="fa-brands fa-facebook-f "></i></a></li>
+            <li><a href=" "><i class="fa-solid fa-phone "></i></a></li>
+        </ul>
+    </div>
+
+    <div class="footer-bottom ">
+        <p>copyright &copy;2022 MarsCafé. Designed & developed by <span>RSF1S2G2</span><br>
+            <a href="term_privacy.html ">Term & Privacy</a>&nbsp;|&nbsp;<a href="membership.html">Membership</a>
+        </p>
+    </div>
+</footer>
+
+</html>

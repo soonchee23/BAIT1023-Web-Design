@@ -34,7 +34,7 @@
                     <li><a href="promotion.html">Promotion</a></li>
                 </ul>
             </li>
-            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="membership.html">Reservation</a></li>
             <li><a href="about_us.html">About Us</a>
                 <ul>
                     <li><a href="astronaut.html">Astronaut</a></li>
@@ -87,52 +87,55 @@
         function closeNav() {
             document.getElementById("myNavicon").style.width = "0";
         }
-    </script><div class="container_reservation">
-    
+    </script>
+
     <div class="container_reservation">
-        <h2>Reservation</h2>
 
-        <form action="" method="get">
+        <div class="container_reservation">
+            <h2>Reservation</h2>
 
-            <label for="name"><b>Name:</b></label><br>
-            <input type="text" id="name" name="name"><br><br>
+            <form action="" method="get">
 
-            <label for="phone"><b>Phone Number:</b></label><br>
-            <input type="text" id="phone" name="phone"><br><br>
+                <label for="name"><b>Name:</b></label><br>
+                <input type="text" id="name" name="name"><br><br>
 
-            <label for="adult"><b>Adult:</b></label><br>
-            <input type="number" id="adult" name="total_adults" placeholder="0" min="0" required><br><br>
+                <label for="phone"><b>Phone Number:</b></label><br>
+                <input type="text" id="phone" name="phone"><br><br>
 
-            <label for="children"><b>Children:</b></label><br>
-            <input type="number" id="children" name="total_children" placeholder="0" min="0" required><br><br>
+                <label for="adult"><b>Adult:</b></label><br>
+                <input type="number" id="adult" name="total_adults" placeholder="0" min="0" required><br><br>
 
-            <label class="date_time_r" for="datetime"><b>Select Date/Time:</b></label><br>
-            <input type="datetime-local" id="Test_DatetimeLocal"><br><br>
+                <label for="children"><b>Children:</b></label><br>
+                <input type="number" id="children" name="total_children" placeholder="0" min="0" required><br><br>
+
+                <label class="date_time_r" for="datetime"><b>Select Date/Time:</b></label><br>
+                <input type="datetime-local" id="Test_DatetimeLocal"><br><br>
 
 
-
-        </form>
-
-        <button class="buttonbook" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Book</button>
-
-        <div id="id01" class="reservation_modal">
-
-            <form class="modal-content animate" action="/action_page.php" method="post">
-                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                <p class="reserve">
-                    Reservation Successful !!!<br><br>
-                    Would you like to preoder?
-                </p>
-
-                <div class="btnyesno">
-                    <button class="container_reservation_button"><a href="preorder.html">YES</a></button>
-                    <button class="container_reservation_button"><a href="index.html">NO</a></button>
-                </div>
 
             </form>
+
+            <button class="buttonbook" onclick="document.getElementById('id01').style.display='block'"
+                style="width:auto;">Book</button>
+
+            <div id="id01" class="reservation_modal">
+
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <p class="reserve">
+                        Reservation Successful !!!<br><br>
+                        Would you like to preoder?
+                    </p>
+
+                    <div class="btnyesno">
+                        <button class="container_reservation_button"><a href="preorder.html">YES</a></button>
+                        <button class="container_reservation_button"><a href="index.html">NO</a></button>
+                    </div>
+
+                </form>
+            </div>
         </div>
     </div>
-
 
     <script>
         // Get modal
@@ -143,7 +146,7 @@
         window.onclick = function (event) {
             if (event.target == modal) {
                 alert(animate);
-            }else{
+            } else {
                 return false;
             }
         }
@@ -151,26 +154,26 @@
 
 
 
-<!--footer-->
-<footer>
-    <div class="content ">
+    <!--footer-->
+    <footer>
+        <div class="content ">
 
-        <ul class="socials ">
-            <li><a href=" "><i class="fa-solid fa-envelope "></i></a></li>
-            <li><a href=" "><i class="fa-brands fa-whatsapp "></i></a></li>
-            <li><a href=" "><i class="fa-brands fa-instagram "></i></a></li>
-            <li><a href=" "><i class="fa-brands fa-facebook-f "></i></a></li>
-            <li><a href=" "><i class="fa-solid fa-phone "></i></a></li>
-        </ul>
-    </div>
+            <ul class="socials ">
+                <li><a href=" "><i class="fa-solid fa-envelope "></i></a></li>
+                <li><a href=" "><i class="fa-brands fa-whatsapp "></i></a></li>
+                <li><a href=" "><i class="fa-brands fa-instagram "></i></a></li>
+                <li><a href=" "><i class="fa-brands fa-facebook-f "></i></a></li>
+                <li><a href=" "><i class="fa-solid fa-phone "></i></a></li>
+            </ul>
+        </div>
 
 
-    <div class="footer-bottom ">
-        <p>copyright &copy;2022 MarsCafé. Designed & developed by <span>RSF1S2G2</span><br>
-            <a href="term_privacy.html ">Term & Privacy</a>&nbsp;|&nbsp;<a href="term_privacy.html ">Membership</a>
-        </p>
-    </div>
-</footer>
+        <div class="footer-bottom ">
+            <p>copyright &copy;2022 MarsCafé. Designed & developed by <span>RSF1S2G2</span><br>
+                <a href="term_privacy.html ">Term & Privacy</a>&nbsp;|&nbsp;<a href="term_privacy.html ">Membership</a>
+            </p>
+        </div>
+    </footer>
 
 </body>
 

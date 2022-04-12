@@ -1454,6 +1454,11 @@ div .HOVER {
     background: rgba(71, 60, 60, 0.7);
 }
 
+.valentinelayer a {
+    color: rgb(11, 160, 86);
+    font-weight: 900;
+}
+
 .valentinelayer ul{
     width: 100%;
     font-weight: 500;

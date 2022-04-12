@@ -1513,9 +1513,7 @@ div .HOVER {
 }
 /* end of promotion*/
 
-
-
-/*MEMBERSHIP REGISTER*/
+/*REGISTER for membership*/
 
 .membership h1{
     font-size: 60px;
@@ -1617,16 +1615,13 @@ box-shadow: 0 0 15px rgba(0, 0, 0,0.7);
 }
 
 /*--------------------------------------------------------------------*/
-/*LOG IN*/
-/*body{
-background-image: url('image/signin_cafeshop.jpg');
-background-size: cover;
-background-repeat: no-repeat;
-}*/
+/*MEMBERSHIP log in*/
+
 .container_login{
 padding-bottom: 10%;
 padding-top: 2%;
 }
+
 .container_login form{
 text-align: center;
 margin :auto;
@@ -1687,9 +1682,19 @@ padding-top: 2%;
  cursor: pointer;
 }
 
+.register_link{
+    text-align:center;
+    font-size:100%;
+    padding-top: 5%;
+}
+
+.register_link:hover a{
+    color: red;
+    cursor: pointer;
+}
 
 /*--------------------------------------------------------------------*/
-/RESERVATION/ 
+/*RESERVATION*/ 
 
 .container_reservation{
 padding-bottom: 20%;
@@ -1769,25 +1774,25 @@ button:hover {
 
   /* The Modal (background) */
   .reservation_modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
     padding-top:100px;
   }
 
   /* Modal Content/Box */
   .reservation_modal .modal-content {
-    background-color: rgba(192, 192, 192, 0.9);/pink/
-    margin: auto; /* 5% from the top, 15% from the bottom and centered */
+    background-color: rgba(192, 192, 192, 0.9);
+    margin: auto; 
     border: 1px solid rgba(29, 28, 28,0.5);
     padding-bottom: 5%;
-    width: 60%; /* Could be more or less, depending on screen size */
+    width: 60%; 
     border-radius: 25px;
     text-align: center;
   }
@@ -1812,6 +1817,21 @@ button:hover {
   font-size: 30px;
   text-align: center;
   padding-bottom: 3%;
+  }
+  
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(245, 245, 245);
+    cursor: pointer;
   }
   
   /* Add Zoom Animation */
@@ -1844,6 +1864,7 @@ button:hover {
 
 
 /*End of Reservation and membership*/
+
 
 
 

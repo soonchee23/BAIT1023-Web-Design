@@ -1663,7 +1663,7 @@ padding-top: 2%;
 
 
 /*--------------------------------------------------------------------*/
-/*RESERVATION*/ 
+/RESERVATION/ 
 
 .container_reservation{
 padding-bottom: 20%;
@@ -1679,11 +1679,13 @@ border: 1px solid;
 border-radius: 50px;
 padding: 10px;
 transition: box-shadow 0.5s;
+padding-bottom: 5%;
 }
 
 .container_reservation form:hover{
 box-shadow: 0 0 15px rgba(0, 0, 0,0.7);
 }
+
 .container_reservation h2{
 text-align: center;
 font-size:50px;
@@ -1705,38 +1707,117 @@ background: rgba(241, 230, 230, 0.849);
 outline: none;
 }
 
+.buttonbook {
+    background-color: #1249be; 
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    position: absolute;
+    bottom: 4%;
+    left:48%;
+}
 
-/*book*/
-.reservation_button_book {
-  border-style: outset;
-  width: 100px;
-  height: 40px;
+.btnyesno{
+    margin-left: 37.5%;
+}
+
+.btnyesno a{
+    text-decoration: none;
+    color:white;
+}
+
+.btnyesno button{
+    background-color: #1249be; 
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    display:block;
+    float: left;
+}
+  
+button:hover {
+    opacity: 0.8;
+}
+
+  /* The Modal (background) */
+  .reservation_modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top:100px;
+  }
+
+  /* Modal Content/Box */
+  .reservation_modal .modal-content {
+    background-color: rgba(192, 192, 192, 0.9);/pink/
+    margin: auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid rgba(29, 28, 28,0.5);
+    padding-bottom: 5%;
+    width: 60%; /* Could be more or less, depending on screen size */
+    border-radius: 25px;
+    text-align: center;
+  }
+  
+  .container_reservation_button{
+  width: 20%;
+  height: 20%;
+  background-color: rgb(212, 152, 20);
+  border:1px solid black;
   cursor: pointer;
   transition: box-shadow 0.2s;
+ 
+  }
+  .container_reservation_button:hover{
+    opacity: 0.8;
+    background-color: #17a847;
+  }
+ 
+  .reserve{
+  color:black;
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 3%;
+  }
   
-}
-.reservation_button_cancel {
-  border-style: outset;
-  width: 100px;
-  height: 40px;
-  cursor: pointer;
-  transition: box-shadow 0.2s;
-}
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
 
-.reservation_button_book:hover {
-  background-color: rgba(52, 209, 52, 0.822);
-  color: black;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
   
-}
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
 
-.reservation_button_cancel:hover {
-  background-color: rgba(211, 12, 12, 0.822);
-  color: black;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
-}
 
-/*End of Reservation and membership*/
+/End of Reservation and membership/
 
 
 

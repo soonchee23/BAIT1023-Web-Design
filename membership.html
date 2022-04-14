@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Assignment</title>
+    <title>Log In</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -97,8 +97,8 @@
             <input type="text" placeholder="Enter Username" name="text" required> <br><br>
 
             <label for="password"><b>Password</b></label><br>
-            <input type="text" placeholder="Enter Password" name="password" required><br><br>
-
+            <input type="password" value="" id="pwdInput" placeholder="Enter Password" required><br><br>
+            <input type="checkbox" onclick="myFunction()"> Show Password <br><br>
 
             <label>
                 <input type="checkbox" name="remember"> Remember Me
@@ -107,7 +107,7 @@
             <button class="login_button"><b>Log In</b></button> <br>
 
             <div class="container_signin">
-                <span class="psw">Forgot <a href="membership.html">password?</a></span>
+                <span class="psw"><a href="membership.html">Forgot password?</a></span>
             </div>
 
             <div class="register_link">
@@ -115,6 +115,16 @@
             </div>
         </form>
     </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("pwdInput");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+        </script>
 
     <footer>
         <div class="content ">

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Assignment</title>
+    <title>Reservation</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -89,7 +89,7 @@
         }
     </script>
 
-    <div class="container_reservation">
+  
 
         <div class="container_reservation">
             <h2>Reservation</h2>
@@ -111,8 +111,6 @@
                 <label class="date_time_r" for="datetime"><b>Select Date/Time:</b></label><br>
                 <input type="datetime-local" id="Test_DatetimeLocal"><br><br>
 
-
-
             </form>
 
             <button class="buttonbook" onclick="document.getElementById('id01').style.display='block'"
@@ -123,19 +121,17 @@
                 <form class="modal-content animate" action="/action_page.php" method="post">
                     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
                     <p class="reserve">
-                        Reservation Successful !!!<br><br>
-                        Would you like to preoder?
+                        Reservation Successful !!!<br>
                     </p>
 
-                    <div class="btnyesno">
-                        <button class="container_reservation_button"><a href="preorder.html">YES</a></button>
-                        <button class="container_reservation_button"><a href="index.html">NO</a></button>
+                    <div class="btnbcktoindex">
+                        <button><a href="index.html">Back to Home Page</a></button>
                     </div>
 
                 </form>
             </div>
         </div>
-    </div>
+    
 
     <script>
         // Get modal

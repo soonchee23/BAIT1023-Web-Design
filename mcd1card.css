@@ -6,10 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mcd1card.css">
-    <link rel="stylesheet" href="membership.css">
-    <link rel="stylesheet" href="merchandise.css">
-    <link rel="stylesheet" href="preorder.css">
     <script src="https://kit.fontawesome.com/2703fb7a38.js" crossorigin="anonymous"></script>
 </head>
 
@@ -25,7 +21,6 @@
                     <li><a href="menu_beverage.html">Beverage</a></li>
                     <li><a href="menu_comboset.html">Combo Set</a></li>
                     <li><a href="merchandise.html">Merchandise</a></li>
-                    <li><a href="preorder.html">Pre-order</a></li>
                 </ul>
             </li>
             <li><a href="event_promotion.html">Event Promotion</a>
@@ -41,12 +36,11 @@
                     <li><a href="membership.html">Membership</a></li>
                 </ul>
             </li>
-            <li><a class="cart_car" href=""></a></li>
         </ul>
     </nav>
 
     <!--Small screen-->
-    <nav class="small_s">
+    <nav class="small_s" id="small_ss">
         <div class="mclogo">
             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
             <img src="image/mars_logo.png" alt="Mars">Mars Café
@@ -61,7 +55,6 @@
                 <a href="menu_beverage.html">Beverage</a>
                 <a href="menu_comboset.html">Combo Set</a>
                 <a href="merchandise.html">Merchandise</a>
-                <a href="preorder.html">Pre-order</a>
             </ol>
             <a href="event_promotion.html">Event Promotion</a>
             <ol>
@@ -75,7 +68,6 @@
                 <a href="astronaut.html">Astronaut</a>
                 <a href="membership.html">Membership</a>
             </ol>
-            <a class="cart_car" href=""></a>
         </div>
     </nav>
 
@@ -88,10 +80,23 @@
             document.getElementById("myNavicon").style.width = "0";
         }
     </script>
+    <script>
+
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById('small_ss').style.top = "-100px";
+            } else {
+                document.getElementById('small_ss').style.top = "0px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 
     <div class="merchandise_mcd1">
         <div class="gallery-vertical">
-            <img src="image/merchandise_m/m_bag_kawaii front.JPG" alt="" />
+            <img src="image/merchandise_m/m_bag_front.JPG" alt="" />
             <img src="image/merchandise_m/bag_1.JPG" alt="" />
             <img src="image/merchandise_m/bag_2.avif" alt="" />
             <img src="image/merchandise_m/bag_3.JPG" alt="" />
@@ -104,10 +109,11 @@
         <div class="column1">
             <h2>Mars Tote Bag</h2>
             <hr>
-            <p>Ribbed Stretch Jersey <br>
+            <br>
+            <p>Surdy cloth, thick leather<br>
                 White & Black <br><br>
 
-                <strong>MYR 3,080</strong>
+            <div id="price"><strong>MYR 100.00</strong></div>
             </p>
         </div>
 
@@ -115,25 +121,29 @@
             <h1>DESIGN BY</h1>
             <br>
             <img src="image/merchandise_m/designerlia.jpg" alt="" class="merchandisedesigner1" />
+            <br>
             <h2>Julia Choi</h2>
             <br>
             <blockquote>The public is more familiar with bad design than good design. is, in effect, conditioned to
-                prefer
-                bad design, <br>because that is what it lives with. The new becomes threatening, the old reassuring.
+                prefer bad design, <br>because that is what it lives with. The new becomes threatening, the old
+                reassuring.
             </blockquote>
         </div>
     </div>
-
+    
     <!--footer-->
     <footer>
         <div class="content ">
 
             <ul class="socials ">
-                <li><a href=" "><i class="fa-solid fa-envelope "></i></a></li>
-                <li><a href=" "><i class="fa-brands fa-whatsapp "></i></a></li>
-                <li><a href=" "><i class="fa-brands fa-instagram "></i></a></li>
-                <li><a href=" "><i class="fa-brands fa-facebook-f "></i></a></li>
-                <li><a href=" "><i class="fa-solid fa-phone "></i></a></li>
+                <li><a href="mailto:marscafe1023@gmail.com"><i class="fa-solid fa-envelope "></i></a></li>
+                <li><a href="https://wa.me/+603-41450123" target="_blank"><i class="fa-brands fa-whatsapp "></i></a>
+                </li>
+                <li><a href="https://instagram.com/mars_cafe1023?igshid=YmMyMTA2M2Y=" target="_blank"><i
+                            class="fa-brands fa-instagram "></i></a></li>
+                <li><a href="https://www.facebook.com/Mars-Café-103796502239072/" target="_blank"><i
+                            class="fa-brands fa-facebook-f "></i></a></li>
+                <li><a href="tel:+03-41450123 "><i class="fa-solid fa-phone "></i></a></li>
             </ul>
         </div>
 

@@ -6,10 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mcd1card.css">
-    <link rel="stylesheet" href="membership.css">
-    <link rel="stylesheet" href="merchandise.css">
-    <link rel="stylesheet" href="preorder.css">
     <script src="https://kit.fontawesome.com/2703fb7a38.js" crossorigin="anonymous"></script>
 </head>
 
@@ -25,7 +21,6 @@
                     <li><a href="menu_beverage.html">Beverage</a></li>
                     <li><a href="menu_comboset.html">Combo Set</a></li>
                     <li><a href="merchandise.html">Merchandise</a></li>
-                    <li><a href="preorder.html">Pre-order</a></li>
                 </ul>
             </li>
             <li><a href="event_promotion.html">Event Promotion</a>
@@ -41,12 +36,11 @@
                     <li><a href="membership.html">Membership</a></li>
                 </ul>
             </li>
-            <li><a class="cart_car" href=""></a></li>
         </ul>
     </nav>
 
     <!--Small screen-->
-    <nav class="small_s">
+    <nav class="small_s" id="small_ss">
         <div class="mclogo">
             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
             <img src="image/mars_logo.png" alt="Mars">Mars Café
@@ -61,7 +55,6 @@
                 <a href="menu_beverage.html">Beverage</a>
                 <a href="menu_comboset.html">Combo Set</a>
                 <a href="merchandise.html">Merchandise</a>
-                <a href="preorder.html">Pre-order</a>
             </ol>
             <a href="event_promotion.html">Event Promotion</a>
             <ol>
@@ -75,7 +68,6 @@
                 <a href="astronaut.html">Astronaut</a>
                 <a href="membership.html">Membership</a>
             </ol>
-            <a class="cart_car" href=""></a>
         </div>
     </nav>
 
@@ -88,139 +80,155 @@
             document.getElementById("myNavicon").style.width = "0";
         }
     </script>
+    <script>
 
-<section class="valentine_text">
-    <p>All the set is the same price which is RM22.22</p>
-</section>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById('small_ss').style.top = "-100px";
+            } else {
+                document.getElementById('small_ss').style.top = "0px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+
+    <section class="valentine_text">
+        <p>All the set is the same price which is RM22.22</p>
+    </section>
 
 
-<div class="valentine_set" style="background-color:rgb(68, 68, 204);">
-    <h2>Set A: Lord Capulet's masquerade party</h2>
-    <div class="valentine-row">
-        <div class="valentine-col">
-            <p>Love Shot</p>
-            <ul>
-                <li>Red Sparkling with white Rum</li>
-                <li>which is owner want to represent the love at first sign between every lover.</li>
-            </ul>
-        </div>
+    <div class="valentine_set" style="background-color:rgb(68, 68, 204);">
+        <h2>Set A: Lord Capulet's masquerade party</h2>
+        <div class="valentine-row">
+            <div class="valentine-col">
+                <p>Love Shot</p>
+                <ul>
+                    <li>Red Sparkling with white Rum</li>
+                    <li>which is owner want to represent the love at first sign between every lover.</li>
+                </ul>
+            </div>
 
-        <div class="valentine-col">
-            <p>Page</p>
-            <ul>
-                <li>Rose and tomato flavoured Lasagna served with wagyu meatballs.
-                </li>
-                <li> The love storybook between lovers will be like Lasagna containing multiple pages and very thick
-                </li>
-            </ul>
-        </div>
+            <div class="valentine-col">
+                <p>Page</p>
+                <ul>
+                    <li>Rose and tomato flavoured Lasagna served with wagyu meatballs.
+                    </li>
+                    <li> The love storybook between lovers will be like Lasagna containing multiple pages and very thick
+                    </li>
+                </ul>
+            </div>
 
-        <div class="valentine-col">
-            <p>Knock Knock Window</p>
-            <ul>
-                <li>Red velvet 3D heart-shaped Lava cupcake wrapped by the strawberry flavour chocolate
-                </li>
-                <li>just like Romeo knocks open Juliet’s window, and they confess to each other's hearts all night.
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<div class="valentine_set" style="background-color:rgb(96, 201, 43);">
-    <h2>Set B : Vega and Altair’s milky way</h2>
-    <div class="valentine-row">
-        <div class="valentine-col">
-            <p> Saturn and Ring</p>
-            <ul>
-                <li>Double espresso made by Kopi Luwak from Indonesia
-                </li>
-                <li>to present the expression of the lovers having a long distance relationship
-                </li>
-            </ul>
-        </div>
-
-        <div class="valentine-col">
-            <p>Cursed Poison </p>
-            <ul>
-                <li>Nasi Lemak from Mars, Valentine edition.</li>
-                <li> A crazy spicy and sour flavour makes you addicted, want to never stop and forever enjoy it.
-                </li>
-                <li>The only antidote is love.</li>
-            </ul>
-        </div>
-
-        <div class="valentine-col">
-            <p>Love Serenada</p>
-
-            <ul>
-                <li>Waffle topping with selected flavour ice cream</li>
-                <li>ice cream (strawberry, chocolate oreo, peanut butter)</li>
-                <li>An sweet and creamy ice cream lead you and your partner can have a sweet dream
-                </li>
-            </ul>
+            <div class="valentine-col">
+                <p>Knock Knock Window</p>
+                <ul>
+                    <li>Red velvet 3D heart-shaped Lava cupcake wrapped by the strawberry flavour chocolate
+                    </li>
+                    <li>just like Romeo knocks open Juliet’s window, and they confess to each other's hearts all night.
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="valentine_set" style="background-color:#C94;">
-    <h2>Set C: Dye with you</h2>
-    <div class="valentine-row">
-        <div class="valentine-col">
-            <p>Astrantia milky way</p>
-            <ul>
-                <li>Pork Steak pickled with apiaceae</li>
-                <li>which is an aromatic flower that has a flavour similar to parsley before being grilled.
+    <div class="valentine_set" style="background-color:rgb(96, 201, 43);">
+        <h2>Set B : Vega and Altair’s milky way</h2>
+        <div class="valentine-row">
+            <div class="valentine-col">
+                <p> Saturn and Ring</p>
+                <ul>
+                    <li>Double espresso made by Kopi Luwak from Indonesia
+                    </li>
+                    <li>to present the expression of the lovers having a long distance relationship
+                    </li>
+                </ul>
+            </div>
+
+            <div class="valentine-col">
+                <p>Cursed Poison </p>
+                <ul>
+                    <li>Nasi Lemak from Mars, Valentine edition.</li>
+                    <li> A crazy spicy and sour flavour makes you addicted, want to never stop and forever enjoy it.
+                    </li>
+                    <li>The only antidote is love.</li>
+                </ul>
+            </div>
+
+            <div class="valentine-col">
+                <p>Love Serenada</p>
+
+                <ul>
+                    <li>Waffle topping with selected flavour ice cream</li>
+                    <li>ice cream (strawberry, chocolate oreo, peanut butter)</li>
+                    <li>An sweet and creamy ice cream lead you and your partner can have a sweet dream
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="valentine_set" style="background-color:#C94;">
+        <h2>Set C: Dye with you</h2>
+        <div class="valentine-row">
+            <div class="valentine-col">
+                <p>Astrantia milky way</p>
+                <ul>
+                    <li>Pork Steak pickled with apiaceae</li>
+                    <li>which is an aromatic flower that has a flavour similar to parsley before being grilled.
+                    </li>
+                    <li>You are one and only fill up my heart.</li>
+                    <li>Even though you leave, your image unable be dissipated out my heart easily
+                    </li>
+                </ul>
+            </div>
+
+            <div class="valentine-col">
+                <p>Umbelliferae dyes</p>
+                <ul>
+                    <li>Fresh New Zealand’s cow milk mixed with watermelon juice and rose syrup.
+                    </li>
+                    <li>Without you, everything is colourless.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="valentine-col">
+                <p>Now and Never</p>
+                <ul>
+                    <li>Aster Cookie Star shaped floral cookies</li>
+                    <li>cookies (peach,strawberry, Cherry </li>
+                    <li> You are a starlight that lights up my dark,from now and never.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!--footer-->
+    <footer>
+        <div class="content ">
+
+            <ul class="socials ">
+                <li><a href="mailto:marscafe1023@gmail.com"><i class="fa-solid fa-envelope "></i></a></li>
+                <li><a href="https://wa.me/+603-41450123" target="_blank"><i class="fa-brands fa-whatsapp "></i></a>
                 </li>
-                <li>You are one and only fill up my heart.</li>
-                <li>Even though you leave, your image unable be dissipated out my heart easily
-                </li>
+                <li><a href="https://instagram.com/mars_cafe1023?igshid=YmMyMTA2M2Y=" target="_blank"><i
+                            class="fa-brands fa-instagram "></i></a></li>
+                <li><a href="https://www.facebook.com/Mars-Café-103796502239072/" target="_blank"><i
+                            class="fa-brands fa-facebook-f "></i></a></li>
+                <li><a href="tel:+03-41450123 "><i class="fa-solid fa-phone "></i></a></li>
             </ul>
         </div>
 
-        <div class="valentine-col">
-            <p>Umbelliferae dyes</p>
-            <ul>
-                <li>Fresh New Zealand’s cow milk mixed with watermelon juice and rose syrup.
-                </li>
-                <li>Without you, everything is colourless.
-                </li>
-            </ul>
+
+        <div class="footer-bottom ">
+            <p>copyright &copy;2022 MarsCafé. Designed & developed by <span>RSF1S2G2</span><br>
+                <a href="term_privacy.html ">Term & Privacy</a>&nbsp;|&nbsp;<a href="membership.html ">Membership</a>
+            </p>
         </div>
-
-        <div class="valentine-col">
-            <p>Now and Never</p>
-            <ul>
-                <li>Aster Cookie Star shaped floral cookies</li>
-                <li>cookies (peach,strawberry, Cherry）</li>
-                <li> You are a starlight that lights up my dark,from now and never.
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-
-<!--footer-->
-<footer>
-    <div class="content ">
-
-        <ul class="socials ">
-            <li><a href=" "><i class="fa-solid fa-envelope "></i></a></li>
-            <li><a href=" "><i class="fa-brands fa-whatsapp "></i></a></li>
-            <li><a href=" "><i class="fa-brands fa-instagram "></i></a></li>
-            <li><a href=" "><i class="fa-brands fa-facebook-f "></i></a></li>
-            <li><a href=" "><i class="fa-solid fa-phone "></i></a></li>
-        </ul>
-    </div>
-
-
-    <div class="footer-bottom ">
-        <p>copyright &copy;2022 MarsCafé. Designed & developed by <span>RSF1S2G2</span><br>
-            <a href="term_privacy.html ">Term & Privacy</a>&nbsp;|&nbsp;<a href="membership.html ">Membership</a>
-        </p>
-    </div>
-</footer>
+    </footer>
 
 </body>
 

@@ -2,92 +2,97 @@
 <html lang="en">
 
 <head>
-    <title>Assignment</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mcd1card.css">
-    <link rel="stylesheet" href="membership.css">
-    <link rel="stylesheet" href="merchandise.css">
-    <link rel="stylesheet" href="preorder.css">
-    <script src="https://kit.fontawesome.com/2703fb7a38.js" crossorigin="anonymous"></script>
+  <title>Assignment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/2703fb7a38.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav>
-        <img class="mclogo" src="image/mars_logo.png" alt="mars_cafe_logo">
-        <div class="logo">Mars Café</div>
-        <ul class="nav_ul">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Menu</a>
-                <ul>
-                    <li><a href="menu_food.html">Food</a></li>
-                    <li><a href="menu_beverage.html">Beverage</a></li>
-                    <li><a href="menu_comboset.html">Combo Set</a></li>
-                    <li><a href="merchandise.html">Merchandise</a></li>
-                    <li><a href="preorder.html">Pre-order</a></li>
-                </ul>
-            </li>
-            <li><a href="event_promotion.html">Event Promotion</a>
-                <ul>
-                    <li><a href="event.html">Event</a></li>
-                    <li><a href="promotion.html">Promotion</a></li>
-                </ul>
-            </li>
-            <li><a href="reservation.html">Reservation</a></li>
-            <li><a href="about_us.html">About Us</a>
-                <ul>
-                    <li><a href="astronaut.html">Astronaut</a></li>
-                    <li><a href="membership.html">Membership</a></li>
-                </ul>
-            </li>
-            <li><a class="cart_car" href=""></a></li>
+  <nav>
+    <img class="mclogo" src="image/mars_logo.png" alt="mars_cafe_logo">
+    <div class="logo">Mars Café</div>
+    <ul class="nav_ul">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Menu</a>
+        <ul>
+          <li><a href="menu_food.html">Food</a></li>
+          <li><a href="menu_beverage.html">Beverage</a></li>
+          <li><a href="menu_comboset.html">Combo Set</a></li>
+          <li><a href="merchandise.html">Merchandise</a></li>
         </ul>
-    </nav>
+      </li>
+      <li><a href="event_promotion.html">Event Promotion</a>
+        <ul>
+          <li><a href="event.html">Event</a></li>
+          <li><a href="promotion.html">Promotion</a></li>
+        </ul>
+      </li>
+      <li><a href="reservation.html">Reservation</a></li>
+      <li><a href="about_us.html">About Us</a>
+        <ul>
+          <li><a href="astronaut.html">Astronaut</a></li>
+          <li><a href="membership.html">Membership</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 
-    <!--Small screen-->
-    <nav class="small_s">
-        <div class="mclogo">
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-            <img src="image/mars_logo.png" alt="Mars">Mars Café
-        </div>
+  <!--Small screen-->
+  <nav class="small_s" id="small_ss">
+    <div class="mclogo">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <img src="image/mars_logo.png" alt="Mars">Mars Café
+    </div>
 
-        <div id="myNavicon" class="navicon">
-            <a href="javascript:void(0)" class="navclosebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">Home</a>
-            <a href="#">Menu</a>
-            <ol>
-                <a href="menu_food.html">Food</a>
-                <a href="menu_beverage.html">Beverage</a>
-                <a href="menu_comboset.html">Combo Set</a>
-                <a href="merchandise.html">Merchandise</a>
-                <a href="preorder.html">Pre-order</a>
-            </ol>
-            <a href="event_promotion.html">Event Promotion</a>
-            <ol>
-                <a href="event.html">Event</a>
-                <a href="promotion.html">Promotion</a>
-            </ol>
+    <div id="myNavicon" class="navicon">
+      <a href="javascript:void(0)" class="navclosebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="#">Menu</a>
+      <ol>
+        <a href="menu_food.html">Food</a>
+        <a href="menu_beverage.html">Beverage</a>
+        <a href="menu_comboset.html">Combo Set</a>
+        <a href="merchandise.html">Merchandise</a>
+      </ol>
+      <a href="event_promotion.html">Event Promotion</a>
+      <ol>
+        <a href="event.html">Event</a>
+        <a href="promotion.html">Promotion</a>
+      </ol>
 
-            <a href="reservation.html">Reservation</a>
-            <a href="about_us.html">About Us</a>
-            <ol>
-                <a href="astronaut.html">Astronaut</a>
-                <a href="membership.html">Membership</a>
-            </ol>
-            <a class="cart_car" href=""></a>
-        </div>
-    </nav>
+      <a href="reservation.html">Reservation</a>
+      <a href="about_us.html">About Us</a>
+      <ol>
+        <a href="astronaut.html">Astronaut</a>
+        <a href="membership.html">Membership</a>
+      </ol>
+    </div>
+  </nav>
 
-    <script>
-        function openNav() {
-            document.getElementById("myNavicon").style.width = "100%";
-        }
+  <script>
+    function openNav() {
+      document.getElementById("myNavicon").style.width = "100%";
+    }
 
-        function closeNav() {
-            document.getElementById("myNavicon").style.width = "0";
-        }
-    </script>
+    function closeNav() {
+      document.getElementById("myNavicon").style.width = "0";
+    }
+  </script>
+  <script>
+
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById('small_ss').style.top = "-100px";
+      } else {
+        document.getElementById('small_ss').style.top = "0px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
 
   <aside class="menuisningpart_picture_left">
     <div class="menu_ning_container_left">
@@ -101,7 +106,7 @@
         </p>
       </div>
     </div>
-    
+
   </aside>
 
   <div id="pillar" style="margin: 10px 70%">
@@ -215,7 +220,6 @@
         <h2>&#11088;Belgium Chocolate Cake&#11088;</h2>
         Made with imported premium Belgian Couverture chocolates</br>
         gives you an intense, bittersweet chocolate taste and a natural, sweet taste of the cocoa fruit.
-
         </p>
       </div>
     </div>
@@ -278,7 +282,202 @@
         <div class="menu_ning_right">R M 1 8 . 0 0 / s l i d e</div>
       </div>
     </div>
+  </div>
 
+  <!--Food small screen-->
+  <div class="food_small_s">
+    <h class="foodmenu"><span>Food Menu</span></h>
+    <div class="food_menu1">
+      <div class="container_food_pic">
+        <img src="Image/menu/menu_nasilemak.jpg" alt="Mars Signature nasi lemak" />
+        <div class="content_food_pic">
+          <h2>&#11088;Mars Nasi Lemak&#11088;</h2>
+          <p>Deep fried organic chicken thigh served with Homemade organic, fresh salmon based Sambal</p>
+        </div>
+      </div>
+
+      <div class="food_menu1_list1">
+        <div class="food-list">
+          <div class="list-1">
+            <div class="menu-list-1">
+              <div class="dish-name">
+                <h4>Mars Nasi Lemak</h4>
+                <div class="dishs-price"><span class="rm_food">RM </span>12 .25</div>
+              </div>
+            </div>
+
+            <div class="menu-list-1">
+              <div class="dish-name">
+                <h4>CHICKEN CHOP</h4>
+                <h4 class="mushroom_blackpepper">(Mushroom , Blackpepper)</h4>
+                <div class="dishs-price"><span class="rm_food">RM </span>15 .50</div>
+              </div>
+            </div>
+
+            <div class="menu-list-1">
+              <div class="dish-name">
+                <h4>CHEESE BAKED RICE</h4>
+                <div class="dishs-price"><span class="rm_food">RM </span>20 .00</div>
+              </div>
+            </div>
+
+            <div class="menu-list-1">
+              <div class="dish-name">
+                <h4>FISH AND CHIPS</h4>
+                <div class="dishs-price"><span class="rm_food">RM </span>20 .50</div>
+              </div>
+            </div>
+
+            <div class="menu-list-1">
+              <div class="dish-name">
+                <h4>BOLOGNA PASTA</h4>
+                <div class="dishs-price"><span class="rm_food">RM </span>20 .00</div>
+              </div>
+            </div>
+
+            <div class="menu-list-1">
+              <div class="dish-name">
+                <h4>CARBONARA PASTA</h4>
+                <div class="dishs-price"><span class="rm_food">RM </span>20 .50</div>
+              </div>
+            </div>
+
+            <div class="menu-list-1">
+              <div class="dish-name">
+                <h4>TOMATO LAGSAGNA</h4>
+                <div class="dishs-price"><span class="rm_food">RM </span>20 .50</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- container -->
+
+    <div class="food_menu1">
+      <div class="container_food_pic">
+        <img src="Image/menu/menu_roticanai.jpg" alt="Mars Signature Roti Canai" />
+        <div class="content_food_pic">
+          <h2>&#11088;Mars Roti Canai &#11088;</h2>
+          <p>Preserved roti canai
+            served with the curry of the day, curry flavor will following owner's inconsistent mood.</p>
+        </div>
+      </div>
+
+      <div class="food_menu1_list1">
+        <div class="food-list">
+          <div class="list-1">
+            <div class="menu-list-1">
+              <div class="dish-name">
+                <h4>MARS ROTI CANAI</h4>
+                <div class="dishs-price"><span class="rm_food">RM </span>1 .75<span class="rm_food"> / EACH</span></div>
+              </div>
+            </div>
+
+            <div class="menu-list-1">
+              <div class="dish-name">
+                <h4>CURRY PUFF</h4>
+                <div class="dishs-price"><span class="rm_food">RM </span>2 .00<span class="rm_food"> / EACH</span></div>
+              </div>
+            </div>
+
+            <div class="menu-list-1">
+              <div class="dish-name">
+                <h4>APPLE PIE</h4>
+                <div class="dishs-price"><span class="rm_food">RM </span>4 .50<span class="rm_food"> / EACH</span></div>
+              </div>
+            </div>
+
+            <div class="menu-list-1">
+              <div class="dish-name">
+                <h4>CROISSANT</h4>
+                <div class="dishs-price"><span class="rm_food">RM </span>4 .50<span class="rm_food"> / EACH</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- container -->
+
+    <div class="food_menu1">
+      <div class="container_food_pic">
+        <img src="Image/menu/menu_belgiumcake.jpg" alt="Mars Signature Belgium Cake" />
+        <div class="content_food_pic">
+          <h2>&#11088;Belgium Chocolate Cake&#11088;</h2>
+          <p>Made with imported premium Belgian Couverture chocolates
+            gives you an intense, bittersweet chocolate taste and a natural, sweet taste of the cocoa fruit.</p>
+        </div>
+      </div>
+
+      <div class="food_menu1_list1">
+        <div class="food-list">
+          <div class="list-1">
+            <div class="menu-list-1">
+              <div class="dish-name">
+                <h4>Belgium Chocolate Cake</h4>
+                <div class="dishs-price"><span class="rm_food">RM </span>12 .00<span class="rm_food"> / SLIDE</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-list-1">
+              <div class="dish-name">
+                <h4>Red Velvet Cake</h4>
+                <div class="dishs-price"><span class="rm_food">RM </span>12 .00<span class="rm_food"> / SLIDE</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-list-1">
+              <div class="dish-name">
+                <h4>Burnt Cheese Cake</h4>
+                <div class="dishs-price"><span class="rm_food">RM </span>12 .00<span class="rm_food"> / SLIDE</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-list-1">
+              <div class="dish-name">
+                <h4>Oreo Cheese Cake</h4>
+                <div class="dishs-price"><span class="rm_food">RM </span>15 .00<span class="rm_food"> / SLIDE</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-list-1">
+              <div class="dish-name">
+                <h4>Chocolate Lava Cake</h4>
+                <div class="dishs-price"><span class="rm_food">RM </span>15 .00<span class="rm_food"> / SLIDE</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-list-1">
+              <div class="dish-name">
+                <h4>Tiramisu Cake</h4>
+                <div class="dishs-price"><span class="rm_food">RM </span>15 .00<span class="rm_food"> / SLIDE</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-list-1">
+              <div class="dish-name">
+                <h4>Matcha Cheese Cake</h4>
+                <div class="dishs-price"><span class="rm_food">RM </span>18 .00<span class="rm_food"> / SLIDE</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-list-1">
+              <div class="dish-name">
+                <h4>Strawberry Vanilla Cake</h4>
+                <div class="dishs-price"><span class="rm_food">RM </span>18 .00<span class="rm_food"> / SLIDE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- container -->
   </div>
 
   <!--footer-->
@@ -286,11 +485,13 @@
     <div class="content ">
 
       <ul class="socials ">
-        <li><a href=" "><i class="fa-solid fa-envelope "></i></a></li>
-        <li><a href=" "><i class="fa-brands fa-whatsapp "></i></a></li>
-        <li><a href=" "><i class="fa-brands fa-instagram "></i></a></li>
-        <li><a href=" "><i class="fa-brands fa-facebook-f "></i></a></li>
-        <li><a href=" "><i class="fa-solid fa-phone "></i></a></li>
+        <li><a href="mailto:marscafe1023@gmail.com"><i class="fa-solid fa-envelope "></i></a></li>
+        <li><a href="https://wa.me/+603-41450123" target="_blank"><i class="fa-brands fa-whatsapp "></i></a></li>
+        <li><a href="https://instagram.com/mars_cafe1023?igshid=YmMyMTA2M2Y=" target="_blank"><i
+              class="fa-brands fa-instagram "></i></a></li>
+        <li><a href="https://www.facebook.com/Mars-Café-103796502239072/" target="_blank"><i
+              class="fa-brands fa-facebook-f "></i></a></li>
+        <li><a href="tel:+03-41450123 "><i class="fa-solid fa-phone "></i></a></li>
       </ul>
     </div>
 

@@ -25,7 +25,6 @@
                     <li><a href="menu_beverage.html">Beverage</a></li>
                     <li><a href="menu_comboset.html">Combo Set</a></li>
                     <li><a href="merchandise.html">Merchandise</a></li>
-                    <li><a href="preorder.html">Pre-order</a></li>
                 </ul>
             </li>
             <li><a href="event_promotion.html">Event Promotion</a>
@@ -41,12 +40,11 @@
                     <li><a href="membership.html">Membership</a></li>
                 </ul>
             </li>
-            <li><a class="cart_car" href=""></a></li>
         </ul>
     </nav>
 
     <!--Small screen-->
-    <nav class="small_s">
+    <nav class="small_s" id="small_ss">
         <div class="mclogo">
             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
             <img src="image/mars_logo.png" alt="Mars">Mars Café
@@ -61,7 +59,6 @@
                 <a href="menu_beverage.html">Beverage</a>
                 <a href="menu_comboset.html">Combo Set</a>
                 <a href="merchandise.html">Merchandise</a>
-                <a href="preorder.html">Pre-order</a>
             </ol>
             <a href="event_promotion.html">Event Promotion</a>
             <ol>
@@ -75,10 +72,9 @@
                 <a href="astronaut.html">Astronaut</a>
                 <a href="membership.html">Membership</a>
             </ol>
-            <a class="cart_car" href=""></a>
         </div>
     </nav>
-
+    
     <script>
         function openNav() {
             document.getElementById("myNavicon").style.width = "100%";
@@ -86,6 +82,19 @@
 
         function closeNav() {
             document.getElementById("myNavicon").style.width = "0";
+        }
+    </script>
+    <script>
+
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById('small_ss').style.top = "-100px";
+            } else {
+                document.getElementById('small_ss').style.top = "0px";
+            }
+            prevScrollpos = currentScrollPos;
         }
     </script>
 
@@ -183,11 +192,14 @@
         <div class="content ">
 
             <ul class="socials ">
-                <li><a href=" "><i class="fa-solid fa-envelope "></i></a></li>
-                <li><a href=" "><i class="fa-brands fa-whatsapp "></i></a></li>
-                <li><a href=" "><i class="fa-brands fa-instagram "></i></a></li>
-                <li><a href=" "><i class="fa-brands fa-facebook-f "></i></a></li>
-                <li><a href=" "><i class="fa-solid fa-phone "></i></a></li>
+                <li><a href="mailto:marscafe1023@gmail.com"><i class="fa-solid fa-envelope "></i></a></li>
+                <li><a href="https://wa.me/+603-41450123" target="_blank"><i class="fa-brands fa-whatsapp "></i></a>
+                </li>
+                <li><a href="https://instagram.com/mars_cafe1023?igshid=YmMyMTA2M2Y=" target="_blank"><i
+                            class="fa-brands fa-instagram "></i></a></li>
+                <li><a href="https://www.facebook.com/Mars-Café-103796502239072/" target="_blank"><i
+                            class="fa-brands fa-facebook-f "></i></a></li>
+                <li><a href="tel:+03-41450123 "><i class="fa-solid fa-phone "></i></a></li>
             </ul>
         </div>
 
@@ -198,4 +210,5 @@
         </div>
     </footer>
 </body>
+
 </html>

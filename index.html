@@ -6,10 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mcd1card.css">
-    <link rel="stylesheet" href="membership.css">
-    <link rel="stylesheet" href="merchandise.css">
-    <link rel="stylesheet" href="preorder.css">
     <script src="https://kit.fontawesome.com/2703fb7a38.js" crossorigin="anonymous"></script>
 </head>
 
@@ -25,7 +21,6 @@
                     <li><a href="menu_beverage.html">Beverage</a></li>
                     <li><a href="menu_comboset.html">Combo Set</a></li>
                     <li><a href="merchandise.html">Merchandise</a></li>
-                    <li><a href="preorder.html">Pre-order</a></li>
                 </ul>
             </li>
             <li><a href="event_promotion.html">Event Promotion</a>
@@ -41,12 +36,11 @@
                     <li><a href="membership.html">Membership</a></li>
                 </ul>
             </li>
-            <li><a class="cart_car" href=""></a></li>
         </ul>
     </nav>
 
     <!--Small screen-->
-    <nav class="small_s">
+    <nav class="small_s" id="small_ss">
         <div class="mclogo">
             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
             <img src="image/mars_logo.png" alt="Mars">Mars Café
@@ -61,7 +55,6 @@
                 <a href="menu_beverage.html">Beverage</a>
                 <a href="menu_comboset.html">Combo Set</a>
                 <a href="merchandise.html">Merchandise</a>
-                <a href="preorder.html">Pre-order</a>
             </ol>
             <a href="event_promotion.html">Event Promotion</a>
             <ol>
@@ -75,7 +68,6 @@
                 <a href="astronaut.html">Astronaut</a>
                 <a href="membership.html">Membership</a>
             </ol>
-            <a class="cart_car" href=""></a>
         </div>
     </nav>
 
@@ -86,6 +78,19 @@
 
         function closeNav() {
             document.getElementById("myNavicon").style.width = "0";
+        }
+    </script>
+    <script>
+
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById('small_ss').style.top = "-100px";
+            } else {
+                document.getElementById('small_ss').style.top = "0px";
+            }
+            prevScrollpos = currentScrollPos;
         }
     </script>
 
@@ -111,82 +116,161 @@
                 <div class="text "></div>
             </div>
 
-            <a class="prev " onclick="plusSlides(-1) ">&#10094;</a>
-            <a class="next " onclick="plusSlides(1) ">&#10095;</a>
-
+            <a class="prev_index " onclick="plusSlides(-1) ">&#10094;</a>
+            <a class="next_index " onclick="plusSlides(1) ">&#10095;</a>
         </div>
         <br>
+    </div>
 
-        <div style="text-align:center ">
-            <span class="dot " onclick="currentSlide(1) "></span>
-            <span class="dot " onclick="currentSlide(2) "></span>
-            <span class="dot " onclick="currentSlide(3) "></span>
+    <div style="text-align:center ">
+        <span class="dot " onclick="currentSlide(1) "></span>
+        <span class="dot " onclick="currentSlide(2) "></span>
+        <span class="dot " onclick="currentSlide(3) "></span>
+    </div>
+
+    <div class="firstpart">
+        <div class="secondpart">
+
+            <div class=" business_hour1">
+                <img class="secondpart_1stpic" src="image/home/home_comboset.jpg" alt="combo set">
+                <div class="overlay_secondpart1stpic"><a href="menu_comboset.html">View More</a></div>
+                <div class="overlay_secondpart1stpic_smalls"><a href="menu_comboset.html">View More...</a></div>
+            </div>
+
+            <div class="secondpart_secondrow">
+                <div class=" business_hour2">
+                    <img class="secondpart_secondrow_1stpic" src="image/home/home_evtpmtn.png" alt="combo set">
+                    <div class="overlay_secondpart_secondrow1stpic"><a href="event_promotion.html">View More</a>
+                    </div>
+                    <div class="overlay_secondpart2ndpic_smalls"><a href="event_promotion.html">View More...</a></div>
+                </div>
+
+                <div class=" business_hour2">
+                    <img class="secondpart_secondrow_2ndpic" src="image/home/home_abtus.jpg" alt="about us">
+                    <div class="overlay_secondpart_secondrow2ndpic"><a href="about_us.html">Know More</a>
+                    </div>
+                    <div class="overlay_secondpart3rdpic_smalls"><a href="about_us.html">Know More...</a></div>
+                </div>
+            </div>
+
+            <div class=" business_hour1">
+                <img class="secondpart_2ndpic" src="image/home/home_businesshour.jpg" alt="business hour">
+                <div class="overlay_secondpart2ndpic">Mars Café Business Hour</a></div>
+
+                <div class="business_clock">
+                    <ul>
+                        <li><span class="mon_date">Monday</span> <span class="mon_hour"><br>Closed</span></li>
+                        <li><span class="tue-fri_date">Tuesday - Friday</span><span class="tue-fri_hour"><br>11:30 A.M.
+                                To 9:30 P.M.</span></li>
+                        <li><span class="weekend">WeekEnd & Public Holiday</span><span class="weekend_hour"><br>10:00
+                                A.M. To 10:00 P.M.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        var timer = null;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            clearTimeout(timer);
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            clearTimeout(timer);
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides ");
+            var dots = document.getElementsByClassName("dot ");
+            if (n == undefined) {
+                n = ++slideIndex
+            }
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none ";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active ", " ");
+            }
+            slides[slideIndex - 1].style.display = "block ";
+            dots[slideIndex - 1].className += " active ";
+            timer = setTimeout(showSlides, 5000);
+            /*1000 = 1second */
+        }
+    </script>
+    </div>
+
+    <!--Img about MarsCafe-->
+    <div class="gallery_index">
+        <!-- Header -->
+        <div class="header_gallery">
+            <h1>Mars Café</h1>
+            <p>Have a Look To Our Foods, Drinks & Desserts</p>
         </div>
 
-        <script>
-            var slideIndex = 1;
-            var timer = null;
-            showSlides(slideIndex);
+        <!-- Photo Grid -->
+        <div class="row_gallery">
+            <div class="column_gallery">
+                <img src="image/menu/menu_ earlgreytea.jpg" style="width:100%">
+                <img src="image/menu/menu_nasilemak.jpg" style="width:100%">
+                <img src="image/menu/menu_marscoffee.jpg" style="width:100%">
+                <img src="image/menu/tea.jpeg" style="width:100%">
+                <img src="image/menu/menu_roticanai.jpg" style="width:100%">
+                <img src="image/menu/burntcheesecake.png" style="width:100%; height:15%;">
+                <img src="image/menu/matchcupcake.jpg" style="width:100%">
 
-            function plusSlides(n) {
-                clearTimeout(timer);
-                showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n) {
-                clearTimeout(timer);
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("mySlides ");
-                var dots = document.getElementsByClassName("dot ");
-                if (n == undefined) {
-                    n = ++slideIndex
-                }
-                if (n > slides.length) {
-                    slideIndex = 1
-                }
-                if (n < 1) {
-                    slideIndex = slides.length
-                }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none ";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active ", " ");
-                }
-                slides[slideIndex - 1].style.display = "block ";
-                dots[slideIndex - 1].className += " active ";
-                timer = setTimeout(showSlides, 5000);
-                /*1000 = 1second */
-            }
-        </script>
-    
-        <div class=" business_hour">
-        <a href="menu_comboset.html"><img src="image/home/home_comboset.jpg" alt="combo set" width="1470" height="700" ></a>
-    </div>
-
-    <div class=" business_hour">
-        <a href="event_promotion.html"><img src="image/home/home_evtpmtn.png" alt="combo set" width="1470" height="700" ></a>
-    </div>
-
-    <div class=" business_hour">
-        <img src="image/home/home_businesshour.jpg" alt="business hour" width="1470" height="600" >
-    </div>
-
-    <div class=" business_hour">
-        <a href="about_us.html"><img src="image/home/home_abtus.jpg" alt="about us" width="1470" height="700" ></a>
-    </div>
-        
+            </div>
+            <div class="column_gallery">
+                <img src="image/menu/cranberryfruittea.jpg" style="width:100%">
+                <img src="image/menu/oliopasta.jpg" style="width:100%; height:8%;">
+                <img src="image/menu/fruittart.jpg" style="width:100%; height:15.5%;">
+                <img src="image/menu/Dalgona.jpg" style="width:100%">
+                <img src="image/menu/blendedchocolate.jpg" style="width:100%">
+                <img src="image/menu/vegespraggeti.jpg" style="width:100%">
+                <img src="image/menu/mixfruittart.jpg" style="width:100%">
+            </div>
+            <div class="column_gallery">
+                <img src="image/menu/oripancake.jpg" style="width:100%; height:10.8%;">
+                <img src="image/menu/fruitttea.jpg" style="width:100%">
+                <img src="image/menu/spraggetitomato.jpg" style="width:100%">
+                <img src="image/menu/oliocarbonara.jpg" style="width:100%">
+                <img src="image/menu/pastatomato.jpg" style="width:100%">
+                <img src="image/menu/smashpotato.jpg" style="width:100%">
+                <img src="image/menu/wedges.jpg" style="width:100%; height:21.6%;">
+            </div>
+            <div class="column_gallery">
+                <img src="image/menu/mixfruittart.jpg" style="width:100%; height:15.6%;">
+                <img src="image/menu/frenchfries.jpg" style="width:100%">
+                <img src="image/menu/passionfruit.jpg" style="width:100%">
+                <img src="image/menu/chocolatetira.JPG" style="width:100%">
+                <img src="image/menu/unicorncupcake.jpg" style="width:100%">
+                <img src="image/menu/menu_orangejuice.jpg" style="width:100%">
+            </div>
+        </div>
     </div>
 
     <!--Map-->
-    <div class="mapouter ">
-        <div class="gmap_canvas "><iframe width="1500 " height="400 " id="gmap_canvas "
-                src="https://maps.google.com/maps?q=Taruc&t=&z=13&ie=UTF8&iwloc=&output=embed " frameborder="0 "
-                scrolling="no " marginheight="0 " marginwidth="0"></iframe>
+    <div class="map_part">
+        <div class="map_header">
+            <h>Find Us Here</h>
+        </div>
+        <div class="mapouter ">
+            <div class="gmap_canvas"><iframe width="1480" height="400" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=taruc&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                    scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a>
+            </div>
         </div>
     </div>
 
@@ -195,11 +279,14 @@
         <div class="content ">
 
             <ul class="socials ">
-                <li><a href=" "><i class="fa-solid fa-envelope "></i></a></li>
-                <li><a href=" "><i class="fa-brands fa-whatsapp "></i></a></li>
-                <li><a href=" "><i class="fa-brands fa-instagram "></i></a></li>
-                <li><a href=" "><i class="fa-brands fa-facebook-f "></i></a></li>
-                <li><a href=" "><i class="fa-solid fa-phone "></i></a></li>
+                <li><a href="mailto:marscafe1023@gmail.com"><i class="fa-solid fa-envelope "></i></a></li>
+                <li><a href="https://wa.me/+603-41450123" target="_blank"><i class="fa-brands fa-whatsapp "></i></a>
+                </li>
+                <li><a href="https://instagram.com/mars_cafe1023?igshid=YmMyMTA2M2Y=" target="_blank"><i
+                            class="fa-brands fa-instagram "></i></a></li>
+                <li><a href="https://www.facebook.com/Mars-Café-103796502239072/" target="_blank"><i
+                            class="fa-brands fa-facebook-f "></i></a></li>
+                <li><a href="tel:+03-41450123 "><i class="fa-solid fa-phone "></i></a></li>
             </ul>
         </div>
 

@@ -25,7 +25,6 @@
                     <li><a href="menu_beverage.html">Beverage</a></li>
                     <li><a href="menu_comboset.html">Combo Set</a></li>
                     <li><a href="merchandise.html">Merchandise</a></li>
-                    <li><a href="preorder.html">Pre-order</a></li>
                 </ul>
             </li>
             <li><a href="event_promotion.html">Event Promotion</a>
@@ -41,12 +40,11 @@
                     <li><a href="membership.html">Membership</a></li>
                 </ul>
             </li>
-            <li><a class="cart_car" href=""></a></li>
         </ul>
     </nav>
 
     <!--Small screen-->
-    <nav class="small_s">
+    <nav class="small_s" id="small_ss">
         <div class="mclogo">
             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
             <img src="image/mars_logo.png" alt="Mars">Mars Café
@@ -61,7 +59,6 @@
                 <a href="menu_beverage.html">Beverage</a>
                 <a href="menu_comboset.html">Combo Set</a>
                 <a href="merchandise.html">Merchandise</a>
-                <a href="preorder.html">Pre-order</a>
             </ol>
             <a href="event_promotion.html">Event Promotion</a>
             <ol>
@@ -75,7 +72,6 @@
                 <a href="astronaut.html">Astronaut</a>
                 <a href="membership.html">Membership</a>
             </ol>
-            <a class="cart_car" href=""></a>
         </div>
     </nav>
 
@@ -86,6 +82,19 @@
 
         function closeNav() {
             document.getElementById("myNavicon").style.width = "0";
+        }
+    </script>
+    <script>
+
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById('small_ss').style.top = "-100px";
+            } else {
+                document.getElementById('small_ss').style.top = "0px";
+            }
+            prevScrollpos = currentScrollPos;
         }
     </script>
 
@@ -138,14 +147,14 @@
                             <p>Just be you and if they don't like you it's their problem ~</p>
                             <p><a href="mailto:bp.jennie0116@gmail.com?cc=blackpinkOfficial@gmail.com&bcc=jennieManager@gmail.com&subject=Contact%20Us&body=You%20are%20going%20to%20leave%20a%20message%20to%20Jennie"
                                     target="_top">Jenniekim16@gmail.com</a></p>
-                            <div class="like_astro">
+                            <div class="like_astro2">
                                 <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="">
                                     <path
                                         d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"
                                         fill="#3E4373" />
                                 </svg>
-                                <i class="astro_i">0</i>
-                                <span class="astro_span"></span>
+                                <i class="astro_i2">0</i>
+                                <span class="astro_span2"></span>
                             </div>
                         </div>
                     </div>
@@ -165,14 +174,14 @@
                             <p>If you have a dream then you shouldn't give up no matter what ~</p>
                             <p><a href="mailto:siheung06@gmail.com?cc=god7_captain@gmail.com&bcc=jayB@gmail.com&subject=Contact%20Us&body=You%20are%20going%20to%20leave%20a%20message%20to%20JayB"
                                     target="_top">JayB0106@gmail.com</a></p>
-                            <div class="like_astro">
+                            <div class="like_astro3">
                                 <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="">
                                     <path
                                         d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"
                                         fill="#3E4373" />
                                 </svg>
-                                <i class="astro_i">0</i>
-                                <span class="astro_span"></span>
+                                <i class="astro_i3">0</i>
+                                <span class="astro_span3"></span>
                             </div>
                         </div>
                     </div>
@@ -192,14 +201,14 @@
                             <p>Always in hungry in what you wanna do, know yourself and make history ~</p>
                             <p><a href="mailto:bp.jackson0328@gmail.com?cc=teamwangOfficial@gmail.com&bcc=wangJackson@gmail.com&subject=Contact%20Us&body=You%20are%20going%20to%20leave%20a%20message%20to%20Jackson"
                                     target="_top">JacksonWangSM@gmail.com</a></p>
-                            <div class="like_astro">
+                            <div class="like_astro4">
                                 <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="">
                                     <path
                                         d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"
                                         fill="#3E4373" />
                                 </svg>
-                                <i class="astro_i">0</i>
-                                <span class="astro_span"></span>
+                                <i class="astro_i4">0</i>
+                                <span class="astro_span4"></span>
                             </div>
                         </div>
                     </div>
@@ -221,14 +230,14 @@
                             <p>The greater expectation, the greater disapointment</p>
                             <p><a href="mailto:leejongsuk914@gmail.com?cc=KBSofficial@gmail.com&bcc=leejongsuk14@gmail.com&subject=Contact%20Us&body=You%20are%20going%20to%20leave%20a%20message%20to%20Jong-Suk"
                                     target="_top">JongSuk914@gmail.com</a></p>
-                            <div class="like_astro">
+                            <div class="like_astro5">
                                 <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="">
                                     <path
                                         d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"
                                         fill="#3E4373" />
                                 </svg>
-                                <i class="astro_i">0</i>
-                                <span class="astro_span"></span>
+                                <i class="astro_i5">0</i>
+                                <span class="astro_span5"></span>
                             </div>
                         </div>
                     </div>
@@ -248,14 +257,14 @@
                             <p>You can't be successful if you don't fail and try a lot ~</p>
                             <p><a href="mailto:parkjihu@gmail.com?cc=netflixDrama@gmail.com&bcc=parkjihuOfficial@gmail.com&subject=Contact%20Us&body=You%20are%20going%20to%20leave%20a%20message%20to%20Park Ji-Hu"
                                     target="_top">Parkjihu1107@gmail.com</a></p>
-                            <div class="like_astro">
+                            <div class="like_astro6">
                                 <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="">
                                     <path
                                         d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"
                                         fill="#3E4373" />
                                 </svg>
-                                <i class="astro_i">0</i>
-                                <span class="astro_span"></span>
+                                <i class="astro_i6">0</i>
+                                <span class="astro_span6"></span>
                             </div>
                         </div>
                     </div>
@@ -275,14 +284,14 @@
                             <p>Think positive, stay positive and you will be positive~</p>
                             <p><a href="mailto:yihyuncho@gmail.com?cc=yihyunOfficial@gmail.com&bcc=choyihyun1208@gmail.com&subject=Contact%20Us&body=You%20are%20going%20to%20leave%20a%20message%20to%20Cho Yi-Hyun"
                                     target="_top">Choyihyun08@gmail.com</a></p>
-                            <div class="like_astro">
+                            <div class="like_astro7">
                                 <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="">
                                     <path
                                         d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"
                                         fill="#3E4373" />
                                 </svg>
-                                <i class="astro_i">0</i>
-                                <span class="astro_span"></span>
+                                <i class="astro_i7">0</i>
+                                <span class="astro_span7"></span>
                             </div>
                         </div>
                     </div>
@@ -302,14 +311,14 @@
                             <p>You won't be able find a staff that is handsome like me ~</p>
                             <p><a href="mailto:seojoonpark@gmail.com?cc=kbs_official@gmail.com&bcc=parkseojoon1216@gmail.com&subject=Contact%20Us&body=You%20are%20going%20to%20leave%20a%20message%20to%20Park Seo-Joon"
                                     target="_top">Parkseojoon1216@gmail.com</a></p>
-                            <div class="like_astro">
+                            <div class="like_astro8">
                                 <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="">
                                     <path
                                         d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"
                                         fill="#3E4373" />
                                 </svg>
-                                <i class="astro_i">0</i>
-                                <span class="astro_span"></span>
+                                <i class="astro_i8">0</i>
+                                <span class="astro_span8"></span>
                             </div>
                         </div>
                     </div>
@@ -331,14 +340,14 @@
                             <p>Never apologize for what you feel, trust your gud ~</p>
                             <p><a href="mailto:nctOfficial@gmail.com?cc=jisung020502@gmail.com&bcc=parkseojoon1216@gmail.com&subject=Contact%20Us&body=You%20are%20going%20to%20leave%20a%20message%20to%20Park Seo-Joon"
                                     target="_top">Jisung0205@gmail.com</a></p>
-                            <div class="like_astro">
+                            <div class="like_astro9">
                                 <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="">
                                     <path
                                         d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"
                                         fill="#3E4373" />
                                 </svg>
-                                <i class="astro_i">0</i>
-                                <span class="astro_span"></span>
+                                <i class="astro_i9">0</i>
+                                <span class="astro_span9"></span>
                             </div>
                         </div>
                     </div>
@@ -358,14 +367,14 @@
                             <p>You are brightest star in the universe so you are unique ~</p>
                             <p><a href="mailto:nctOfficial@gmail.com?cc=kbs_official@gmail.com&bcc=jaeminOfficial0813@gmail.com&subject=Contact%20Us&body=You%20are%20going%20to%20leave%20a%20message%20to%20Na Jae-Min"
                                     target="_top">Najaemin0813@gmail.com</a></p>
-                            <div class="like_astro">
+                            <div class="like_astro10">
                                 <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="">
                                     <path
                                         d="M11.9649 3.12832C8.29171 -2.5454 0.857422 0.545461 0.857422 6.72603C0.857422 11.3672 11.0494 18.6272 11.9649 19.5712C12.8866 18.6272 22.5717 11.3672 22.5717 6.72603C22.5717 0.592318 15.6449 -2.5454 11.9649 3.12832Z"
                                         fill="#3E4373" />
                                 </svg>
-                                <i class="astro_i">0</i>
-                                <span class="astro_span"></span>
+                                <i class="astro_i10">0</i>
+                                <span class="astro_span10"></span>
                             </div>
                         </div>
                     </div>
@@ -513,8 +522,8 @@
 
     <script>
         const likeBtn = document.getElementsByClassName("like_astro")[0];
-        const countNum = document.getElementsByTagName("i")[0];
-        const bubble = document.getElementsByTagName("span")[0];
+        const countNum = document.getElementsByClassName("astro_i")[0];
+        const bubble = document.getElementsByClassName("astro_span")[0];
         let i = 1;
 
         likeBtn.addEventListener("click", () => {
@@ -525,6 +534,150 @@
             setTimeout(() => {
                 countNum.classList.remove("count-motion");
                 bubble.classList.remove("bubble-motion");
+            }, 900);
+        });
+
+        const likeBtn2 = document.getElementsByClassName("like_astro2")[0];
+        const countNum2 = document.getElementsByClassName("astro_i2")[0];
+        const bubble2 = document.getElementsByClassName("astro_span2")[0];
+        let j = 1;
+
+        likeBtn2.addEventListener("click", () => {
+            countNum2.classList.add("count-motion2");
+            bubble2.classList.add("bubble-motion2");
+            countNum2.textContent = j;
+            j++;
+            setTimeout(() => {
+                countNum2.classList.remove("count-motion2");
+                bubble2.classList.remove("bubble-motion2");
+            }, 900);
+        });
+
+        const likeBtn3 = document.getElementsByClassName("like_astro3")[0];
+        const countNum3 = document.getElementsByClassName("astro_i3")[0];
+        const bubble3 = document.getElementsByClassName("astro_span3")[0];
+        let k = 1;
+
+        likeBtn3.addEventListener("click", () => {
+            countNum3.classList.add("count-motion3");
+            bubble3.classList.add("bubble-motion3");
+            countNum3.textContent = k;
+            k++;
+            setTimeout(() => {
+                countNum3.classList.remove("count-motion3");
+                bubble3.classList.remove("bubble-motion3");
+            }, 900);
+        });
+
+        const likeBtn4 = document.getElementsByClassName("like_astro4")[0];
+        const countNum4 = document.getElementsByClassName("astro_i4")[0];
+        const bubble4 = document.getElementsByClassName("astro_span4")[0];
+        let l = 1;
+
+        likeBtn4.addEventListener("click", () => {
+            countNum4.classList.add("count-motion4");
+            bubble4.classList.add("bubble-motion4");
+            countNum4.textContent = l;
+            l++;
+            setTimeout(() => {
+                countNum4.classList.remove("count-motion4");
+                bubble4.classList.remove("bubble-motion4");
+            }, 900);
+        });
+
+        const likeBtn5 = document.getElementsByClassName("like_astro5")[0];
+        const countNum5 = document.getElementsByClassName("astro_i5")[0];
+        const bubble5 = document.getElementsByClassName("astro_span5")[0];
+        let m = 1;
+
+        likeBtn5.addEventListener("click", () => {
+            countNum5.classList.add("count-motion5");
+            bubble5.classList.add("bubble-motion5");
+            countNum5.textContent = m;
+            m++;
+            setTimeout(() => {
+                countNum5.classList.remove("count-motion5");
+                bubble5.classList.remove("bubble-motion5");
+            }, 900);
+        });
+
+        const likeBtn6 = document.getElementsByClassName("like_astro6")[0];
+        const countNum6 = document.getElementsByClassName("astro_i6")[0];
+        const bubble6 = document.getElementsByClassName("astro_span6")[0];
+        let n = 1;
+
+        likeBtn6.addEventListener("click", () => {
+            countNum6.classList.add("count-motion6");
+            bubble6.classList.add("bubble-motion6");
+            countNum6.textContent = n;
+            n++;
+            setTimeout(() => {
+                countNum6.classList.remove("count-motion6");
+                bubble6.classList.remove("bubble-motion6");
+            }, 900);
+        });
+
+        const likeBtn7 = document.getElementsByClassName("like_astro7")[0];
+        const countNum7 = document.getElementsByClassName("astro_i7")[0];
+        const bubble7 = document.getElementsByClassName("astro_span7")[0];
+        let o = 1;
+
+        likeBtn7.addEventListener("click", () => {
+            countNum7.classList.add("count-motion7");
+            bubble7.classList.add("bubble-motion7");
+            countNum7.textContent = o;
+            o++;
+            setTimeout(() => {
+                countNum7.classList.remove("count-motion7");
+                bubble7.classList.remove("bubble-motion7");
+            }, 900);
+        });
+
+        const likeBtn8 = document.getElementsByClassName("like_astro8")[0];
+        const countNum8 = document.getElementsByClassName("astro_i8")[0];
+        const bubble8 = document.getElementsByClassName("astro_span8")[0];
+        let p = 1;
+
+        likeBtn8.addEventListener("click", () => {
+            countNum8.classList.add("count-motion8");
+            bubble8.classList.add("bubble-motion8");
+            countNum8.textContent = p;
+            p++;
+            setTimeout(() => {
+                countNum8.classList.remove("count-motion8");
+                bubble8.classList.remove("bubble-motion8");
+            }, 900);
+        });
+
+        const likeBtn9 = document.getElementsByClassName("like_astro9")[0];
+        const countNum9 = document.getElementsByClassName("astro_i9")[0];
+        const bubble9 = document.getElementsByClassName("astro_span9")[0];
+        let q = 1;
+
+        likeBtn9.addEventListener("click", () => {
+            countNum9.classList.add("count-motion9");
+            bubble9.classList.add("bubble-motion9");
+            countNum9.textContent = q;
+            q++;
+            setTimeout(() => {
+                countNum9.classList.remove("count-motion9");
+                bubble9.classList.remove("bubble-motion9");
+            }, 900);
+        });
+
+        const likeBtn10 = document.getElementsByClassName("like_astro10")[0];
+        const countNum10 = document.getElementsByClassName("astro_i10")[0];
+        const bubble10 = document.getElementsByClassName("astro_span10")[0];
+        let t = 1;
+
+        likeBtn10.addEventListener("click", () => {
+            countNum10.classList.add("count-motion10");
+            bubble10.classList.add("bubble-motion10");
+            countNum10.textContent = t;
+            t++;
+            setTimeout(() => {
+                countNum10.classList.remove("count-motion10");
+                bubble10.classList.remove("bubble-motion10");
             }, 900);
         });
     </script>
@@ -554,11 +707,13 @@
     <div class="content ">
 
         <ul class="socials ">
-            <li><a href=" "><i class="fa-solid fa-envelope "></i></a></li>
-            <li><a href=" "><i class="fa-brands fa-whatsapp "></i></a></li>
-            <li><a href=" "><i class="fa-brands fa-instagram "></i></a></li>
-            <li><a href=" "><i class="fa-brands fa-facebook-f "></i></a></li>
-            <li><a href=" "><i class="fa-solid fa-phone "></i></a></li>
+            <li><a href="mailto:marscafe1023@gmail.com"><i class="fa-solid fa-envelope "></i></a></li>
+            <li><a href="https://wa.me/+603-41450123" target="_blank"><i class="fa-brands fa-whatsapp "></i></a></li>
+            <li><a href="https://instagram.com/mars_cafe1023?igshid=YmMyMTA2M2Y=" target="_blank"><i
+                        class="fa-brands fa-instagram "></i></a></li>
+            <li><a href="https://www.facebook.com/Mars-Café-103796502239072/" target="_blank"><i
+                        class="fa-brands fa-facebook-f "></i></a></li>
+            <li><a href="tel:+03-41450123 "><i class="fa-solid fa-phone "></i></a></li>
         </ul>
     </div>
 

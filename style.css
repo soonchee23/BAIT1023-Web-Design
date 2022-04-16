@@ -2342,20 +2342,6 @@ input[type=password]:focus {
   opacity: 0.8;
 }
 
-.container_signin{
- text-align:center;
- font-size:100%;
- padding-top: 5%;
-
-}
-
-.container_signin:hover a{
- color: red;
- cursor: pointer;
-}
-.container_signin .psw a{
-    text-decoration: none;
-}
 .register_link a{
     cursor: pointer;
     text-align: center;

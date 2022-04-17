@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>Assignment</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/2703fb7a38.js" crossorigin="anonymous"></script>
-</head>
+    <head>
+        <title>Register</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="Mars Cafe, mars cafe, cafe, mars">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="page icon" type="image/png" href="image/mars_logo.png">
+        <script src="https://kit.fontawesome.com/2703fb7a38.js" crossorigin="anonymous"></script>
+    </head>
 
 <body>
     <div class="context">
@@ -50,7 +52,6 @@
             <div id="myNavicon" class="navicon">
                 <a href="javascript:void(0)" class="navclosebtn" onclick="closeNav()">&times;</a>
                 <a href="index.html">Home</a>
-                <a href="#">Menu</a>
                 <ol>
                     <a href="menu_food.html">Food</a>
                     <a href="menu_beverage.html">Beverage</a>
@@ -95,83 +96,78 @@
             }
         </script>
 
-        <div class="membership">
-            <h1 style="color:#170606">Mars Card</h1><br>
-            <p>
-                You can register one Mars stored value cards (“Mars Cards”) on this Site. Please refer to the Mars Café
-                Terms & Conditions
-                for more information about the terms, conditions and policies that apply to your purchase and use of
-                Mars
-                Cards.Mars Café may
-                allow you to load value onto Mars Card or purchase virtual Mars Card through one or more of the Sites.
-                By
-                submitting your order
-                to load value or purchase virtual Mars Card, you represent and warrant that you are authorized to use
-                the
-                designated credit card
-                or payment account and authorize Mars Café to charge your order to that card or payment account.<br>
-                <br>
-                If the card or payment account cannot be verified, is invalid or otherwise is not acceptable, or if the
-                payment instruction is otherwise
-                refused or reversed, your order may be suspended or cancelled automatically and the value already loaded
-                or
-                the virtual Mars Card already
-                issued may be cancelled or revoked automatically.<br>
-                <br>
-                You can apply the Mars Card through register the form below, the card will send to you after you done
-                register.
-                The benefit of using the Mars Card can have a member discount 20% every spend minimum RM30 and also have
-                a
-                stamp collection card ( 5 stamp free 1 drink). As a member, u can also have a promotion discount spend
-                in
-                Mars Café for special occasion
-                such like birthday celebration and valentine day. So let fast apply the special "Mars Card".<br><br>
+<div class="membership">
+    <h1 style="color:#170606">Mars Card</h1><br>
+    <p>
+        You can register one Mars stored value cards (“Mars Cards”) on this Site. Please refer to the Mars Café
+        Terms & Conditions
+        for more information about the terms, conditions and policies that apply to your purchase and use of
+        Mars
+        Cards.Mars Café may
+        allow you to load value onto Mars Card or purchase virtual Mars Card through one or more of the Sites.
+        By
+        submitting your order
+        to load value or purchase virtual Mars Card, you represent and warrant that you are authorized to use
+        the
+        designated credit card
+        or payment account and authorize Mars Café to charge your order to that card or payment account.<br>
+        <br>
+        If the card or payment account cannot be verified, is invalid or otherwise is not acceptable, or if the
+        payment instruction is otherwise
+        refused or reversed, your order may be suspended or cancelled automatically and the value already loaded
+        or
+        the virtual Mars Card already
+        issued may be cancelled or revoked automatically.<br>
+        <br>
+        You can apply the Mars Card through register the form below, the card will send to you after you done
+        register.
+        The benefit of using the Mars Card can have a member discount 20% every spend minimum RM30 and also have
+        a
+        stamp collection card ( 5 stamp free 1 drink). As a member, u can also have a promotion discount spend
+        in
+        Mars Café for special occasion
+        such like birthday celebration and valentine day. So let fast apply the special "Mars Card".<br><br>
 
-                <button class="registerbutton"><a href="#register">Register </a> </button>
-            </p>
-            <br>
+        <button class="registerbutton"><a href="#register">Register </a> </button>
+    </p>
+    <br>
+</div>
+
+
+<div class="container_marscardregister">
+    <h2 id="register">Mars Card Register</h2><br>
+    <h3>Please fill in this form to create an account and apply the Mars Card.</h3><br><br>
+
+    <form class="register_form" action="membership.html" method="get">
+        <label for="username"><b>Username</b></label><br>
+        <input type="text"id="text" name="text" placeholder="First letter should be a capital letter" pattern="[A-Za-z]{}*" required><br>
+
+        <label for="password"><b>Password</b></label><br>
+        <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" placeholder="Enter Password" maxlength="10" size="10" required><br>
+
+
+        <label for="password"><b>Repeat Password</b></label><br>
+        <input type="password" id="password"   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" placeholder="Repeat Password" maxlength="10" size="10" required><br>
+
+        <p class="password_valid">You should enter at most 10 characters that including <br>at least one uppercase and one lowercase</p><br>
+
+
+        <input type="checkbox" id="term_policy" name="term_policy" required> I agree to the Term and Policy</label><br><br>
+
+
+        <button class="membership_button">Register</button>
+
+        <div class="login">
+            Already have an account?
+            <a href="membership.html">Log In</a>
         </div>
 
+    </form>
 
-        <div class="container_marscardregister">
-            <h2 id="register">Mars Card Register</h2><br>
-            <h3>Please fill in this form to create an account and apply the Mars Card.</h3><br><br>
 
-            <form class="register_form" action="membership.html" method="get">
-                <label for="username"><b>Username</b></label><br>
-                <input type="text" placeholder="Enter Username" id="text" name="text" maxlength="15" size="15"><br>
 
-                <label for="password"><b>Password</b></label><br>
-                <input type="password" placeholder="Password" id="password" name="password" maxlength="10" size="10"><br>
+</div>
 
-                <label for="password"><b>Repeat Password</b></label><br>
-                <input type="password" placeholder="Repeat Password" id="password" name="password" maxlength="8" size="8"><br>
-
-                <input type="checkbox" id="term_policy" name="term_policy">
-
-                <label for="term_policy"> I agree to the Term and Policy</label><br><br>
-
-                <button class="membership_button">Register</button>
-
-                <div class="login">
-                    Already have an account?
-                    <a href="membership.html">Log In</a>
-                </div>
-
-            </form>
-
-            <script>
-                function myFunction() {
-                    var x = document.getElementById("password");
-                    if (x.type === "password") {
-                        x.type = "text";
-                    } else {
-                        x.type = "password";
-                    }
-                }
-            </script>
-
-        </div>
 
 
         <!--footer-->

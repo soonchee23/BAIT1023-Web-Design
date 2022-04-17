@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: art-nuvo;
+    src: url(Art-nuvo.otf);
+  }
+  
+
 nav img.mclogo{
     float: left;
     border-radius: 50%;
@@ -15,7 +21,7 @@ nav img.mclogo{
 
 body{
     font: #f2f2f2;
-    background: white;
+    background: #fffaf1;
 }
 
 /*navigation*/
@@ -23,6 +29,8 @@ nav {
     background-color: #1b1b1b;
     color: #f2f2f2;
     margin-bottom: 30px;
+    font-size: 70px;
+    font-family: art-nuvo;
 }
 
 nav:after {
@@ -34,7 +42,7 @@ nav:after {
 nav .logo {
     float: left;
     color: white;
-    font-size: 27px;
+    font-size: 38px;
     font-weight: 600;
     line-height: 70px;
     padding-left: 10px;
@@ -57,7 +65,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     line-height: 70px;
-    font-size: 18px;
+    font-size: 23px;
     padding: 8px 15px;
 }
 
@@ -228,7 +236,6 @@ div .slideshow {
     display:block;
     text-align: center;
     margin-top: 5%;
-    background-color: rgb(247, 227, 184);
     padding-bottom:4% ;
     padding-top: 5%;;
 }
@@ -399,6 +406,7 @@ div .slideshow {
 .mon_date, .tue-fri_date, .weekend{
     font-size: 50px;
     font-weight: bolder;
+    font-family: art-nuvo;
     color: rgba(42, 40, 38, 0.8);
     text-shadow: 2.5px 1px rgb(55, 52, 44);
 }
@@ -438,8 +446,13 @@ div .slideshow {
     text-align: center;
 }
 
+.header_gallery h1{
+    font-family: art-nuvo;
+    margin-bottom: 1%;
+}
+
 .header_gallery p{
-    font-size: 45px;
+    font-size: 43px;
     margin-bottom: 2%;
 }
 
@@ -478,6 +491,7 @@ div .slideshow {
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 10px;
+    font-family: art-nuvo;
     text-align: center;
     color:rgba(104, 106, 110, 0.6);
     text-shadow: 1px 1px rgb(23, 21, 21);
@@ -622,11 +636,19 @@ img .menuisningpart_picture_left{
     text-align: center;
 }
 
+.menu_ning_container_left .menu_ning_content h2 {
+    font-family: art-nuvo;
+    letter-spacing: 1px;
+}
+
 #pillar {
     display: block;
     max-width: 100%;
     margin: 100px ; 
     width: 300px; 
+    font-family: art-nuvo;
+    letter-spacing: 1px;
+    font-size:x-large;
     transform: translateX(-200px); 
     perspective: 1900px;
     overflow:visible;
@@ -719,14 +741,22 @@ img .menuisningpart_picture_left{
     
   }
 
+  .menu_ning_container_right .menu_ning_content_right h2 {
+    font-family: art-nuvo;
+    letter-spacing: 1px;
+  }
 
   #pillar1 {
    
     display: block; 
     margin: 100px 10%; 
     width: 550px; 
+    font-family: art-nuvo;
+    letter-spacing: 1px;
+    font-size:x-large;
     transform: translateX(-200px); 
     perspective: 1900px;
+
    }
    
    .menu_ning_wrap {display: flex; transform: rotateY(0deg);
@@ -782,7 +812,11 @@ img .menuisningpart_picture_left{
         transform-origin: left center;
         transform-style: preserve-3d;
         backface-visibility: hidden;
-     }
+    }
+    
+    .earl_grey{
+        padding-bottom: 3%;
+    }
   
 /*menu end*/
 
@@ -808,6 +842,7 @@ table {
 
 .combosettable th{
     font-size:75px;
+    font-family: art-nuvo;
 }
   
 td {
@@ -854,6 +889,11 @@ th {
     overflow-x: scroll;
     overflow-y: scroll;
     cursor:default;
+}
+
+.comboset_column h1{
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 }
   
 .comboset_column::-webkit-scrollbar {
@@ -905,6 +945,8 @@ th {
 	display: flex;
 	flex-direction: column;
 	align-content: center;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 	padding: 5rem 5rem;
 }
 
@@ -979,16 +1021,18 @@ div .HOVER {
 /*Start of Merchandise and Preorder*/
 /*Merchandise*/
 .merchandiseword h1{
-    background-color: #7c6547;
+    background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #f3863d 75%);
     padding: 20px;
+    
 }
 
 #merchandiseword{
     color: #fffaf1;
     text-shadow: none;
-    font-size: 80px;
+    font-size: 100px;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
     text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .merchandisecart h1{
@@ -1001,7 +1045,8 @@ div .HOVER {
     text-shadow: none;
     font-size: 80px;
     text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
     margin-bottom: 50px;
     margin-top: 50px;
 }
@@ -1065,6 +1110,9 @@ div .HOVER {
     text-align: center;
     font-weight: bold;
     font-size: 1.5em;
+    font-family: art-nuvo;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
     color: #574732;
     padding-top: 0ch;
     padding: 10px;
@@ -1098,6 +1146,8 @@ div .HOVER {
 .cart-header {
     font-weight: bold;
     font-size: 1.25em;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
     color: #333;
 }
 
@@ -1206,14 +1256,17 @@ div .HOVER {
     color: #333;
     font-size: 1.1em;
     margin-right: 70px;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 }
 
 .btn-purchase {
     display: block;
     margin: 40px auto 80px auto;
     font-size: 1.75em;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 }
-
 
 
   /* Bottom left text*/
@@ -1256,9 +1309,8 @@ div .HOVER {
     right: 0;
   }
 
-
   .gallery-vertical {
-    overflow-y:auto;
+    overflow-y:scroll;
     overflow-x:hidden;
     height: 80vh;
     scroll-snap-type: mandatory;
@@ -1267,7 +1319,7 @@ div .HOVER {
     width: 30%;
     margin-left: 5cm;
     }
-  
+
     .gallery-vertical img {
       position: sticky;
       top: 0;
@@ -1278,19 +1330,23 @@ div .HOVER {
     width: 100%;
     }
   
-  /* width */
-  .gallery-vertical::-webkit-scrollbar {
+/* width */
+.gallery-vertical::-webkit-scrollbar {
     width: 20px;
-  }
+}
   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgb(150, 103, 81); 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(200, 197, 196, 0.5); 
     border-radius: 10px;
-  }
+}
+
+  
   
   .column1 h2{
     font-size: 30px;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
   }
 
   .column1 p{
@@ -1327,6 +1383,9 @@ div .HOVER {
   
   .designer h1{
     text-align: center;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
+    margin-top: 2%;
   }
 
   .merchandisedesigner1{
@@ -1341,6 +1400,8 @@ div .HOVER {
   .designer h2{
     text-align: center;
     font-size: 30px;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
   }
 
   .designer blockquote{
@@ -1392,7 +1453,9 @@ div .HOVER {
 }
 
 .textinhead h1 {
-    font-size: 60px;
+    font-size: 75px;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 }
 
 .textinhead p {
@@ -1420,6 +1483,8 @@ div .HOVER {
 .special_event h1 {
     font-size: 50px;
     font-weight: 600;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 }
 
 .special_event p{
@@ -1453,7 +1518,9 @@ div .HOVER {
     font-weight: 600;
     font-size: 30px;
     margin: 10px 0 ;
-    color: #fff;
+    color:#fffaf1;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 }
 
 .event-col p {
@@ -1477,13 +1544,15 @@ div .HOVER {
     cursor: pointer;
     margin-bottom: 100px;
     font-variant: small-caps ;
+    transition: 1s;
 }
 
 .eventbutton:hover a {
+
     border: 1px solid black;
     color: white;
     background: rgb(0, 0, 0);
-    transition: 1s;
+    
 }
 
 @media(max-width : 700px) {
@@ -1503,8 +1572,10 @@ div .HOVER {
 }
 
 .promotional h1{
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 600;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 }
 
 .promotional p{
@@ -1546,7 +1617,9 @@ div .HOVER {
     width: 100%;
     font-weight: 500;
     color: #fff;
-    font-size: 30px;
+    font-size: 40px;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
     bottom: 0;
     left: 50%;
     transform: translate(-50%);
@@ -1587,8 +1660,10 @@ div .HOVER {
 }
 
 .textineventpageheader h1 {
-    font-size: 60px;
+    font-size: 80px;
     margin-top:10px ;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 }
 
 .eventpagerow {
@@ -1609,7 +1684,7 @@ div .HOVER {
     line-height: 22px;
     padding: 20px 0;
     text-align: center;
-    background-color: #93a5cf;
+    background-color: #adaefd;
 }
 
 .event-column {
@@ -1634,6 +1709,8 @@ div .HOVER {
     padding-top: 0;
     font-size: 50px;
     font-weight: 500;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 }
 
 .event-column p {
@@ -1666,6 +1743,12 @@ div .HOVER {
     margin: auto;
     overflow: hidden;
     padding: 0 20px;
+    
+}
+
+.commenhead h1{
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 }
 
 .commen-row {
@@ -1741,6 +1824,8 @@ div .HOVER {
 .textinpromotionpageheader h1 {
     font-size: 60px;
     margin-top:10px ;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 }
 
 .promotionh {
@@ -1748,6 +1833,12 @@ div .HOVER {
     padding-top: 30px;
     font-size: 26px;
     background-color: #fcb69f;
+    
+}
+
+.promotionh h1 {
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 }
 
 .promotiopage {
@@ -1765,6 +1856,7 @@ div .HOVER {
     border-radius: 10px 10px 10px 10px;
     background: #f2f2f2;
     box-shadow: 5px 10px 20px #000;
+    transition: all 1s ease;
 
 }
 
@@ -1772,7 +1864,7 @@ div .HOVER {
     background-color: #000;
     color: #f2f2f2;
     transform: scale(1.03);
-    transition: all 1s ease;
+    
 }
 
 .pic {
@@ -1787,6 +1879,8 @@ div .HOVER {
     text-align: center;
     font-size: 25px;
     padding-top: 30px;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 }
 
 .comboset p {
@@ -1824,6 +1918,8 @@ div .HOVER {
     padding-top: 2%;
     background-color: #FFF6B7 ;
     padding-bottom: 3%;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 }
 
 .promotionh1 > h1 {    
@@ -1857,7 +1953,7 @@ div .HOVER {
 }
 
 .valentinelayer a {
-    color: rgb(11, 160, 86);
+    color: #F53E50;
     font-weight: 900;
 }
 
@@ -1921,22 +2017,37 @@ div .HOVER {
 
 /*Start of Valentime*/
 .valentine_text {
-    margin-top: -30px;
     font-size: 26px;
     font-weight: 400;
     line-height: 22px;
     padding: 20px 0;
     text-align: center;
-    background-color: #93a5cf;
+    color: #F53E50;
+    margin-top: -30px;
 }
+
+.valentine_text1 {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 20px 0;
+    text-align: center;
+    color: #F53E50;
+
+}
+
 
 .valentine_set {
     width: 100%;
-    padding-bottom: 4%;
+    height: 50%;
+    margin: auto;
+    padding-bottom: 312px;
+    padding-top: 312px;
+    
 }
 
 .valentine_set h2 {
-    color: rgb(41, 34, 34);
+    color: #fffaf1;
     font-size: 33px;
     padding: 30px 0;
     text-align: center;
@@ -1946,14 +2057,14 @@ div .HOVER {
     width: 90%;
     margin: auto;
     display: grid;
-    max-width: 1000px;
+
     grid-template-columns: repeat(auto-fit,minmax(251px, 1fr));
     gap: 25px;
 }
 
 .valentine-col {
     background: #1f283b;
-    padding: 8% 14%;
+    padding: 8% 8%;
     border-radius: 10px;
     color: rgb(255, 252, 252);
     text-align: center;
@@ -1964,7 +2075,7 @@ div .HOVER {
 }
 
 .valentine-col p {
-    font-size: 23px;
+    font-size: 40px;
 }
 
 .valentine-col ul {
@@ -1976,6 +2087,7 @@ div .HOVER {
 
 .valentine-col ul li {
     margin: 19px 0;
+    font-size: 23px;
 }
 
 .valentine-col ul li::before {
@@ -2171,6 +2283,8 @@ div .HOVER {
     font-size: 60px;
     text-align: center;
     padding: auto;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 
 }
 
@@ -2205,6 +2319,8 @@ div .HOVER {
     text-decoration: none;
     color: aliceblue;
     background-color: #f47105d7;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
     border: none;
     cursor: pointer;
     padding: 15%;
@@ -2214,6 +2330,12 @@ div .HOVER {
 padding-bottom: 20%;
 
 }
+
+ .container_marscardregister h2{
+    font-family: art-nuvo;
+    letter-spacing: 1px;
+}
+
 .container_marscardregister form{
 text-align: center;
 width:50%;
@@ -2253,6 +2375,8 @@ box-shadow: 0 0 15px #decbc5;
   width: 100px;
   height: 40px;
   cursor: pointer;
+  font-family: art-nuvo;
+  letter-spacing: 1px;
 
 }
 
@@ -2310,9 +2434,11 @@ box-shadow: 0 0 15px #decbc5;
 .login_membership{
 text-align: center;
 font-size:60px;
-color: black;
+color: #140606;
 text-shadow: 2px 2px 4px #f0ebeb;
 padding-top: 2%;
+font-family: art-nuvo;
+letter-spacing: 1px;
 }
 
 .container_login input[type=text], input[type=password], #pwdInput {
@@ -2335,12 +2461,15 @@ input[type=password]:focus {
     width: 100px;
     height: 40px;
     cursor: pointer;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
     
 }
 
 .container_login button:hover {
   opacity: 0.8;
 }
+
 
 .register_link a{
     cursor: pointer;
@@ -2357,9 +2486,16 @@ input[type=password]:focus {
     cursor: pointer;
 }
 
+#register{
+    text-align: center;
+}
+
+.container_marscardregister h3{
+    text-align: center;
+}
+
 /*--------------------------------------------------------------------*/
 /*RESERVATION*/ 
-
 .container_reservation{
     padding-top: 5%;
     padding-bottom: 20%;
@@ -2389,6 +2525,8 @@ text-align: center;
 font-size:50px;
 color: black;
 padding-bottom: 20px;
+font-family: art-nuvo;
+letter-spacing: 1px;
 }
 
 .container_reservation input[type=text], input[type=password],input[type=number],input[type=datetime-local] {
@@ -2412,11 +2550,13 @@ outline: none;
     width: 50%;
     position: absolute;
     left:48%;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
     
 }
 
-.btnbcktoindex{
-    margin-left: 37.5%;
+div.btnbcktoindex{
+    margin-left: 46%;
 }
 
 .btnbcktoindex a{
@@ -2441,7 +2581,7 @@ button:hover {
 
   /* The Modal (background) */
   .reservation_modal {
-    display: none; 
+     display: none; 
     position: fixed; 
     z-index: 1; 
     left: 0;
@@ -2464,15 +2604,6 @@ button:hover {
     text-align: center;
   }
   
-.container_marscardregister h2{
-    font-size: 50px;
-    text-align: center;
-}
-  
-.container_marscardregister h3{
-    font-size: 25px;
-    text-align: center;
-}
 
   .reserve{
   color:black;
@@ -2480,25 +2611,12 @@ button:hover {
   font-size: 30px;
   text-align: center;
   padding-bottom: 3%;
+  padding-top: 3%;
   }
   
-  .close {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: rgb(245, 245, 245);
-    cursor: pointer;
-  }
   
   /* Add Zoom Animation */
-  .animate {
+  .reservation_modal .modal-content.animate {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
   }
@@ -2525,8 +2643,28 @@ button:hover {
     }
   }
 
+.close_reservation {
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 40px;
+    font-weight: bold;
+}
+  
+.close_reservation:hover,
+.close_reservation:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 45px;
+}
+
+
 
 /*End of Reservation and membership*/
+
+
 
 
 
@@ -2561,6 +2699,8 @@ div h1.about_us_caption{
     width:100%;
     text-align: center;
     color: white;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 }
 
 /*1st img about us*/
@@ -2599,6 +2739,8 @@ div img.about_usimg1{
 div p.capl_1st strong{
     font-size: 50px;
     border:none;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 }
 
 /*2nd about us*/
@@ -2637,6 +2779,8 @@ div img.about_usimg2{
 div p.capl_2nd strong{
     font-size: 50px;
     border:none;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 }
 
 /*3rd about us*/
@@ -2675,6 +2819,8 @@ div img.about_usimg3{
 div p.capl_3rd strong{
     font-size: 50px;
     border:none;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 }
 
 /*4th about us*/
@@ -2713,6 +2859,8 @@ div img.about_usimg4{
 div p.capl_4th strong{
     font-size: 50px;
     border:none;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 }
 
 /*5rd about us*/
@@ -2756,6 +2904,8 @@ div img.about_usimg5{
 div p.capl_5rd strong{
     font-size: 50px;
     border:none;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 }
 
 /*footer_about us*/   
@@ -3350,6 +3500,8 @@ body.astro_body, div.bgimg, html.astro_html{
     font-size: 55px;
     color:rgb(78, 214, 169);
     text-decoration: none;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 }
 
 .bg_text_about a:hover{
@@ -3373,6 +3525,8 @@ div.astro_header{
 div.astro_header h1{
     font-size: 50px;
     margin-bottom: 20px;
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 }
 
 div.astro_header h2{
@@ -3564,6 +3718,11 @@ div.row_astro img.hover-shadow {
     padding: 0 16px;
     padding-bottom: 10px;
     display:block;
+}
+
+.container_1_astro h2{
+    font-family: art-nuvo;
+    letter-spacing: 1px;
 }
   
 .container_1_astro::after, .row::after {
@@ -4533,6 +4692,7 @@ div.container_photo {
     color: #140606;
     text-shadow: 1px 1.5px grey;
     margin-bottom: 10px;
+    font-family: art-nuvo;
 }
 
 
@@ -4951,11 +5111,11 @@ nav.small_s{
     }
 
     .area_reservation{
-        height:128vh;
+        height:128vh;   
     }
 
     .area_membership{
-        height:105vh;
+        height:140vh;
     }
 
     .area_register{
@@ -5251,8 +5411,116 @@ nav.small_s{
     }
 
     /*Merchandise*/
+    h1#merchandiseword{
+        font-size:40px;
+    }
 
-    
+    h1#merchandisecart{
+        font-size:40px;
+    }
+
+    .cart-row span{
+        font-size:15px;
+    }
+
+    .cart-quantity-input[type=number]{
+        width:100%;
+        margin-left: 10%;
+    }
+
+    img.cart-item-image{
+        width:25%;
+        margin-right:-70%;
+        margin-left: -5%;
+    }
+
+    #price_cart{
+        margin-right: 0%;
+        padding-left: 5%;
+    }
+
+    span.cart-price{
+        margin-right:-10%;
+    }
+
+    .cart-quantity-input[type=number]{
+        font-size: 13px;
+    }
+
+    .btn-danger[type=button]{
+        margin-left: 5%;
+    }
+
+    .btn-purchase{
+        font-size: 20px;
+    }  
+
+    /*Mcd1*/
+    .merchandise_mcd1, .merchandise_mcd2, .merchandise_mcd3, .merchandise_mcd4{
+        margin-left:-15%;
+    }
+
+    .gallery-vertical {
+        overflow-y:scroll;
+        overflow-x:hidden;
+        height: 80vh;
+        scroll-snap-type: mandatory;
+        scroll-snap-points-y: repeat(100%);
+        float: left;
+        width: 50%;
+        margin-bottom: 5%;
+    }
+      
+    .gallery-vertical img {
+        width: 100%;   
+    }
+      
+    /* width */
+    .gallery-vertical::-webkit-scrollbar {
+        width: 20px;
+        display: none;
+    }
+      
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(200, 197, 196, 0.5); 
+        border-radius: 10px;
+    }
+
+    div.merchandise_mcd1 div.column1{
+        margin-left:40%;
+        margin-top: 0%; 
+    }
+
+    div.merchandise_mcd1 div.column1 h2{
+        font-size: 25px;
+    }
+
+    div.merchandise_mcd1 div.column1 hr{
+        width:100%
+    }
+
+    .designer h1{
+        margin-left: 13%;
+    }
+
+    .designer img{
+        margin-left: 30%;
+    }
+
+    .designer h2{
+        margin-left: 15%;
+    }
+
+    .designer blockquote{
+        font-size: 15px;
+        margin-left: 18%;
+        margin-right: 7%;
+    }
+
+    .area_reservation{
+        height:130vh;
+    }
 }   
 
 /*Tablet screen*/

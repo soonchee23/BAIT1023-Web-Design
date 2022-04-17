@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>Assignment</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/2703fb7a38.js" crossorigin="anonymous"></script>
-</head>
+    <head>
+        <title>Membership</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="Mars Cafe, mars cafe, cafe, mars">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="page icon" type="image/png" href="image/mars_logo.png">
+        <script src="https://kit.fontawesome.com/2703fb7a38.js" crossorigin="anonymous"></script>
+    </head>
 
 <body>
     <div class="context">
@@ -50,7 +52,6 @@
             <div id="myNavicon" class="navicon">
                 <a href="javascript:void(0)" class="navclosebtn" onclick="closeNav()">&times;</a>
                 <a href="index.html">Home</a>
-                <a href="#">Menu</a>
                 <ol>
                     <a href="menu_food.html">Food</a>
                     <a href="menu_beverage.html">Beverage</a>
@@ -96,41 +97,45 @@
         </script>
 
 
-        <h1 class="login_membership" style="color:#170606">Log In</h1><br>
-        <div class="container_login">
-            <form class="login_form" action="reservation.html">
 
-                <label for="username"><b><span>Username</span></b></label><br>
-                 <input type="text" placeholder="Enter Username" name="text" maxlength="15" size="15" required> <br><br>
+<h1 class="login_membership" style="color:#170606">Log In</h1><br>
+<div class="container_login">
+    <form class="login_form" action="reservation.html">
 
-                <label for="password"><b>Password</b></label><br>
-                <input type="password" value="" id="pwdInput" placeholder="Enter Password" maxlength="10" size="10" required><br><br>
-                <input type="checkbox" onclick="myFunction()"> Show Password <br><br>
+        <label for="username"><b><span>Username</span></b></label><br>
+        <input type="text"id="text" name="text" placeholder="First letter should be a capital letter" pattern="[A-Za-z]{}*" required><br>                
 
-                <label>
-                    <input type="checkbox" name="remember"> Remember Me
-                </label><br><br>
+        <label for="password"><b>Password</b></label><br>
+        <input type="password" id="pwdInput"  value="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" placeholder="Enter Password" maxlength="10" size="10" required><br>
+         <p class="password_valid">You should enter at most 10 characters that including <br>at least one uppercase and one lowercase</p><br>
 
-                <button class="login_button"><b>Log In</b></button> <br>
+        <input type="checkbox" onclick="myFunction()"> Show Password <br><br>
 
-                <div class="register_link">
-                    <a href="register.html">Register</a>
-                </div>
-            </form>
+        <label>
+            <input type="checkbox" name="remember" required> Remember Me
+        </label><br><br>
+
+        <button class="login_button"><b>Log In</b></button> <br>
+
+
+        <div class="register_link">
+            <a href="register.html">Register</a>
         </div>
+    </form>
+</div>
 
 
 
-        <script>
-            function myFunction() {
-                var x = document.getElementById("pwdInput");
-                if (x.type === "password") {
-                    x.type = "text";
-                } else {
-                    x.type = "password";
-                }
-            }
-        </script>
+<script>
+    function myFunction() {
+        var x = document.getElementById("pwdInput");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+</script>
 
         <footer>
             <div class="content ">

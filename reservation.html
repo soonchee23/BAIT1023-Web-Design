@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
-    <title>Assignment</title>
+    <title>Reservation</title>
     <meta charset="utf-8">
+    <meta name="keywords" content="Mars Cafe, mars cafe, cafe, mars">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="page icon" type="image/png" href="image/mars_logo.png">
     <script src="https://kit.fontawesome.com/2703fb7a38.js" crossorigin="anonymous"></script>
 </head>
 
@@ -50,7 +52,6 @@
             <div id="myNavicon" class="navicon">
                 <a href="javascript:void(0)" class="navclosebtn" onclick="closeNav()">&times;</a>
                 <a href="index.html">Home</a>
-                <a href="#">Menu</a>
                 <ol>
                     <a href="menu_food.html">Food</a>
                     <a href="menu_beverage.html">Beverage</a>
@@ -93,71 +94,75 @@
                 }
                 prevScrollpos = currentScrollPos;
             }
-        </script>
 
-
-
-        <div class="container_reservation">
-            <h2>Reservation</h2>
-
-            <form class="reservation_form" action="" method="get">
-
-                <label for="name"><b>Name:</b></label><br>
-                <input type="text" id="name" name="name"><br><br>
-
-                <label for="phone"><b>Phone Number:</b></label><br>
-                <input type="text" id="phone" name="phone"><br><br>
-
-                <label for="adult"><b>Adult:</b></label><br>
-                <input type="number" id="adult" name="total_adults" placeholder="0" min="0" required><br><br>
-
-                <label for="children"><b>Children:</b></label><br>
-                <input type="number" id="children" name="total_children" placeholder="0" min="0" required><br><br>
-
-                <label class="date_time_r" for="datetime"><b>Select Date/Time:</b></label><br>
-                <input type="datetime-local" id="Test_DatetimeLocal"><br><br>
-
-                <button class="buttonbook" onclick="document.getElementById('id01').style.display='block'"
-                    style="width:auto;">Book</button>
-
-            </form>
-
-            <div id="id01" class="reservation_modal">
-
-                <form class="modal-content animate" action="/action_page.php" method="post">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                        title="Close Modal">&times;</span>
-                    <p class="reserve">
-                        Reservation Successful !!!<br>
-                    </p>
-
-                    <div class="btnbcktoindex">
-                        <button><a href="index.html">Back to Home Page</a></button>
-                    </div>
-
-                </form>
-            </div>
-        </div>
-
-
-
-
-        <script>
-            // Get modal
-            var modal = document.getElementById('id01');
             var animate = document.getElementsByClassName('animate').click();
 
-            // outside the modal box
-            window.onclick = function (event) {
+            function myFunction() {
+                document.getElementById("popup").style.display = "block";
+                event.preventDefault()
+            }
+
+
+            window.onchange = function () {
                 if (event.target == modal) {
                     alert(animate);
                 } else {
                     return false;
                 }
             }
+
+            function closeModal() {
+            document.getElementById("popup").style.display = "none";
+        }
         </script>
 
 
+
+
+        <div class="container_reservation">
+            <h2>Reservation</h2>
+
+            <form class="reservation_form" onsubmit="myFunction()" method="get">
+
+                <label for="name"><b>Name:</b></label><br>
+                <input type="text" id="name" name="name" placeholder="First letter should be a capital letter"
+                    pattern="[A-Za-z]{}*" required><br><br>
+
+                <label for="phone"><b>Phone Number:</b></label><br>
+                <input type="text" id="phone" name="phone" placeholder="XXX - XXXXXXXX"
+                    pattern="^(\+?6?01)[02-46-9]-*[0-9]{7}$|^(\+?6?01)[1]-*[0-9]{8}$" required><br><br>
+
+                <label for="adult"><b>Adult:</b></label><br>
+                <input type="number" id="adult" name="total_adults" placeholder=" Max 10 person" min="0" max="10"
+                    required><br><br>
+
+                <label for="children"><b>Children:</b></label><br>
+                <input type="number" id="children" name="total_children" placeholder="Max 10 person" min="0" max="10"
+                    required><br><br>
+
+                <label class="date_time_r" for="datetime"><b>Select Date/Time:</b></label><br>
+                <input type="datetime-local"  onload="getDate()" id="Test_DatetimeLocal" required><br><br>
+
+
+                <button class="buttonbook" id="id01" onclick="document.getElementById('id01').style.display='block'"
+                    window.onsubmit style="width:auto;">Book</button>
+
+            </form>
+
+            <div id="popup" class="reservation_modal" style="display:none;">
+                <div class="modal-content animate">
+                    <span class="close_reservation cursor_astro" onclick="closeModal()">&times;</span>
+
+                    <p class="reserve">
+                        Reservation Successful !!!<br>
+                    </p>
+
+                    <div class="btnbcktoindex">
+                        <button><a href="index.html">Okay</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!--footer-->
         <footer>
